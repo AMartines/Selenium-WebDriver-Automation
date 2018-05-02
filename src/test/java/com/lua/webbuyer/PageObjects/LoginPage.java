@@ -23,7 +23,7 @@ public class LoginPage {
 	
 	
 	
-	
+		
 	
 	
 		public void performLogin(String user, String password, String URL) throws NoSuchElementException{
@@ -34,7 +34,6 @@ public class LoginPage {
 			actions.setText(By.xpath(".//*[@id='page-wrap']/div[3]/div[2]/div[2]/div[1]/div/div/form/div[1]/div/input"), user);
 			actions.setText(By.xpath(".//*[@id='page-wrap']/div[3]/div[2]/div[2]/div[1]/div/div/form/div[2]/div/input"), password);
 			actions.click(By.xpath(".//button[text()[contains(.,'Entrar')]]"));
-			actions.wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.xpath(".//div[@class='bm-menu']"))));
 			actions.loadingWait(driver);
 		}
 }

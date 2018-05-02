@@ -17,6 +17,7 @@ public class Common {
 	public void logIn() {
 		actions = new Actions(driver);
 		actions.loadingWait(driver);
+		//actions.waitForElementNotVisible(5, driver);
 		actions.click(By.xpath(".//button[@class='source-components-Header-___Header__menu-trigger___3rL3X']"));
 		actions.click(By.xpath(".//*[@id='outer-container']/ul/li[2]/a"));
 	}

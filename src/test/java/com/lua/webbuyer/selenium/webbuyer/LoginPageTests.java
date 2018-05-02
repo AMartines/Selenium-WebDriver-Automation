@@ -4,10 +4,12 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.lua.webbuyer.PageObjects.LoginPage;
 import com.lua.webbuyer.utils.Driver;
 
 
@@ -16,39 +18,36 @@ import com.lua.webbuyer.utils.Driver;
 
 public class LoginPageTests {
 
+	private LoginPage login;
 	private WebDriver driver;
 	
 
 
-	@Parameters({"URL"})
+	@Parameters({"Browser","URL"})
 	@BeforeClass
-	public void setupClass(String URL) {
-		//Qual Browser à ser usado
-		String browser ="Firefox";
+	public void setupClass(String browser, String URL) {
 		driver = Driver.getBrowser(browser);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get(URL);
-		System.out.println("driver 1 =" + driver);
 		driver.manage().window().setSize(new Dimension(1920, 1080));
+		driver.get(URL);
 		
+		this.login = new LoginPage(driver);
 	}
 	
 	
 
-//	@AfterClass
-//	public void logoutAfterSTest() throws InterruptedException {
-//		extent.flush();
-//	}
+	@AfterClass
+	public void endSession() {
+		driver.quit();
+	}
 
 	
 	
 	
 	@Test//(description="Simula duas compras seguidas pelo WebBuyerBuyer.")
-	@Parameters({"user", "password", "itemToSearch", "itemColorCode", "cep", "URL"})
+	@Parameters({"user", "password"})
 	public void testingBuyer(String PasswordOK, String UserOK, String itemToSearch1, String colorCode, String cep, String URL){
-		//ExtentTestManager.getTest().setDescription("Robô faz login no sistema com uma conta pré-existente e efetua duas compras consecutivas");
-		TestBuyer buyer = new TestBuyer(driver);
-		buyer.testCompra(PasswordOK, UserOK, itemToSearch1, colorCode, cep, URL);
+		login.performLogin(PasswordOK, UserOK, URL);
 		
 		
 	}

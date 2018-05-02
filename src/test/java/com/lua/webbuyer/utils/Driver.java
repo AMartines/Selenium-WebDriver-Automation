@@ -10,9 +10,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Driver {
 	
-	public  WebDriver driver = null;
+	public static  WebDriver driver = null;
 	 
-	public  WebDriver getBrowser(String browserType)
+	public static  WebDriver getBrowser(String browserType)
 	 
 		{
 		if(driver == null)

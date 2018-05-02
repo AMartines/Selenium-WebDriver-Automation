@@ -21,9 +21,9 @@ public class PurchasePage {
 
 	public void finalizarCompraBtn() {
 		actions.click(By.xpath(".//button[text()[contains(.,'Finalizar Compra')]]"));
-		if (driver.findElement(By.xpath(".//button[text()[contains(.,'Finalizar Compra')]]")).isDisplayed()) {
+		//if (driver.findElement(By.xpath(".//button[text()[contains(.,'Finalizar Compra')]]")).isDisplayed()) {
 			actions.click(By.xpath(".//button[text()[contains(.,'Finalizar Compra')]]"));
-		}
+		//}
 	}
 	
 	public void productColorSelectByValue(String cor) {
@@ -31,6 +31,7 @@ public class PurchasePage {
 	}
 	
 	public void productSelect(String itemToBeSelected) {
+		
 		actions.click(By.xpath("//*[@class='source-components-ProductList-ProductListItem-___ProductListItem__link___1-CWH']//*[text()='"+ itemToBeSelected +"']"));
 	}
 

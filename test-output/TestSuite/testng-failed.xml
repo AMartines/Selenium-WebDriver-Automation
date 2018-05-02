@@ -1,31 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="3" name="Failed suite [TestSuite]">
-  <parameter name="password" value="123456Aaa"/>
+  <parameter name="password" value="123456"/>
   <parameter name="itemColorCode" value="11682"/>
   <parameter name="itemToSearch" value="Pijama Snacks"/>
-  <parameter name="user" value="teste11202@mailinator.com"/>
+  <parameter name="user" value="nakas_ndr@mailinator.com"/>
   <parameter name="URL" value="https://kurastore.lua.net/"/>
+  <parameter name="Browser" value="Firefox"/>
   <parameter name="cep" value="03279120"/>
   <parameter name="itemToSelect" value="Camisola Fruit"/>
   <listeners>
     <listener class-name="com.lua.webbuyer.utils.ExtentReports_Listner"/>
   </listeners>
   <test name="Teste Compras(failed)">
-    <parameter name="password" value="123456Aaa"/>
+    <parameter name="password" value="123456"/>
     <parameter name="itemColorCode" value="11682"/>
     <parameter name="itemToSearch" value="Pijama Snacks"/>
-    <parameter name="user" value="teste11202@mailinator.com"/>
+    <parameter name="user" value="nakas_ndr@mailinator.com"/>
     <parameter name="URL" value="https://kurastore.lua.net/"/>
+    <parameter name="Browser" value="Firefox"/>
     <parameter name="cep" value="03279120"/>
     <parameter name="itemToSelect" value="Camisola Fruit"/>
     <classes>
       <class name="com.lua.webbuyer.selenium.webbuyer.LoginPageTests">
         <methods>
-          <include name="testingBuyer" invocation-numbers="0"/>
+          <include name="testingBuyer"/>
           <include name="setupClass"/>
         </methods>
       </class> <!-- com.lua.webbuyer.selenium.webbuyer.LoginPageTests -->
+      <class name="com.lua.webbuyer.selenium.webbuyer.TestBuyer">
+        <methods>
+          <include name="testeCompra" invocation-numbers="0"/>
+          <include name="setupClass"/>
+        </methods>
+      </class> <!-- com.lua.webbuyer.selenium.webbuyer.TestBuyer -->
     </classes>
   </test> <!-- Teste Compras(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

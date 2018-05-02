@@ -39,7 +39,7 @@ public class Actions{
 			}catch(NoSuchElementException e) {
 				System.out.println("O botão '"+ "' não foi encontrado" + e.getMessage());
 			}catch(TimeoutException g) {
-				System.out.println("Tempo limite estourado ao procurar o  botão '"+ "'" + g.getMessage());
+				System.out.println("Tempo limite estourado ao procurar o  botão '"+ Locator +"'" + g.getMessage());
 			}
 	}
 	
@@ -60,12 +60,30 @@ public class Actions{
 	}
 	
 	public void loadingWait(WebDriver driver) {
-		WebElement loader = driver.findElement(By.xpath(".//div[@class='sk-double-bounce sk-spinner source-components-Loading-___Loading__spinner___dEAFF']"));
-	    WebDriverWait wait = new WebDriverWait(driver, 5000L);
-	    //wait.until(ExpectedConditions.visibilityOf(loader)); // wait for loader to appear
-	    wait.until(ExpectedConditions.invisibilityOf(loader)); // wait for loader to disappear
+		try {
+			WebElement loader = driver.findElement(By.xpath(".//div[@class='sk-double-bounce sk-spinner source-components-Loading-___Loading__spinner___dEAFF']"));
+		    WebDriverWait wait = new WebDriverWait(driver, 5000L);
+		    //wait.until(ExpectedConditions.visibilityOf(loader)); // wait for loader to appear
+		    wait.until(ExpectedConditions.invisibilityOf(loader)); // wait for loader to disappear
+		}catch(TimeoutException e) {
+			
+		}
 		}
 	
+	
+	public  String waitForElementNotVisible(int timeOutInSeconds, WebDriver driver) {
+	    if ((driver == null)) {
+
+	        return "Wrong usage of WaitforElementNotVisible()";
+	    }
+	    try {
+	        (new WebDriverWait(driver, timeOutInSeconds)).until(ExpectedConditions.invisibilityOfElementLocated(By
+	                .xpath(".//div[@class='sk-double-bounce sk-spinner source-components-Loading-___Loading__spinner___dEAFF']")));
+	        return null;
+	    } catch (TimeoutException e) {
+	        return "Build your own errormessage...";
+	    }
+	}
 	
 	
 	
