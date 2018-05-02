@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestSuite" duration-ms="24357" started-at="2018-05-02T18:34:02Z" finished-at="2018-05-02T18:34:26Z">
+    <groups>
+    </groups>
+    <test name="Teste Compras" duration-ms="24357" started-at="2018-05-02T18:34:02Z" finished-at="2018-05-02T18:34:26Z">
+      <class name="com.lua.webbuyer.selenium.webbuyer.LoginPageTests">
+        <test-method status="PASS" signature="setupClass(java.lang.String)[pri:0, instance:com.lua.webbuyer.selenium.webbuyer.LoginPageTests@69a3d1d]" name="setupClass" is-config="true" duration-ms="11949" started-at="2018-05-02T15:34:02Z" finished-at="2018-05-02T15:34:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://kurastore.lua.net/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+        <test-method status="FAIL" signature="testingBuyer(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.selenium.webbuyer.LoginPageTests@69a3d1d]" name="testingBuyer" duration-ms="12350" started-at="2018-05-02T15:34:14Z" finished-at="2018-05-02T15:34:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[teste11202@mailinator.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456Aaa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Pijama Snacks]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[11682]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[03279120]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[https://kurastore.lua.net/]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[Unable to locate window
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:e9:1daa:97f0:d88a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 38791, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 124da0b7-0a86-c747-a6ef-69676f0a81ed
+*** Element info: {Using=xpath, value=.//*[@id='page-wrap']/div[3]/div/article/div[2]/div[1]/div/div/div/select}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to locate window
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:e9:1daa:97f0:d88a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 38791, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 124da0b7-0a86-c747-a6ef-69676f0a81ed
+*** Element info: {Using=xpath, value=.//*[@id='page-wrap']/div[3]/div/article/div[2]/div[1]/div/div/div/select}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at com.lua.webbuyer.utils.Actions.menuDropdown(Actions.java:53)
+	at com.lua.webbuyer.PageObjects.PurchasePage.productColorSelectByValue(PurchasePage.java:30)
+	at com.lua.webbuyer.selenium.webbuyer.TestBuyer.testCompra(TestBuyer.java:38)
+	at com.lua.webbuyer.selenium.webbuyer.LoginPageTests.testingBuyer(LoginPageTests.java:72)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testingBuyer -->
+      </class> <!-- com.lua.webbuyer.selenium.webbuyer.LoginPageTests -->
+    </test> <!-- Teste Compras -->
+  </suite> <!-- TestSuite -->
+</testng-results>

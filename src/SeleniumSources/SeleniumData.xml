@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" thread-count="3">
+
+	<listeners>
+		<listener class-name="com.lua.webbuyer.utils.ExtentReports_Listner"></listener>
+	</listeners>
+	
+<!-- Parametros paraa classe TestBuyer-->
+
+	<test name="Teste Compras">
+		<parameter name="URL" value="https://kurastore.lua.net/" />
+		<parameter name="user" value="teste11202@mailinator.com" />
+		<parameter name="password" value="123456Aaa" />
+		<parameter name="cep" value="03279120" />
+		<parameter name="itemToSearch" value="Pijama Snacks" />
+		<parameter name="itemColorCode" value="11682" />
+		
+		<parameter name="itemToSelect" value="Camisola Fruit" />
+		<classes>
+			<class name="com.lua.webbuyer.selenium.webbuyer.LoginPageTests">
+			</class>
+		</classes>
+	</test>
+
+
+
+
+
+
+</suite>

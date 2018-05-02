@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>TestNG:  Teste Compras</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Teste Compras</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed May 02 15:34:02 BRT 2018</td>
+</tr>
+<tr><td>Total time:</td><td>24 seconds (24357 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.lua.webbuyer.selenium.webbuyer.LoginPageTests.testingBuyer()'><b>testingBuyer</b><br>Test class: com.lua.webbuyer.selenium.webbuyer.LoginPageTests<br>Parameters: teste11202@mailinator.com, 123456Aaa, Pijama Snacks, 11682, 03279120, https://kurastore.lua.net/</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: Unable to locate window
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;Guminis-Mac-mini.local&apos;, ip: &apos;fe80:0:0:0:e9:1daa:97f0:d88a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.4&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 38791, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 124da0b7-0a86-c747-a6ef-69676f0a81ed
+*** Element info: {Using=xpath, value=.//*[@id=&apos;page-wrap&apos;]/div[3]/div/article/div[2]/div[1]/div/div/div/select}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at com.lua.webbuyer.utils.Actions.menuDropdown(Actions.java:53)
+	at com.lua.webbuyer.PageObjects.PurchasePage.productColorSelectByValue(PurchasePage.java:30)
+	at com.lua.webbuyer.selenium.webbuyer.TestBuyer.testCompra(TestBuyer.java:38)
+	at com.lua.webbuyer.selenium.webbuyer.LoginPageTests.testingBuyer(LoginPageTests.java:72)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1114335860", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1114335860'><pre>org.openqa.selenium.NoSuchWindowException: Unable to locate window
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;Guminis-Mac-mini.local&apos;, ip: &apos;fe80:0:0:0:e9:1daa:97f0:d88a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.4&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 38791, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 124da0b7-0a86-c747-a6ef-69676f0a81ed
+*** Element info: {Using=xpath, value=.//*[@id=&apos;page-wrap&apos;]/div[3]/div/article/div[2]/div[1]/div/div/div/select}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at com.lua.webbuyer.utils.Actions.menuDropdown(Actions.java:53)
+	at com.lua.webbuyer.PageObjects.PurchasePage.productColorSelectByValue(PurchasePage.java:30)
+	at com.lua.webbuyer.selenium.webbuyer.TestBuyer.testCompra(TestBuyer.java:38)
+	at com.lua.webbuyer.selenium.webbuyer.LoginPageTests.testingBuyer(LoginPageTests.java:72)
+</pre></div></td>
+<td>12</td>
+<td>com.lua.webbuyer.selenium.webbuyer.LoginPageTests@69a3d1d</td></tr>
+</table><p>
+</body>
+</html>
