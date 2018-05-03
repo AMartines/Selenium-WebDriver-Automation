@@ -14,14 +14,14 @@
 		<parameter name="user" value="nakas_ndr@mailinator.com" />
 		<parameter name="password" value="123456" />
 		<parameter name="cep" value="03279120" />
-		<parameter name="itemToSearch" value="Pijama Snacks" />
+		<parameter name="Product" value="Pijama Snacks" />
 		<parameter name="itemColorCode" value="11682" />
 		
 		<parameter name="itemToSelect" value="Camisola Fruit" />
 		<classes>
 			<class name="com.lua.webbuyer.selenium.webbuyer.TestBuyer">
 			</class>
-			<class name="com.lua.webbuyer.selenium.webbuyer.LoginPageTests">
+			<class name="com.lua.webbuyer.selenium.webbuyer.TestLoginPage">
 			</class>
 		</classes>
 	</test>

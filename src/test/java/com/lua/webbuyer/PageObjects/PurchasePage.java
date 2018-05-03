@@ -3,16 +3,16 @@ package com.lua.webbuyer.PageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import com.lua.webbuyer.utils.Actions;
+import com.lua.webbuyer.utils.Selenium;
 
 public class PurchasePage {
 
 	private WebDriver driver;
-	private Actions actions;
+	private Selenium actions;
 
 	public PurchasePage(WebDriver driver) {
 		this.driver = driver;
-		this.actions = new Actions(driver);
+		this.actions = new Selenium(driver);
 	}
 
 	public void comprarBtn() {
@@ -22,7 +22,7 @@ public class PurchasePage {
 	public void finalizarCompraBtn() {
 		actions.click(By.xpath(".//button[text()[contains(.,'Finalizar Compra')]]"));
 		//if (driver.findElement(By.xpath(".//button[text()[contains(.,'Finalizar Compra')]]")).isDisplayed()) {
-			actions.click(By.xpath(".//button[text()[contains(.,'Finalizar Compra')]]"));
+			//actions.click(By.xpath(".//button[text()[contains(.,'Finalizar Compra')]]"));
 		//}
 	}
 	

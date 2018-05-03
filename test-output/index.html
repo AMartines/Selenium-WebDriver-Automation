@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,  1 skipped,  </span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,24 +101,24 @@
                     <div class="method-list-content failed suite-TestSuite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.lua.webbuyer.selenium.webbuyer.TestBuyer" hash-for-method="testeCompra(nakas_ndr@mailinator.com, 123456, Pijama Snacks, 11682, 03279120, https://kurastore.lua.net/)">testeCompra(nakas_ndr@mailinator.com, 123456, Pijama Snacks, 11682, 03279120, https://kurastore.lua.net/)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.lua.webbuyer.selenium.webbuyer.TestBuyer" hash-for-method="testeCompraSequencial(nakas_ndr@mailinator.com, 123456, Pijama Snacks, 11682, 03279120, https://kurastore.lua.net/)">testeCompraSequencial(nakas_ndr@mailinator.com, 123456, Pijama Snacks, 11682, 03279120, https://kurastore.lua.net/)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-TestSuite -->
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-TestSuite" class="hide-methods skipped suite-TestSuite"> (hide)</a> <!-- hide-methods skipped suite-TestSuite -->
-                      <a href="#" panel-name="suite-TestSuite" class="show-methods skipped suite-TestSuite"> (show)</a> <!-- show-methods skipped suite-TestSuite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-TestSuite" class="hide-methods passed suite-TestSuite"> (hide)</a> <!-- hide-methods passed suite-TestSuite -->
+                      <a href="#" panel-name="suite-TestSuite" class="show-methods passed suite-TestSuite"> (show)</a> <!-- show-methods passed suite-TestSuite -->
                     </span>
-                    <div class="method-list-content skipped suite-TestSuite">
+                    <div class="method-list-content passed suite-TestSuite">
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.lua.webbuyer.selenium.webbuyer.LoginPageTests" hash-for-method="testingBuyer(nakas_ndr@mailinator.com, 123456)">testingBuyer(nakas_ndr@mailinator.com, 123456)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.lua.webbuyer.selenium.webbuyer.TestLoginPage" hash-for-method="testingBuyer(123456, nakas_ndr@mailinator.com, https://kurastore.lua.net/)">testingBuyer(123456, nakas_ndr@mailinator.com, https://kurastore.lua.net/)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-TestSuite -->
+                    </div> <!-- method-list-content passed suite-TestSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -138,86 +138,40 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testeCompra(nakas_ndr@mailinator.com, 123456, Pijama Snacks, 11682, 03279120, https://kurastore.lua.net/)">
-                  </a> <!-- testeCompra(nakas_ndr@mailinator.com, 123456, Pijama Snacks, 11682, 03279120, https://kurastore.lua.net/) -->
-                  <span class="method-name">testeCompra</span>
+                  <a name="testeCompraSequencial(nakas_ndr@mailinator.com, 123456, Pijama Snacks, 11682, 03279120, https://kurastore.lua.net/)">
+                  </a> <!-- testeCompraSequencial(nakas_ndr@mailinator.com, 123456, Pijama Snacks, 11682, 03279120, https://kurastore.lua.net/) -->
+                  <span class="method-name">testeCompraSequencial</span>
                   <span class="parameters">(nakas_ndr@mailinator.com, 123456, Pijama Snacks, 11682, 03279120, https://kurastore.lua.net/)</span>
-                  <div class="stack-trace"><b>"org.openqa.selenium.NoSuchWindowException: Unable to locate window
-Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
-System info: host: &apos;Guminis-Mac-mini.local&apos;, ip: &apos;fe80:0:0:0:e9:1daa:97f0:d88a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.4&apos;, java.version: &apos;1.8.0_161&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 40087, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 7e539b5d-8d8b-ad4a-9f49-26ded73bab39
-*** Element info: {Using=xpath, value=.//button[text()[contains(.,&apos;Finalizar Compra&apos;)]]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:346)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:425)
-	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:307)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	at com.lua.webbuyer.utils.Actions.click(Actions.java:36)
-	at com.lua.webbuyer.PageObjects.PurchasePage.finalizarCompraBtn(PurchasePage.java:23)
-	at com.lua.webbuyer.selenium.webbuyer.TestBuyer.testeCompra(TestBuyer.java:62)
-<br/> org.openqa.selenium.NoSuchWindowException: Unable to locate window
-Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
-System info: host: &apos;Guminis-Mac-mini.local&apos;, ip: &apos;fe80:0:0:0:e9:1daa:97f0:d88a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.4&apos;, java.version: &apos;1.8.0_161&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 40087, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 7e539b5d-8d8b-ad4a-9f49-26ded73bab39
-*** Element info: {Using=xpath, value=.//button[text()[contains(.,&apos;Finalizar Compra&apos;)]]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:346)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:425)
-	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:307)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	at com.lua.webbuyer.utils.Actions.click(Actions.java:36)
-	at com.lua.webbuyer.PageObjects.PurchasePage.finalizarCompraBtn(PurchasePage.java:23)
-	at com.lua.webbuyer.selenium.webbuyer.TestBuyer.testeCompra(TestBuyer.java:62)
-"</b><br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br>org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br>org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br>org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)<br>org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:346)<br>org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:425)<br>org.openqa.selenium.By$ByXPath.findElements(By.java:356)<br>org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:307)<br>org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)<br>org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)<br>org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)<br>org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)<br>org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)<br>com.lua.webbuyer.utils.Actions.click(Actions.java:36)<br>com.lua.webbuyer.PageObjects.PurchasePage.finalizarCompraBtn(PurchasePage.java:23)<br>com.lua.webbuyer.selenium.webbuyer.TestBuyer.testeCompra(TestBuyer.java:62)<br>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: Teste Failed: Expected condition failed: waiting for presence of element located by: By.xpath: .//button[text()[contains(.,&apos;Finalizar Compra&apos;)]] (tried for 30 second(s) with 1000 milliseconds interval)
+	at com.lua.webbuyer.selenium.webbuyer.TestBuyer.testeCompraSequencial(TestBuyer.java:37)
+<br/> java.lang.AssertionError: Teste Failed: Expected condition failed: waiting for presence of element located by: By.xpath: .//button[text()[contains(.,&apos;Finalizar Compra&apos;)]] (tried for 30 second(s) with 1000 milliseconds interval)
+	at com.lua.webbuyer.selenium.webbuyer.TestBuyer.testeCompraSequencial(TestBuyer.java:37)
+"</b><br>com.lua.webbuyer.selenium.webbuyer.TestBuyer.testeCompraSequencial(TestBuyer.java:37)<br>
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-TestSuite-class-failed -->
-          <div class="suite-TestSuite-class-skipped">
+          <div class="suite-TestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.lua.webbuyer.selenium.webbuyer.LoginPageTests</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.lua.webbuyer.selenium.webbuyer.TestLoginPage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testingBuyer(nakas_ndr@mailinator.com, 123456)">
-                  </a> <!-- testingBuyer(nakas_ndr@mailinator.com, 123456) -->
+                  <a name="testingBuyer(123456, nakas_ndr@mailinator.com, https://kurastore.lua.net/)">
+                  </a> <!-- testingBuyer(123456, nakas_ndr@mailinator.com, https://kurastore.lua.net/) -->
                   <span class="method-name">testingBuyer</span>
-                  <span class="parameters">(nakas_ndr@mailinator.com, 123456)</span>
+                  <span class="parameters">(123456, nakas_ndr@mailinator.com, https://kurastore.lua.net/)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestSuite-class-skipped -->
+          </div> <!-- suite-TestSuite-class-passed -->
         </div> <!-- panel TestSuite -->
         <div panel-name="test-xml-TestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/andremartines/eclipse-workspace/Archive/Lua_ExtendReport first/selenium.webbuyer_OLD/Lua_Automation/src/SeleniumSources/SeleniumData.xml</span>
+            <span class="header-content">/Users/andre.martines/eclipse-workspace/ProjetoLua/Lua_Automation/src/SeleniumSources/SeleniumData.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -230,7 +184,7 @@ Session ID: 7e539b5d-8d8b-ad4a-9f49-26ded73bab39
   &lt;test name=&quot;Teste Compras&quot;&gt;
     &lt;parameter name=&quot;password&quot; value=&quot;123456&quot;/&gt;
     &lt;parameter name=&quot;itemColorCode&quot; value=&quot;11682&quot;/&gt;
-    &lt;parameter name=&quot;itemToSearch&quot; value=&quot;Pijama Snacks&quot;/&gt;
+    &lt;parameter name=&quot;Product&quot; value=&quot;Pijama Snacks&quot;/&gt;
     &lt;parameter name=&quot;user&quot; value=&quot;nakas_ndr@mailinator.com&quot;/&gt;
     &lt;parameter name=&quot;URL&quot; value=&quot;https://kurastore.lua.net/&quot;/&gt;
     &lt;parameter name=&quot;Browser&quot; value=&quot;Firefox&quot;/&gt;
@@ -238,7 +192,7 @@ Session ID: 7e539b5d-8d8b-ad4a-9f49-26ded73bab39
     &lt;parameter name=&quot;itemToSelect&quot; value=&quot;Camisola Fruit&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.lua.webbuyer.selenium.webbuyer.TestBuyer&quot;/&gt;
-      &lt;class name=&quot;com.lua.webbuyer.selenium.webbuyer.LoginPageTests&quot;/&gt;
+      &lt;class name=&quot;com.lua.webbuyer.selenium.webbuyer.TestLoginPage&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Teste Compras --&gt;
 &lt;/suite&gt; &lt;!-- TestSuite --&gt;
@@ -280,18 +234,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testeCompra')
-data.setCell(0, 2, 'com.lua.webbuyer.selenium.webbuyer.TestBuyer')
-data.setCell(0, 3, 25025);
+data.setCell(0, 1, 'testingBuyer')
+data.setCell(0, 2, 'com.lua.webbuyer.selenium.webbuyer.TestLoginPage')
+data.setCell(0, 3, 246760);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testingBuyer')
-data.setCell(1, 2, 'com.lua.webbuyer.selenium.webbuyer.LoginPageTests')
-data.setCell(1, 3, 4);
+data.setCell(1, 1, 'testeCompraSequencial')
+data.setCell(1, 2, 'com.lua.webbuyer.selenium.webbuyer.TestBuyer')
+data.setCell(1, 3, 65155);
 window.suiteTableData['TestSuite']= { tableData: data, tableDiv: 'times-div-TestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 25 seconds</span>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
               <div id="times-div-TestSuite">
               </div> <!-- times-div-TestSuite -->
             </div> <!-- times-div -->
@@ -325,22 +279,28 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testeCompra(nakas_ndr@mailinator.com, 123456, Pijama Snacks, 11682, 03279120, https://kurastore.lua.net/)</span>
-                <span class="method-start">11319 ms</span>
+                <span class="method-name">testeCompraSequencial(nakas_ndr@mailinator.com, 123456, Pijama Snacks, 11682, 03279120, https://kurastore.lua.net/)</span>
+                <span class="method-start">18971 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">endSession</span>
+                <span class="method-start">84161 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.lua.webbuyer.selenium.webbuyer.LoginPageTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.lua.webbuyer.selenium.webbuyer.TestLoginPage</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setupClass(Firefox, https://kurastore.lua.net/)</span>
-                <span class="method-start">36365 ms</span>
+                <span class="method-start">95114 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">testingBuyer(nakas_ndr@mailinator.com, 123456)</span>
-                <span class="method-start">36403 ms</span>
+                <span class="method-name">testingBuyer(123456, nakas_ndr@mailinator.com, https://kurastore.lua.net/)</span>
+                <span class="method-start">111947 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">endSession</span>
+                <span class="method-start">358712 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -3,16 +3,16 @@ package com.lua.webbuyer.PageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import com.lua.webbuyer.utils.Actions;
+import com.lua.webbuyer.utils.Selenium;
 
 public class ShippingPage {
 	
 	private WebDriver driver;
-	private Actions actions;
+	private Selenium actions;
 	
 	public ShippingPage(WebDriver driver) {
 		this.driver = driver;
-		this.actions = new Actions(driver);
+		this.actions = new Selenium(driver);
 	}
 	
 	

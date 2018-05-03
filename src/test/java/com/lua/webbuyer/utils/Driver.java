@@ -1,5 +1,8 @@
 package com.lua.webbuyer.utils;
 
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -11,6 +14,20 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Driver {
 	
 	public static  WebDriver driver = null;
+	
+	
+	public static void initializeTest(String browser, String URL) {
+		driver = Driver.getBrowser(browser);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().window().setSize(new Dimension(1920, 1080));
+		driver.get(URL);
+		
+	}
+	
+	public static void finalizeTest() {
+		driver.quit();
+		driver = null;
+	}
 	 
 	public static  WebDriver getBrowser(String browserType)
 	 

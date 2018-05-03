@@ -6,16 +6,16 @@ import org.openqa.selenium.WebElement;
 
 public class Common {
 	WebDriver driver;
-	private Actions actions;
+	private Selenium actions;
 	
 
 	public Common(WebDriver driver) {
 		this.driver = driver;
-		this.actions = new Actions(driver);
+		this.actions = new Selenium(driver);
 	}
 
 	public void logIn() {
-		actions = new Actions(driver);
+		actions = new Selenium(driver);
 		actions.loadingWait(driver);
 		//actions.waitForElementNotVisible(5, driver);
 		actions.click(By.xpath(".//button[@class='source-components-Header-___Header__menu-trigger___3rL3X']"));
@@ -24,7 +24,7 @@ public class Common {
 
 	
 	public void logoutMenu() {
-		actions = new Actions(driver);
+		actions = new Selenium(driver);
 		actions.click(By.xpath(".//button[@class='source-components-Header-___Header__menu-trigger___3rL3X']"));
 		actions.click(By.xpath(".//*[@id='outer-container']/ul/li[4]/button"));
 	}

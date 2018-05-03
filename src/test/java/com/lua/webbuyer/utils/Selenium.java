@@ -15,12 +15,12 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-public class Actions{
+public class Selenium{
 	
 	private WebDriver driver;
 	public FluentWait<WebDriver> wait;
 	
-	public Actions(WebDriver driver) {
+	public Selenium(WebDriver driver) {
 		this.driver = driver;
 		
 		this.wait = new FluentWait<WebDriver>(driver)
@@ -31,32 +31,21 @@ public class Actions{
 		
 	}
 
-	public void click(By Locator) {
-			try {
+	public void click(By Locator) throws NoSuchElementException, TimeoutException{
 			wait.until(ExpectedConditions.presenceOfElementLocated(Locator));
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Locator));
 			wait.until(ExpectedConditions.elementToBeClickable(Locator)).click();
-			}catch(NoSuchElementException e) {
-				System.out.println("O botão '"+ "' não foi encontrado" + e.getMessage());
-			}catch(TimeoutException g) {
-				System.out.println("Tempo limite estourado ao procurar o  botão '"+ Locator +"'" + g.getMessage());
-			}
 	}
 	
-	public void setText(By Locator, String text) {
+	public void setText(By Locator, String text) throws NoSuchElementException, TimeoutException{
 		wait.until(ExpectedConditions.elementToBeClickable(Locator)).click();
 		wait.until(ExpectedConditions.elementToBeClickable(Locator)).clear();
 		wait.until(ExpectedConditions.elementToBeClickable(Locator)).sendKeys(text);
 		
 	}
-	public void menuDropdown(By selector, String value) {
+	public void menuDropdown(By selector, String value) throws NoSuchElementException, TimeoutException, NullPointerException{
 		final Select dropDown = new Select(driver.findElement(selector));
 		dropDown.selectByValue(value);
-	}
-
-	public void waitForPageLoad() {
-		wait.until(ExpectedConditions.invisibilityOfElementLocated
-		(By.xpath(".//div[@class='sk-double-bounce sk-spinner source-components-Loading-___Loading__spinner___dEAFF']")));
 	}
 	
 	public void loadingWait(WebDriver driver) {
@@ -65,7 +54,7 @@ public class Actions{
 		    WebDriverWait wait = new WebDriverWait(driver, 5000L);
 		    //wait.until(ExpectedConditions.visibilityOf(loader)); // wait for loader to appear
 		    wait.until(ExpectedConditions.invisibilityOf(loader)); // wait for loader to disappear
-		}catch(TimeoutException e) {
+		}catch(Exception e) {
 			
 		}
 		}

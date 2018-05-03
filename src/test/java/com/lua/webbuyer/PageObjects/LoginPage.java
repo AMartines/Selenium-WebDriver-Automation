@@ -3,21 +3,20 @@ package com.lua.webbuyer.PageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import com.lua.webbuyer.utils.Actions;
 import com.lua.webbuyer.utils.Common;
+import com.lua.webbuyer.utils.Selenium;
 
 public class LoginPage {
 
 	
 	public WebDriver driver;
-	public Actions actions;
+	public Selenium actions;
 	public Common common;
 	
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
-		this.actions = new Actions(driver);
+		this.actions = new Selenium(driver);
 		this.common = new Common(driver);
 	}
 	
