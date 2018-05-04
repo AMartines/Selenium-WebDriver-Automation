@@ -14,7 +14,7 @@ public class Common {
 		this.actions = new Selenium(driver);
 	}
 
-	public void logIn() {
+	public void reachLoginPage() {
 		actions = new Selenium(driver);
 		actions.loadingWait(driver);
 		//actions.waitForElementNotVisible(5, driver);

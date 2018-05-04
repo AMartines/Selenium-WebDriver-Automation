@@ -1,40 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="3" name="Failed suite [TestSuite]">
-  <parameter name="password" value="123456"/>
   <parameter name="itemColorCode" value="11682"/>
   <parameter name="Product" value="Pijama Snacks"/>
-  <parameter name="user" value="nakas_ndr@mailinator.com"/>
-  <parameter name="URL" value="https://kurastore.lua.net/"/>
   <parameter name="Browser" value="Firefox"/>
-  <parameter name="cep" value="03279120"/>
-  <parameter name="itemToSelect" value="Camisola Fruit"/>
   <listeners>
-    <listener class-name="com.lua.webbuyer.utils.ExtentReports_Listner"/>
+    <listener class-name="com.lua.webbuyer.listners.AnnotationTransformer"/>
   </listeners>
   <test name="Teste Compras(failed)">
-    <parameter name="password" value="123456"/>
     <parameter name="itemColorCode" value="11682"/>
     <parameter name="Product" value="Pijama Snacks"/>
-    <parameter name="user" value="nakas_ndr@mailinator.com"/>
-    <parameter name="URL" value="https://kurastore.lua.net/"/>
     <parameter name="Browser" value="Firefox"/>
-    <parameter name="cep" value="03279120"/>
-    <parameter name="itemToSelect" value="Camisola Fruit"/>
     <classes>
-      <class name="com.lua.webbuyer.selenium.webbuyer.TestBuyer">
+      <class name="com.lua.webbuyer.test.TestBuyer">
         <methods>
+          <include name="setup"/>
+          <include name="register"/>
           <include name="endSession"/>
           <include name="testeCompraSequencial" invocation-numbers="0"/>
-          <include name="setupClass"/>
+          <include name="cleanUp"/>
+          <include name="getResult"/>
         </methods>
-      </class> <!-- com.lua.webbuyer.selenium.webbuyer.TestBuyer -->
-      <class name="com.lua.webbuyer.selenium.webbuyer.TestLoginPage">
-        <methods>
-          <include name="endSession"/>
-          <include name="setupClass"/>
-        </methods>
-      </class> <!-- com.lua.webbuyer.selenium.webbuyer.TestLoginPage -->
+      </class> <!-- com.lua.webbuyer.test.TestBuyer -->
     </classes>
   </test> <!-- Teste Compras(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

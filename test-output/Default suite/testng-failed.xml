@@ -3,12 +3,15 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.lua.webbuyer.selenium.webbuyer.TestApp">
+      <class name="com.lua.webbuyer.extent.reports.DummyForExReport">
         <methods>
-          <include name="testBuyer"/>
-          <include name="setupClass"/>
+          <include name="setup"/>
+          <include name="register"/>
+          <include name="cleanUp"/>
+          <include name="getResult"/>
+          <include name="methodTwo"/>
         </methods>
-      </class> <!-- com.lua.webbuyer.selenium.webbuyer.TestApp -->
+      </class> <!-- com.lua.webbuyer.extent.reports.DummyForExReport -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

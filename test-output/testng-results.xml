@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="TestSuite" duration-ms="359476" started-at="2018-05-03T02:53:02Z" finished-at="2018-05-03T02:59:01Z">
+  <suite name="TestSuite" duration-ms="58890" started-at="2018-05-04T21:13:06Z" finished-at="2018-05-04T21:14:05Z">
     <groups>
     </groups>
-    <test name="Teste Compras" duration-ms="359476" started-at="2018-05-03T02:53:02Z" finished-at="2018-05-03T02:59:01Z">
-      <class name="com.lua.webbuyer.selenium.webbuyer.TestLoginPage">
-        <test-method status="PASS" signature="setupClass(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.selenium.webbuyer.TestLoginPage@ba2f4ec]" name="setupClass" is-config="true" duration-ms="16833" started-at="2018-05-02T23:54:37Z" finished-at="2018-05-02T23:54:54Z">
+    <test name="Teste Compras" duration-ms="58890" started-at="2018-05-04T21:13:06Z" finished-at="2018-05-04T21:14:05Z">
+      <class name="com.lua.webbuyer.test.TestBuyer">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.lua.webbuyer.test.TestBuyer@3cb1ffe6]" name="setup" is-config="true" duration-ms="373" started-at="2018-05-04T18:13:06Z" finished-at="2018-05-04T18:13:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="register(java.lang.reflect.Method)[pri:0, instance:com.lua.webbuyer.test.TestBuyer@3cb1ffe6]" name="register" is-config="true" duration-ms="17" started-at="2018-05-04T18:13:06Z" finished-at="2018-05-04T18:13:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lua.webbuyer.test.TestBuyer.testeCompraSequencial(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="FAIL" signature="testeCompraSequencial(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestBuyer@3cb1ffe6]" name="testeCompraSequencial" duration-ms="58839" started-at="2018-05-04T18:13:06Z" finished-at="2018-05-04T18:14:05Z">
           <params>
             <param index="0">
               <value>
@@ -15,87 +30,8 @@
               </value>
             </param>
             <param index="1">
-              <value>
-                <![CDATA[https://kurastore.lua.net/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupClass -->
-        <test-method status="PASS" signature="testingBuyer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.selenium.webbuyer.TestLoginPage@ba2f4ec]" name="testingBuyer" duration-ms="246760" started-at="2018-05-02T23:54:54Z" finished-at="2018-05-02T23:59:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[nakas_ndr@mailinator.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[https://kurastore.lua.net/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testingBuyer -->
-        <test-method status="PASS" signature="endSession()[pri:0, instance:com.lua.webbuyer.selenium.webbuyer.TestLoginPage@ba2f4ec]" name="endSession" is-config="true" duration-ms="752" started-at="2018-05-02T23:59:00Z" finished-at="2018-05-02T23:59:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endSession -->
-      </class> <!-- com.lua.webbuyer.selenium.webbuyer.TestLoginPage -->
-      <class name="com.lua.webbuyer.selenium.webbuyer.TestBuyer">
-        <test-method status="PASS" signature="setupClass(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.selenium.webbuyer.TestBuyer@4116aac9]" name="setupClass" is-config="true" duration-ms="18959" started-at="2018-05-02T23:53:02Z" finished-at="2018-05-02T23:53:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Firefox]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://kurastore.lua.net/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupClass -->
-        <test-method status="FAIL" signature="testeCompraSequencial(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.selenium.webbuyer.TestBuyer@4116aac9]" name="testeCompraSequencial" duration-ms="65155" started-at="2018-05-02T23:53:21Z" finished-at="2018-05-02T23:54:26Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[nakas_ndr@mailinator.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-            <param index="2">
               <value>
                 <![CDATA[Pijama Snacks]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[11682]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[03279120]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[https://kurastore.lua.net/]]>
               </value>
             </param>
           </params>
@@ -105,18 +41,64 @@
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Teste Failed: Expected condition failed: waiting for presence of element located by: By.xpath: .//button[text()[contains(.,'Finalizar Compra')]] (tried for 30 second(s) with 1000 milliseconds interval)
-	at com.lua.webbuyer.selenium.webbuyer.TestBuyer.testeCompraSequencial(TestBuyer.java:37)
+	at com.lua.webbuyer.actions.ActionsBuyer.productBuy(ActionsBuyer.java:49)
+	at com.lua.webbuyer.test.TestBuyer.testeCompraSequencial(TestBuyer.java:39)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testeCompraSequencial -->
-        <test-method status="PASS" signature="endSession()[pri:0, instance:com.lua.webbuyer.selenium.webbuyer.TestBuyer@4116aac9]" name="endSession" is-config="true" duration-ms="10948" started-at="2018-05-02T23:54:26Z" finished-at="2018-05-02T23:54:37Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestBuyer@3cb1ffe6]" name="getResult" is-config="true" duration-ms="14" started-at="2018-05-04T18:14:05Z" finished-at="2018-05-04T18:14:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testeCompraSequencial status=FAILURE method=TestBuyer.testeCompraSequencial(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestBuyer@3cb1ffe6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="FAIL" signature="endSession()[pri:0, instance:com.lua.webbuyer.test.TestBuyer@3cb1ffe6]" name="endSession" is-config="true" duration-ms="0" started-at="2018-05-04T18:14:05Z" finished-at="2018-05-04T18:14:05Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.lua.webbuyer.utils.Driver.finalyzeClass(Driver.java:31)
+	at com.lua.webbuyer.test.TestBuyer.endSession(TestBuyer.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.afterRun(TestRunner.java:1021)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endSession -->
-      </class> <!-- com.lua.webbuyer.selenium.webbuyer.TestBuyer -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.lua.webbuyer.test.TestBuyer@3cb1ffe6]" name="cleanUp" is-config="true" duration-ms="370" started-at="2018-05-04T18:14:05Z" finished-at="2018-05-04T18:14:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.lua.webbuyer.test.TestBuyer -->
     </test> <!-- Teste Compras -->
   </suite> <!-- TestSuite -->
 </testng-results>

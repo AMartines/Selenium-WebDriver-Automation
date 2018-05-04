@@ -16,17 +16,19 @@ public class Driver {
 	public static  WebDriver driver = null;
 	
 	
-	public static void initializeTest(String browser, String URL) {
+	public static void initialyzeTest(String browser) {
 		driver = Driver.getBrowser(browser);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().setSize(new Dimension(1920, 1080));
-		driver.get(URL);
-		
 	}
 	
-	public static void finalizeTest() {
-		driver.quit();
+	public static void finalyzeTest() {
+		driver.close();
 		driver = null;
+	}
+	
+	public static void finalyzeClass() {
+		driver.quit();
 	}
 	 
 	public static  WebDriver getBrowser(String browserType)
@@ -69,5 +71,9 @@ public class Driver {
 		}
 		return driver;
 	 
+	}
+
+	public static void getURL(String URL) {
+		driver.get(URL);
 	}
 }
