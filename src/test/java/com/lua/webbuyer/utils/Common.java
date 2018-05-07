@@ -14,22 +14,22 @@ public class Common {
 		this.actions = new Selenium(driver);
 	}
 
-	public void reachLoginPage() {
+	public void reachLoginPage() throws Exception {
 		actions = new Selenium(driver);
 		actions.loadingWait(driver);
 		//actions.waitForElementNotVisible(5, driver);
 		actions.click(By.xpath(".//button[@class='source-components-Header-___Header__menu-trigger___3rL3X']"));
 		actions.click(By.xpath(".//*[@id='outer-container']/ul/li[2]/a"));
-	}
+	} 
 
-	
-	public void logoutMenu() {
+	 
+	public void logoutMenu() throws Exception {
 		actions = new Selenium(driver);
 		actions.click(By.xpath(".//button[@class='source-components-Header-___Header__menu-trigger___3rL3X']"));
 		actions.click(By.xpath(".//*[@id='outer-container']/ul/li[4]/button"));
 	}
 
-	public void searchItem(String text) {
+	public void searchItem(String text) throws Exception {
 		actions.setText(By.xpath(".//input[@name='search']"), text);
 		actions.click(By.xpath(".//button[text()[contains(.,'Buscar')]]"));
 	}

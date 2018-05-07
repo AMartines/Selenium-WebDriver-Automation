@@ -38,7 +38,8 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+						<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
 		<!-- report name -->
@@ -51,7 +52,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>May 4, 2018 06:13:06 PM</span>
+                    <span class='label suite-start-time blue darken-3'>May 7, 2018 06:32:10 PM</span>
 				</a>
 			</li>
 			<li>
@@ -76,7 +77,8 @@
 					<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-											<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -130,7 +132,7 @@
 					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -145,7 +147,7 @@
 					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='28.571%'>4</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='71.429%'>10</span> others
 				</div>
 			</div>
 		</div>
@@ -163,14 +165,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>testeCompraSequencial</span>
-						<span class='test-time'>May 4, 2018 06:13:06 PM</span>
+						<span class='test-time'>May 7, 2018 06:32:10 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 4, 2018 06:13:06 PM</span>
-	<span class='label end-time'>May 4, 2018 06:14:05 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 58s+858ms</span>
+	<span class='label start-time'>May 7, 2018 06:32:10 PM</span>
+	<span class='label end-time'>May 7, 2018 06:33:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 0s+375ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -182,19 +184,120 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:14:05 PM</td>
-					<td class='step-details'><span class='label white-text red'>Test: testeCompraSequencial FAIL FAILED</span></td>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:32:10 PM</td>
+					<td class='step-details'>Starting testeCompraSequencial</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:32:18 PM</td>
+					<td class='step-details'>Executando Login com o usuário: compradorteste@mailinator.com, na loja 'https://lojatestelua.lua.net'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:32:35 PM</td>
+					<td class='step-details'>Login executado com sucesso!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:32:35 PM</td>
+					<td class='step-details'>Pesquisando o produto: dfvfdvdv</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:33:10 PM</td>
+					<td class='step-details'>Produto não encontrado: dfvfdvdv</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:14:05 PM</td>
-					<td class='step-details'>Test Failure: java.lang.AssertionError: Teste Failed: Expected condition failed: waiting for presence of element located by: By.xpath: .//button[text()[contains(.,'Finalizar Compra')]] (tried for 30 second(s) with 1000 milliseconds interval)</td>
+					<td class='timestamp'>6:33:10 PM</td>
+					<td class='step-details'><span class='label white-text red'>Test: testeCompraSequencial FAILED</span></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>6:33:10 PM</td>
+					<td class='step-details'><pre>java.lang.AssertionError: Test Failed: Produto não encontrado: dfvfdvdv
+	at com.lua.webbuyer.actions.ActionsBuyer.productBuy(ActionsBuyer.java:68)
+	at com.lua.webbuyer.test.TestBuyer.testeCompraSequencial(TestBuyer.java:39)
+</pre></td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/ErrorScreenshot/screenshotForExtentReport.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/ErrorScreenshot/screenshotForExtentReport.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/ErrorScreenshot/screenshotForExtentReport.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>testeCompradois</span>
+						<span class='test-time'>May 7, 2018 06:33:12 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 7, 2018 06:33:12 PM</span>
+	<span class='label end-time'>May 7, 2018 06:34:12 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 0s+458ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:33:12 PM</td>
+					<td class='step-details'>Starting testeCompradois</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:33:17 PM</td>
+					<td class='step-details'>Executando Login com o usuário: compradorteste@mailinator.com, na loja 'https://lojatestelua.lua.net'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:33:36 PM</td>
+					<td class='step-details'>Login executado com sucesso!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:33:36 PM</td>
+					<td class='step-details'>Pesquisando o produto: dfvfdvdv</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>6:34:12 PM</td>
+					<td class='step-details'>Produto não encontrado: dfvfdvdv</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>6:34:12 PM</td>
+					<td class='step-details'><span class='label white-text red'>Test: testeCompradois FAILED</span></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>6:34:12 PM</td>
+					<td class='step-details'><pre>java.lang.AssertionError: Test Failed: Produto não encontrado: dfvfdvdv
+	at com.lua.webbuyer.actions.ActionsBuyer.productBuy(ActionsBuyer.java:68)
+	at com.lua.webbuyer.test.TestLoginPage.testeCompradois(TestLoginPage.java:44)
+</pre></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/ErrorScreenshot/screenshotForExtentReport.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/ErrorScreenshot/screenshotForExtentReport.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/ErrorScreenshot/screenshotForExtentReport.png'></li>
+							</ul>
 					</div>
 				</li>
 			</ul>
@@ -223,6 +326,78 @@
 </div>
 <!-- test view -->
 <!-- category view -->
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>java.lang.AssertionError</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>May 7, 2018 06:32:10 PM</td>
+                                                        <td class='linked' test-id='1'>testeCompraSequencial</td>
+                                                        <td><pre><pre>java.lang.AssertionError: Test Failed: Produto não encontrado: dfvfdvdv
+	at com.lua.webbuyer.actions.ActionsBuyer.productBuy(ActionsBuyer.java:68)
+	at com.lua.webbuyer.test.TestBuyer.testeCompraSequencial(TestBuyer.java:39)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>May 7, 2018 06:33:12 PM</td>
+                                                        <td class='linked' test-id='2'>testeCompradois</td>
+                                                        <td><pre><pre>java.lang.AssertionError: Test Failed: Produto não encontrado: dfvfdvdv
+	at com.lua.webbuyer.actions.ActionsBuyer.productBuy(ActionsBuyer.java:68)
+	at com.lua.webbuyer.test.TestLoginPage.testeCompradois(TestLoginPage.java:44)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -232,31 +407,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>1</div>
-				</div>
-			</div>
-			<div class='col s2'>
-				<div class='card-panel r'>
-					Steps
 					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>14</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 4, 2018 06:13:06 PM</div>
+					<div class='panel-lead'>May 7, 2018 06:32:10 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 4, 2018 06:14:05 PM</div>
+			 		<div class='panel-lead'>May 7, 2018 06:34:13 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 58s+996ms</div>
+					<div class='panel-lead'>0h 2m 3s+339ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -286,21 +461,21 @@
 		<script>
 			var statusGroup = {
 				passParent: 0,
-				failParent: 1,
+				failParent: 2,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 2,
 				
 				passChild: 0,
-				failChild: 2,
+				failChild: 4,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 0,
-				exceptionsChild: 2,
+				infoChild: 10,
+				exceptionsChild: 4,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

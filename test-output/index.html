@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,7 +101,12 @@
                     <div class="method-list-content failed suite-TestSuite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.lua.webbuyer.test.TestBuyer" hash-for-method="testeCompraSequencial(Firefox, Pijama Snacks)">testeCompraSequencial(Firefox, Pijama Snacks)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.lua.webbuyer.test.TestBuyer" hash-for-method="testeCompraSequencial(Firefox, dfvfdvdv)">testeCompraSequencial(Firefox, dfvfdvdv)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestSuite" title="com.lua.webbuyer.test.TestLoginPage" hash-for-method="testeCompradois(Firefox, dfvfdvdv)">testeCompradois(Firefox, dfvfdvdv)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-TestSuite -->
@@ -124,17 +129,41 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testeCompraSequencial(Firefox, Pijama Snacks)">
-                  </a> <!-- testeCompraSequencial(Firefox, Pijama Snacks) -->
+                  <a name="testeCompraSequencial(Firefox, dfvfdvdv)">
+                  </a> <!-- testeCompraSequencial(Firefox, dfvfdvdv) -->
                   <span class="method-name">testeCompraSequencial</span>
-                  <span class="parameters">(Firefox, Pijama Snacks)</span>
-                  <div class="stack-trace"><b>"java.lang.AssertionError: Teste Failed: Expected condition failed: waiting for presence of element located by: By.xpath: .//button[text()[contains(.,&apos;Finalizar Compra&apos;)]] (tried for 30 second(s) with 1000 milliseconds interval)
-	at com.lua.webbuyer.actions.ActionsBuyer.productBuy(ActionsBuyer.java:49)
+                  <span class="parameters">(Firefox, dfvfdvdv)</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: Test Failed: Produto não encontrado: dfvfdvdv
+	at com.lua.webbuyer.actions.ActionsBuyer.productBuy(ActionsBuyer.java:68)
 	at com.lua.webbuyer.test.TestBuyer.testeCompraSequencial(TestBuyer.java:39)
-<br/> java.lang.AssertionError: Teste Failed: Expected condition failed: waiting for presence of element located by: By.xpath: .//button[text()[contains(.,&apos;Finalizar Compra&apos;)]] (tried for 30 second(s) with 1000 milliseconds interval)
-	at com.lua.webbuyer.actions.ActionsBuyer.productBuy(ActionsBuyer.java:49)
+<br/> java.lang.AssertionError: Test Failed: Produto não encontrado: dfvfdvdv
+	at com.lua.webbuyer.actions.ActionsBuyer.productBuy(ActionsBuyer.java:68)
 	at com.lua.webbuyer.test.TestBuyer.testeCompraSequencial(TestBuyer.java:39)
-"</b><br>com.lua.webbuyer.actions.ActionsBuyer.productBuy(ActionsBuyer.java:49)<br>com.lua.webbuyer.test.TestBuyer.testeCompraSequencial(TestBuyer.java:39)<br>
+"</b><br>com.lua.webbuyer.actions.ActionsBuyer.productBuy(ActionsBuyer.java:68)<br>com.lua.webbuyer.test.TestBuyer.testeCompraSequencial(TestBuyer.java:39)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-failed -->
+          <div class="suite-TestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.lua.webbuyer.test.TestLoginPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testeCompradois(Firefox, dfvfdvdv)">
+                  </a> <!-- testeCompradois(Firefox, dfvfdvdv) -->
+                  <span class="method-name">testeCompradois</span>
+                  <span class="parameters">(Firefox, dfvfdvdv)</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: Test Failed: Produto não encontrado: dfvfdvdv
+	at com.lua.webbuyer.actions.ActionsBuyer.productBuy(ActionsBuyer.java:68)
+	at com.lua.webbuyer.test.TestLoginPage.testeCompradois(TestLoginPage.java:44)
+<br/> java.lang.AssertionError: Test Failed: Produto não encontrado: dfvfdvdv
+	at com.lua.webbuyer.actions.ActionsBuyer.productBuy(ActionsBuyer.java:68)
+	at com.lua.webbuyer.test.TestLoginPage.testeCompradois(TestLoginPage.java:44)
+"</b><br>com.lua.webbuyer.actions.ActionsBuyer.productBuy(ActionsBuyer.java:68)<br>com.lua.webbuyer.test.TestLoginPage.testeCompradois(TestLoginPage.java:44)<br>
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -155,10 +184,11 @@
   &lt;/listeners&gt;
   &lt;test name=&quot;Teste Compras&quot;&gt;
     &lt;parameter name=&quot;itemColorCode&quot; value=&quot;11682&quot;/&gt;
-    &lt;parameter name=&quot;Product&quot; value=&quot;Pijama Snacks&quot;/&gt;
+    &lt;parameter name=&quot;Product&quot; value=&quot;dfvfdvdv&quot;/&gt;
     &lt;parameter name=&quot;Browser&quot; value=&quot;Firefox&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.lua.webbuyer.test.TestBuyer&quot;/&gt;
+      &lt;class name=&quot;com.lua.webbuyer.test.TestLoginPage&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Teste Compras --&gt;
 &lt;/suite&gt; &lt;!-- TestSuite --&gt;
@@ -172,7 +202,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Teste Compras (1 class)</span>
+                <span class="test-name">Teste Compras (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -198,16 +228,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testeCompraSequencial')
-data.setCell(0, 2, 'com.lua.webbuyer.test.TestBuyer')
-data.setCell(0, 3, 58839);
+data.setCell(0, 1, 'testeCompradois')
+data.setCell(0, 2, 'com.lua.webbuyer.test.TestLoginPage')
+data.setCell(0, 3, 54505);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testeCompraSequencial')
+data.setCell(1, 2, 'com.lua.webbuyer.test.TestBuyer')
+data.setCell(1, 3, 51742);
 window.suiteTableData['TestSuite']= { tableData: data, tableDiv: 'times-div-TestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 58 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-TestSuite">
               </div> <!-- times-div-TestSuite -->
             </div> <!-- times-div -->
@@ -222,9 +256,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-TestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.lua.webbuyer.test.TestLoginPage</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">cleanUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-TestSuite" class="panel">
@@ -239,28 +282,48 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
-                <span class="method-name">register(public void com.lua.webbuyer.test.TestBuyer.testeCompraSequencial(java.lang.String,java.lang.String))</span>
-                <span class="method-start">384 ms</span>
+                <span class="method-name">register(public void com.lua.webbuyer.test.TestBuyer.testeCompraSequencial(java.lang.String,java.lang.String)...)</span>
+                <span class="method-start">609 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testeCompraSequencial(Firefox, Pijama Snacks)</span>
-                <span class="method-start">401 ms</span>
+                <span class="method-name">testeCompraSequencial(Firefox, dfvfdvdv)</span>
+                <span class="method-start">9001 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=testeCompraSequencial status=FAILURE method=TestBuyer.testeCompraSequencial(java.la...)</span>
-                <span class="method-start">59244 ms</span>
+                <span class="method-start">60747 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lua.webbuyer.test.TestLoginPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">register(public void com.lua.webbuyer.test.TestLoginPage.testeCompradois(java.lang.String,java.lang.String), ...)</span>
+                <span class="method-start">62071 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testeCompradois(Firefox, dfvfdvdv)</span>
+                <span class="method-start">67762 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=testeCompradois status=FAILURE method=TestLoginPage.testeCompradois(java.lang.Strin...)</span>
+                <span class="method-start">122268 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lua.webbuyer.test.TestBuyer</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">endSession</span>
-                <span class="method-start">59260 ms</span>
+                <span class="method-start">123583 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">cleanUp</span>
-                <span class="method-start">59286 ms</span>
+                <span class="method-start">123761 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -13,12 +13,14 @@
 	<test name="Teste Compras">
 
 		<parameter name="Browser" value="Firefox" />
-		<parameter name="Product" value="Pijama Snacks" />
+		<parameter name="Product" value="dfvfdvdv" />
 		<parameter name="itemColorCode" value="11682" />
-
+""
 		<classes>
 
 			<class name="com.lua.webbuyer.test.TestBuyer">
+			</class>
+			<class name="com.lua.webbuyer.test.TestLoginPage">
 			</class>
 
 		</classes>

@@ -31,36 +31,55 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Teste Compras</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">58.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Teste Compras</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">123.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
 <tr><th colspan="4">Teste Compras &#8212; failed (configuration methods)</th></tr>
-<tr class="failedodd"><td rowspan="1">com.lua.webbuyer.test.TestBuyer</td><td><a href="#m1"><b>endSession</b>  </a></td><td class="numi">1</td><td>1525468445288</td><td class="numi">0</td></tr>
+<tr class="failedodd"><td rowspan="1">com.lua.webbuyer.test.TestBuyer</td><td><a href="#m1"><b>endSession</b>  </a></td><td class="numi">1</td><td>1525728853542</td><td class="numi">0</td></tr>
 <tr><th colspan="4">Teste Compras &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">com.lua.webbuyer.test.TestBuyer</td><td><a href="#m2"><b>testeCompraSequencial</b>  </a></td><td class="numi">1</td><td>1525468386429</td><td class="numi">58839</td></tr>
+<tr class="failedodd"><td rowspan="1">com.lua.webbuyer.test.TestBuyer</td><td><a href="#m2"><b>testeCompraSequencial</b>  </a></td><td class="numi">1</td><td>1525728738960</td><td class="numi">51742</td></tr>
+<tr class="failedeven"><td rowspan="1">com.lua.webbuyer.test.TestLoginPage</td><td><a href="#m3"><b>testeCompradois</b>  </a></td><td class="numi">1</td><td>1525728797721</td><td class="numi">54505</td></tr>
+<tr><th colspan="4">Teste Compras &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">com.lua.webbuyer.test.TestLoginPage</td><td><a href="#m4"><b>endSession</b>  </a></td><td class="numi">1</td><td>1525728853545</td><td class="numi">0</td></tr>
 </table>
 <h1>Teste Compras</h1>
 <h2 id="m1">com.lua.webbuyer.test.TestBuyer:endSession</h2>
 <div style="padding-left:3em">
 <p>null</p>
 com.lua.webbuyer.utils.Driver.finalyzeClass(Driver.java:31)
-<br/>at com.lua.webbuyer.test.TestBuyer.endSession(TestBuyer.java:25)
+<br/>at com.lua.webbuyer.test.TestBuyer.endSession(TestBuyer.java:26)
 <br/>23 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">com.lua.webbuyer.test.TestBuyer:testeCompraSequencial</h2>
+<h2 id="m2">com.lua.webbuyer.test.TestLoginPage:testeCompradois</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
 <tr class="param stripe"><td>Firefox</td>
-<td>Pijama Snacks</td>
+<td>dfvfdvdv</td>
 </tr>
 <tr><td style="padding-left:3em" colspan="2">
-<p>Teste Failed: Expected condition failed: waiting for presence of element located by: By.xpath: .//button[text()[contains(.,&apos;Finalizar Compra&apos;)]] (tried for 30 second(s) with 1000 milliseconds interval)</p>
-com.lua.webbuyer.actions.ActionsBuyer.productBuy(ActionsBuyer.java:49)
+<p>Test Failed: Produto não encontrado: dfvfdvdv</p>
+com.lua.webbuyer.actions.ActionsBuyer.productBuy(ActionsBuyer.java:68)
+<br/>at com.lua.webbuyer.test.TestLoginPage.testeCompradois(TestLoginPage.java:44)
+<br/>1 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.lua.webbuyer.test.TestBuyer:testeCompraSequencial</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>Firefox</td>
+<td>dfvfdvdv</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>Test Failed: Produto não encontrado: dfvfdvdv</p>
+com.lua.webbuyer.actions.ActionsBuyer.productBuy(ActionsBuyer.java:68)
 <br/>at com.lua.webbuyer.test.TestBuyer.testeCompraSequencial(TestBuyer.java:39)
 <br/>1 lines not shown
 </td></tr>
 </table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.lua.webbuyer.test.TestLoginPage:endSession</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

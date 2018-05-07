@@ -27,13 +27,11 @@ public class LoginPage {
 	
 	
 		
-	
+	 
 	//Efetua login no webbuyer
-		public void performLogin() throws NoSuchElementException, TimeoutException{
+		public void performLogin(String URL, String user, String password) throws Exception{
 			
-			String user = LoginParams.getUser();
-			String password = LoginParams.getPassword();
-			String URL = LoginParams.getURL();
+			
 			
 			Driver.getURL(URL);
 			common.reachLoginPage();

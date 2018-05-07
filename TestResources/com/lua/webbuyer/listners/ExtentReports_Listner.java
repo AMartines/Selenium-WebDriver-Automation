@@ -47,7 +47,7 @@ public class ExtentReports_Listner implements IReporter {
 		extent.flush();
 		extent.close();
 	}
-
+ 
 	private void buildTestNodes(IResultMap tests, LogStatus status) {
 		ExtentTest test;
 

@@ -2,14 +2,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="3" name="Failed suite [TestSuite]">
   <parameter name="itemColorCode" value="11682"/>
-  <parameter name="Product" value="Pijama Snacks"/>
+  <parameter name="Product" value="dfvfdvdv"/>
   <parameter name="Browser" value="Firefox"/>
   <listeners>
     <listener class-name="com.lua.webbuyer.listners.AnnotationTransformer"/>
   </listeners>
   <test name="Teste Compras(failed)">
     <parameter name="itemColorCode" value="11682"/>
-    <parameter name="Product" value="Pijama Snacks"/>
+    <parameter name="Product" value="dfvfdvdv"/>
     <parameter name="Browser" value="Firefox"/>
     <classes>
       <class name="com.lua.webbuyer.test.TestBuyer">
@@ -22,6 +22,13 @@
           <include name="getResult"/>
         </methods>
       </class> <!-- com.lua.webbuyer.test.TestBuyer -->
+      <class name="com.lua.webbuyer.test.TestLoginPage">
+        <methods>
+          <include name="register"/>
+          <include name="testeCompradois" invocation-numbers="0"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.lua.webbuyer.test.TestLoginPage -->
     </classes>
   </test> <!-- Teste Compras(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->
