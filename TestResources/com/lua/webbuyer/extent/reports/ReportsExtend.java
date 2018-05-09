@@ -3,15 +3,14 @@ package com.lua.webbuyer.extent.reports;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 
-import org.junit.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -19,57 +18,67 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
-import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.lua.webbuyer.utils.Driver;
 import com.lua.webbuyer.utils.getScreenshot;
 
-public class DummyForExReport {
+public class ReportsExtend {
 
 	public static ExtentHtmlReporter htmlReporter;
 	public static ExtentReports reports;
 	public static ExtentTest testInfo;
+	public static ExtentTest parentTest;
+	public static ExtentTest childTest;
 	
-
 	@BeforeSuite(alwaysRun = true)
-	public void setup() {
-		htmlReporter = new ExtentHtmlReporter(new File(System.getProperty("user.dir") + "/LuaReports.html"));
+	public void setup() throws UnknownHostException {
+		
+		htmlReporter = new ExtentHtmlReporter(new File(System.getProperty("user.dir") + "/test-output" +"/LuaReports.html"));
 		htmlReporter.loadXMLConfig(new File(System.getProperty("user.dir") + "/extent-config.xml"));
 		reports = new ExtentReports();
-		// SetEnvironment info
-		reports.setSystemInfo("Environment", "QA");
+		reports.setSystemInfo("Environment", InetAddress.getLocalHost().getHostName());
+		reports.setSystemInfo("Environment", System.getProperty("user.name"));
 		reports.attachReporter(htmlReporter);
 	}
  
-//	@Test 
-//	public void methodOne() {
-//		Assert.assertTrue(true);
-//		testInfo.log(Status.INFO, "Just Testing Reports log");
-//	}
-//
-//	@Test
-//	public void methodTwo() {
-//		Assert.assertTrue(false);
-//		testInfo.log(Status.INFO, "Just Testing Reports log");
-//	}
 
 	@Parameters({ "Browser"})
 	@BeforeMethod(alwaysRun = true)
 	public void register(Method method, String browser) {
+		//method.assignAuthor("AuthorName");
 		String testName = method.getName(); 
-		testInfo = reports.createTest(testName);
-		testInfo.log(Status.INFO, "Starting " + testName);
+		
+		Test test = method.getAnnotation(Test.class);
+	    String desc = test.description();
+	    String[] groupInfo = test.groups();
+	    
+	    
+		testInfo = reports.createTest(testName, desc);
+		testInfo.assignCategory(groupInfo);
+		testInfo.assignAuthor("Author: André_Kennedy");
+		//testInfo.assignCategory("");
+				
+		testInfo.log(Status.INFO, "Iniciando " + testName);
 		Driver.initialyzeTest(browser);
 	}
 	
 	
-	public void logger(String LOG) {
+	public void loggerInfo(String LOG) {
 		testInfo.log(Status.INFO, LOG);
+	}
+	
+	public void loggerFail(String LOG) {
+		testInfo.log(Status.FAIL, LOG);
+	}
+	
+	public void loggerPass(String LOG) {
+		testInfo.log(Status.PASS, LOG);
 	}
 
 	@AfterMethod(alwaysRun = true)
 	public void getResult(ITestResult result) throws IOException {
+		
 		if (result.getStatus() == ITestResult.SUCCESS) {
 			//testInfo.log(Status.PASS, "Test: " + result.getName() + " PASS");
 			testInfo.log(Status.PASS, MarkupHelper.createLabel("Test: " + result.getName() + " PASS", ExtentColor.GREEN));
@@ -81,7 +90,7 @@ public class DummyForExReport {
 			testInfo.addScreenCaptureFromPath(screenshotPath);
 			
 			testInfo.log(Status.FAIL, MarkupHelper.createLabel("Test: " + result.getName() + " FAILED", ExtentColor.RED));
-			testInfo.log(Status.FAIL, result.getThrowable());
+			testInfo.log(Status.FAIL, result.getThrowable()); 
 			Driver.finalyzeTest();
 			
 		} else if (result.getStatus() == ITestResult.SKIP) {

@@ -3,40 +3,43 @@ package com.lua.webbuyer.actions;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-import com.lua.webbuyer.extent.reports.DummyForExReport;
+import com.lua.webbuyer.extent.reports.ReportsExtend;
+import com.lua.webbuyer.page.CartPage;
+import com.lua.webbuyer.page.HomePage;
 import com.lua.webbuyer.page.LoginPage;
-import com.lua.webbuyer.page.PurchasePage;
+import com.lua.webbuyer.page.ProductsPage;
 import com.lua.webbuyer.page.ShippingPage;
 import com.lua.webbuyer.param.BuyerParams;
 import com.lua.webbuyer.param.LoginParams;
 import com.lua.webbuyer.utils.Common;
-import com.lua.webbuyer.utils.Driver;
-import com.lua.webbuyer.utils.Selenium;
 
 public class ActionsBuyer {
 
 	private WebDriver driver;
-	private LoginPage login;
 	private Common common;
-	private Selenium actions;
+	private HomePage homePage;
+	private LoginPage loginPage;
+	private ProductsPage productsPage;	
+	private CartPage cartPage; 
 	private ShippingPage shipping;
-	private PurchasePage purchase;
-	private DummyForExReport LOG;
+	private ReportsExtend LOG;
+	
 	
 	
 	public ActionsBuyer(WebDriver driver) {
 		this.driver = driver;
 		this.common = new Common(driver); 
-		this.actions = new Selenium(driver);
-		this.login = new LoginPage(driver);
+		this.homePage = new HomePage(driver);
+		this.loginPage = new LoginPage(driver); 
+		this.productsPage = new ProductsPage(driver);
+		this.cartPage = new CartPage(driver);
 		this.shipping = new ShippingPage(driver);
-		this.purchase = new PurchasePage(driver);
-		LOG = new DummyForExReport();
+		LOG = new ReportsExtend();
 	}
 
 	public void productBuy(String Product) { 
 
-		String user = LoginParams.getUser();
+		String user = LoginParams.getUser();  
 		String password = LoginParams.getPassword();
 		String URL = LoginParams.getURL();
 		String cep = BuyerParams.getCep();
@@ -45,27 +48,31 @@ public class ActionsBuyer {
 
 		
 		try {
-			LOG.logger("Executando Login com o usuário: " + user + ", na loja '" + URL + "'");
-			login.performLogin(URL, user, password);
-			LOG.logger("Login executado com sucesso!");
-			LOG.logger("Pesquisando o produto: " + Product);
-			common.searchItem(Product);
-			purchase.productSelect(Product);
-			// purchase.productColorSelectByValue(colorCode);
-			purchase.comprarBtn();
-			// common.selectQuantity("3");
-			purchase.finalizarCompraBtn();
+			LOG.loggerInfo("Executando Login com o usuário: " + user + ", na loja '" + URL + "'");
+			loginPage.performLogin(URL, user, password);
+			LOG.loggerInfo("Login executado com sucesso!");
+			cartPage.cleanCart();
+			LOG.loggerInfo("Pesquisando o produto: " + Product);
+			homePage.searchItem(Product);
+			homePage.productSelect(Product);
+			// products.productColorSelectByValue(colorCode);
+			productsPage.comprarBtn();
+			// productsPage.selectQuantity("3");
+			cartPage.finalizarCompraBtn();
 			shipping.setCep(cep);
-			actions.loadingWait(driver);
+			common.loadingWait(driver);
 			shipping.setNumero(numero);
 			shipping.setTelefone(telefone);
 			shipping.continuarBtn();
-			actions.loadingWait(driver);
-		
+			common.loadingWait(driver);
+			
+			
+			shipping.continuarBtn();
+			shipping.efetuarPagamentoBtn();
 			
 		} catch (Exception e) {
-			//Driver.finalyzeTest();
-			Assert.fail("Test Failed: " + e.getMessage());
+			Assert.fail(e.getMessage());
+
 		}
 	}
 }

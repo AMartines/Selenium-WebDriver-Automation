@@ -13,7 +13,7 @@
 	<test name="Teste Compras">
 
 		<parameter name="Browser" value="Firefox" />
-		<parameter name="Product" value="dfvfdvdv" />
+		<parameter name="Product" value="Pijama Snacks" />
 		<parameter name="itemColorCode" value="11682" />
 ""
 		<classes>

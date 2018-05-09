@@ -23,7 +23,7 @@ public class Driver {
 	}
 	
 	public static void finalyzeTest() {
-		driver.close();
+		driver.close(); 
 		driver = null;
 	}
 	

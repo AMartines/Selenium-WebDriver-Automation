@@ -3,7 +3,7 @@
     <configuration>
         <!-- report theme -->
         <!-- standard, dark -->
-        <theme>dark</theme>
+        <theme>standart</theme>
     
         <!-- document encoding -->
         <!-- defaults to UTF-8 -->

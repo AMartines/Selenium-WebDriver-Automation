@@ -3,53 +3,60 @@ package com.lua.webbuyer.utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Common {
 	WebDriver driver;
-	private Selenium actions;
+	private Selenium selenium;
 	
 
-	public Common(WebDriver driver) {
+	public Common(WebDriver driver) { 
 		this.driver = driver;
-		this.actions = new Selenium(driver);
+		this.selenium = new Selenium(driver);
 	}
 
+	
+	public boolean validateElementPresence(By locator) {
+		
+		boolean exist = false;
+		try {
+			WebElement object = driver.findElement(locator); 
+			if (object.isDisplayed()) {
+				exist = true;
+			}
+		}catch(Exception e) {
+			return exist;
+			
+		}
+		return exist;
+	}
+	 
 	public void reachLoginPage() throws Exception {
-		actions = new Selenium(driver);
-		actions.loadingWait(driver);
-		//actions.waitForElementNotVisible(5, driver);
-		actions.click(By.xpath(".//button[@class='source-components-Header-___Header__menu-trigger___3rL3X']"));
-		actions.click(By.xpath(".//*[@id='outer-container']/ul/li[2]/a"));
+		
+		this.loadingWait(driver); 
+		selenium.click(By.xpath(".//button[@class='source-components-Header-___Header__menu-trigger___3rL3X']"));
+		selenium.click(By.xpath(".//*[@id='outer-container']/ul/li[2]/a"));
 	} 
 
 	 
 	public void logoutMenu() throws Exception {
-		actions = new Selenium(driver);
-		actions.click(By.xpath(".//button[@class='source-components-Header-___Header__menu-trigger___3rL3X']"));
-		actions.click(By.xpath(".//*[@id='outer-container']/ul/li[4]/button"));
+		selenium.click(By.xpath(".//button[@class='source-components-Header-___Header__menu-trigger___3rL3X']"));
+		selenium.click(By.xpath(".//*[@id='outer-container']/ul/li[4]/button"));
 	}
 
-	public void searchItem(String text) throws Exception {
-		actions.setText(By.xpath(".//input[@name='search']"), text);
-		actions.click(By.xpath(".//button[text()[contains(.,'Buscar')]]"));
+	
+	public void loadingWait(WebDriver driver) {
+		try {
+			//WebElement loader = driver.findElement(By.xpath(".//div[@class='sk-double-bounce sk-spinner source-components-Loading-___Loading__spinner___dEAFF']"));
+		    WebDriverWait wait = new WebDriverWait(driver, 5000L);
+		    //wait.until(ExpectedConditions.visibilityOf(loader)); // wait for loader to appear
+		    wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.xpath(".//div[@class='sk-double-bounce sk-spinner source-components-Loading-___Loading__spinner___dEAFF']")))); // wait for loader to disappear
+		}catch(Exception e) {
+			
+		}
 	}
 	
-	public void selectQuantity(String expectedNumber) {
-		WebElement selector = driver.findElement(By.xpath(".//*[@id='page-wrap']/section/div[2]/div[2]/div/div[2]/div/div/div/input"));
-		if (selector.getAttribute("value") != expectedNumber) {
-			int count = 0;
-			do {
-				
-		//Decidir entre uma ds tres abordagens ps que nenhuma funcionou
-				//actions.wait.until(ExpectedConditions.elementToBeClickable(By.xpath(".//button[text()[contains(.,'+')]]")));
-				//actions.retryingFindClick(By.xpath(".//button[text()[contains(.,'+')]]"));
-				//actions.getWhenVisible(By.xpath(".//button[text()[contains(.,'+')]]"), 5000).click();
-				count++;
-
-			} while (Integer.parseInt(selector.getAttribute("value")) < Integer.parseInt(expectedNumber)
-					|| count > Integer.parseInt(expectedNumber));
-		}
-
-	}
+	
 
 }
