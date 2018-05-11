@@ -35,6 +35,7 @@ public class TestBuyer extends ReportsExtend {
 		ActionsBuyer actions = new ActionsBuyer(Driver.driver);
 		try {	
 			actions.productBuy(product);
+			LOG.loggerPass("Compra executada com sucesso!");
 		}catch(AssertionError e) {
 			LOG.loggerFail("Test Failed: " + e.getMessage());
 			org.testng.Assert.fail("Test Failed"); 

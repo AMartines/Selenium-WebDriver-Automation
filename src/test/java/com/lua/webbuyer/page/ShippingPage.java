@@ -2,18 +2,22 @@ package com.lua.webbuyer.page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import com.lua.webbuyer.utils.Common;
 import com.lua.webbuyer.utils.Selenium;
 
 public class ShippingPage {
 
 	private Selenium actions;
 	private WebDriver driver;
+	private Common common;
 
 	public ShippingPage(WebDriver driver) {
 
 		this.driver = driver;
 		this.actions = new Selenium(driver);
+		this.common = new Common(driver);
 	}
 
 	public void setCep(String cep) throws Exception {
@@ -81,10 +85,10 @@ public class ShippingPage {
 	}
 
 	public void naoSabeSeuCepBtn() throws Exception {
-		
+
 		try {
 			actions.click(By.xpath(".//a[text()[contains(.,'Não sabe seu cep?')]]"));
-		}catch(Exception e) {
+		} catch (Exception e) {
 			throw new Exception("Não foi possivel clicar no botão 'Não sabe o seu CEP'!");
 		}
 	}
@@ -92,10 +96,13 @@ public class ShippingPage {
 	public void continuarBtn() throws Exception {
 
 		try {
-			actions.click(By.xpath(".//button[text()[contains(.,'Continuar')]]"));
-			if (driver.findElement(By.xpath(".//button[text()[contains(.,'Continuar')]]")).isDisplayed()) {
-				actions.click(By.xpath(".//button[text()[contains(.,'Continuar')]]"));
-			}
+			//Thread.sleep(50000);
+			actions.jsClick(By.xpath(".//button[text()[contains(.,'Continuar')]]"));
+			common.loadingWait(driver);
+			//actions.jsAsyncClick(By.xpath(".//button[text()[contains(.,'Continuar')]]"));
+//			if (driver.findElement(By.xpath(".//button[text()[contains(.,'Continuar')]]")).isDisplayed()) {
+//			actions.click(By.xpath(".//button[text()[contains(.,'Continuar')]]"));
+//			}
 		} catch (Exception e) {
 			throw new Exception("Não foi possivel clicar no botão 'Continuar");
 		}
@@ -104,9 +111,34 @@ public class ShippingPage {
 	public void efetuarPagamentoBtn() throws Exception {
 		try {
 			actions.click(By.xpath(".//button[text()[contains(.,'Efetuar pagamento')]]"));
-		}catch(Exception e) {
+		} catch (Exception e) {
 			throw new Exception("Não foi possivel clicar no botão 'Efetuar pagamento'!");
 		}
+	}
+
+	public void payTypeBoleto() throws Exception {
+
+		try {
+			
+			driver.switchTo().frame(driver.findElement(By.xpath("/html/body/div[3]/iframe")));
+			actions.click(
+					By.xpath("//div[@class='pagarme-checkout-step']//div[@id='pagarme-checkout-boleto-button']"));
+			driver.switchTo().defaultContent();
+		} catch (Exception e) {
+			throw new Exception("Não foi possível selecionar o metodo de pagamento 'Boleto Bancário'! ");
+		}
+	}
+	
+	public String statusCompra() throws Exception {
+		try {
+			actions.wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='source-containers-Shipping-ModalInvoice-___ModalInvoice__invoice-ready___3NOrQ']")));
+			String statusCompra = driver.findElement(By.xpath("//div[@class='source-containers-Shipping-ModalInvoice-___ModalInvoice__invoice-ready___3NOrQ']")).getText();
+		
+			return statusCompra;
+		}catch (Exception e) {
+			throw new Exception("Não foi possivel precisar o status da compra!");
+		}
+		
 	}
 
 }

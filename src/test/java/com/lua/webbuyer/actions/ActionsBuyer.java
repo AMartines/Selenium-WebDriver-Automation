@@ -33,11 +33,12 @@ public class ActionsBuyer {
 		this.loginPage = new LoginPage(driver); 
 		this.productsPage = new ProductsPage(driver);
 		this.cartPage = new CartPage(driver);
-		this.shipping = new ShippingPage(driver);
+		this.shipping = new ShippingPage(driver); 
 		LOG = new ReportsExtend();
 	}
 
 	public void productBuy(String Product) { 
+
 
 		String user = LoginParams.getUser();  
 		String password = LoginParams.getPassword();
@@ -55,9 +56,11 @@ public class ActionsBuyer {
 			LOG.loggerInfo("Pesquisando o produto: " + Product);
 			homePage.searchItem(Product);
 			homePage.productSelect(Product);
+			LOG.loggerInfo("Produto adicionado ao carrinho");
 			// products.productColorSelectByValue(colorCode);
 			productsPage.comprarBtn();
 			// productsPage.selectQuantity("3");
+			LOG.loggerInfo("Preenchendo dados de shipment");
 			cartPage.finalizarCompraBtn();
 			shipping.setCep(cep);
 			common.loadingWait(driver);
@@ -65,11 +68,15 @@ public class ActionsBuyer {
 			shipping.setTelefone(telefone);
 			shipping.continuarBtn();
 			common.loadingWait(driver);
-			
-			
 			shipping.continuarBtn();
+			common.loadingWait(driver);
 			shipping.efetuarPagamentoBtn();
+			common.loadingWait(driver);
+			shipping.payTypeBoleto();
+			common.loadingWait(driver);
 			
+			String SuccessMessage = "Pronto, boleto gerado!";
+			Assert.assertEquals(shipping.statusCompra(), SuccessMessage);
 		} catch (Exception e) {
 			Assert.fail(e.getMessage());
 

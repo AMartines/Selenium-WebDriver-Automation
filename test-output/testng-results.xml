@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="TestSuite" duration-ms="139247" started-at="2018-05-09T19:58:05Z" finished-at="2018-05-09T20:00:24Z">
+  <suite name="TestSuite" duration-ms="169926" started-at="2018-05-11T20:46:59Z" finished-at="2018-05-11T20:49:49Z">
     <groups>
       <group name="Testes de compra">
         <method signature="TestBuyer.compraSequencial(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestBuyer@3dfc5fb8]" name="compraSequencial" class="com.lua.webbuyer.test.TestBuyer"/>
       </group> <!-- Testes de compra -->
     </groups>
-    <test name="Teste Compras" duration-ms="139247" started-at="2018-05-09T19:58:05Z" finished-at="2018-05-09T20:00:24Z">
+    <test name="Teste Compras" duration-ms="169926" started-at="2018-05-11T20:46:59Z" finished-at="2018-05-11T20:49:49Z">
       <class name="com.lua.webbuyer.test.TestLoginPage">
-        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestLoginPage@c46bcd4]" name="register" is-config="true" duration-ms="4957" started-at="2018-05-09T16:59:38Z" finished-at="2018-05-09T16:59:43Z">
+        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestLoginPage@c46bcd4]" name="register" is-config="true" duration-ms="5288" started-at="2018-05-11T17:48:23Z" finished-at="2018-05-11T17:48:28Z">
           <params>
             <param index="0">
               <value>
@@ -26,7 +26,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method status="PASS" signature="testeCompradois(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestLoginPage@c46bcd4]" name="testeCompradois" duration-ms="40557" started-at="2018-05-09T16:59:43Z" finished-at="2018-05-09T17:00:23Z">
+        <test-method status="PASS" signature="testeCompradois(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestLoginPage@c46bcd4]" name="testeCompradois" duration-ms="79443" started-at="2018-05-11T17:48:28Z" finished-at="2018-05-11T17:49:48Z">
           <params>
             <param index="0">
               <value>
@@ -35,14 +35,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[Pijama Snacks]]>
+                <![CDATA[Pijama Adulto Spiderman]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testeCompradois -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestLoginPage@c46bcd4]" name="getResult" is-config="true" duration-ms="1166" started-at="2018-05-09T17:00:23Z" finished-at="2018-05-09T17:00:24Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestLoginPage@c46bcd4]" name="getResult" is-config="true" duration-ms="696" started-at="2018-05-11T17:49:48Z" finished-at="2018-05-11T17:49:49Z">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="FAIL" signature="endSession()[pri:0, instance:com.lua.webbuyer.test.TestLoginPage@c46bcd4]" name="endSession" is-config="true" duration-ms="0" started-at="2018-05-09T17:00:24Z" finished-at="2018-05-09T17:00:24Z">
+        <test-method status="FAIL" signature="endSession()[pri:0, instance:com.lua.webbuyer.test.TestLoginPage@c46bcd4]" name="endSession" is-config="true" duration-ms="0" started-at="2018-05-11T17:49:49Z" finished-at="2018-05-11T17:49:49Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -89,11 +89,11 @@
         </test-method> <!-- endSession -->
       </class> <!-- com.lua.webbuyer.test.TestLoginPage -->
       <class name="com.lua.webbuyer.test.TestBuyer">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.lua.webbuyer.test.TestBuyer@3dfc5fb8]" name="setup" is-config="true" duration-ms="456" started-at="2018-05-09T16:58:05Z" finished-at="2018-05-09T16:58:05Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.lua.webbuyer.test.TestBuyer@3dfc5fb8]" name="setup" is-config="true" duration-ms="552" started-at="2018-05-11T17:46:58Z" finished-at="2018-05-11T17:46:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestBuyer@3dfc5fb8]" name="register" is-config="true" duration-ms="6466" started-at="2018-05-09T16:58:05Z" finished-at="2018-05-09T16:58:11Z">
+        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestBuyer@3dfc5fb8]" name="register" is-config="true" duration-ms="6584" started-at="2018-05-11T17:46:59Z" finished-at="2018-05-11T17:47:05Z">
           <params>
             <param index="0">
               <value>
@@ -109,7 +109,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method status="FAIL" signature="compraSequencial(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestBuyer@3dfc5fb8]" name="compraSequencial" duration-ms="85226" started-at="2018-05-09T16:58:11Z" description="Simula duas compras feitas na mesma loja e com o mesmo usuário em sequência." finished-at="2018-05-09T16:59:37Z">
+        <test-method status="PASS" signature="compraSequencial(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestBuyer@3dfc5fb8]" name="compraSequencial" duration-ms="77109" started-at="2018-05-11T17:47:05Z" description="Simula duas compras feitas na mesma loja e com o mesmo usuário em sequência." finished-at="2018-05-11T17:48:22Z">
           <params>
             <param index="0">
               <value>
@@ -118,35 +118,25 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[Pijama Snacks]]>
+                <![CDATA[Pijama Adulto Spiderman]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Test Failed]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Test Failed
-	at com.lua.webbuyer.test.TestBuyer.compraSequencial(TestBuyer.java:40)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- compraSequencial -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestBuyer@3dfc5fb8]" name="getResult" is-config="true" duration-ms="847" started-at="2018-05-09T16:59:37Z" finished-at="2018-05-09T16:59:38Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestBuyer@3dfc5fb8]" name="getResult" is-config="true" duration-ms="777" started-at="2018-05-11T17:48:22Z" finished-at="2018-05-11T17:48:23Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=compraSequencial status=FAILURE method=TestBuyer.compraSequencial(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestBuyer@3dfc5fb8] output={null}]]]>
+                <![CDATA[[TestResult name=compraSequencial status=SUCCESS method=TestBuyer.compraSequencial(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestBuyer@3dfc5fb8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.lua.webbuyer.test.TestBuyer@3dfc5fb8]" name="cleanUp" is-config="true" duration-ms="459" started-at="2018-05-09T17:00:24Z" finished-at="2018-05-09T17:00:25Z">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.lua.webbuyer.test.TestBuyer@3dfc5fb8]" name="cleanUp" is-config="true" duration-ms="426" started-at="2018-05-11T17:49:49Z" finished-at="2018-05-11T17:49:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->

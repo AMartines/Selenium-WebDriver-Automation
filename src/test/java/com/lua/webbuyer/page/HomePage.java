@@ -9,7 +9,6 @@ public class HomePage {
 	
 		private Selenium selenium;
 		
-		
 		public HomePage(WebDriver driver) {
 			this.selenium = new Selenium(driver);
 		}
@@ -22,12 +21,15 @@ public class HomePage {
 				throw new Exception("Não foi possivel pesquisar o item solicitado!");
 			}
 		}
-		
+		//*[contains(text(),'Pijama Adulto Spiderman')]
 		
 		public void productSelect(String itemToBeSelected) throws Exception {
 			try {
-				selenium.click(By.xpath("//*[@class='source-components-ProductList-ProductListItem-___ProductListItem__link___1-CWH']//*[text()='"+ itemToBeSelected +"']"));
-				
+				selenium.jsClick(By.xpath("//a[@class='source-components-ProductList-ProductListItem-___ProductListItem__link___1-CWH']//span[@class='source-components-ProductList-ProductListItem-___ProductListItem__text___SINqh']//*[contains(text(),'" +  itemToBeSelected + "')]"));
+//				if (driver.findElement(By.xpath("//a[@class='source-components-ProductList-ProductListItem-___ProductListItem__link___1-CWH']//span[@class='source-components-ProductList-ProductListItem-___ProductListItem__text___SINqh']//*[contains(text(),'" +  itemToBeSelected + "')]")).isDisplayed()) {
+//					selenium.jsClick(By.xpath("//a[@class='source-components-ProductList-ProductListItem-___ProductListItem__link___1-CWH']//span[@class='source-components-ProductList-ProductListItem-___ProductListItem__text___SINqh']//*[contains(text(),'" +  itemToBeSelected + "')]"));
+//
+//				}
 			}catch(Exception e) {
 				throw new Exception ("Produto não encontrado: " + itemToBeSelected);
 			}

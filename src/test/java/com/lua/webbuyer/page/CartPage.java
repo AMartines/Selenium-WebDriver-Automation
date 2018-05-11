@@ -44,10 +44,10 @@ public class CartPage {
 		
 		
 		try {
-			selenium.click(By.xpath(".//button[text()[contains(.,'Finalizar Compra')]]"));
-			if (driver.findElement(By.xpath(".//button[text()[contains(.,'Finalizar Compra')]]")).isDisplayed()) {
-				selenium.click(By.xpath(".//button[text()[contains(.,'Finalizar Compra')]]"));
-			}
+			selenium.jsClick(By.xpath(".//button[text()[contains(.,'Finalizar Compra')]]"));
+//			if (driver.findElement(By.xpath(".//button[text()[contains(.,'Finalizar Compra')]]")).isDisplayed()) {
+//				selenium.click(By.xpath(".//button[text()[contains(.,'Finalizar Compra')]]"));
+//			}
 		}catch(Exception e) {
 			//throw new Exception("Não foi possivel clicar no botão 'Finalizar Compra'!" );
 		}

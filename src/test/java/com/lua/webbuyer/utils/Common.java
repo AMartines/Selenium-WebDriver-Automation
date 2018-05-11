@@ -48,10 +48,12 @@ public class Common {
 	
 	public void loadingWait(WebDriver driver) {
 		try {
-			//WebElement loader = driver.findElement(By.xpath(".//div[@class='sk-double-bounce sk-spinner source-components-Loading-___Loading__spinner___dEAFF']"));
 		    WebDriverWait wait = new WebDriverWait(driver, 5000L);
-		    //wait.until(ExpectedConditions.visibilityOf(loader)); // wait for loader to appear
-		    wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.xpath(".//div[@class='sk-double-bounce sk-spinner source-components-Loading-___Loading__spinner___dEAFF']")))); // wait for loader to disappear
+		    if (driver.findElement(By.xpath(".//div[@class='source-components-Loading-___Loading__wrapper___3RmgW']")).isDisplayed()) {
+		    	wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.xpath(".//div[@class='source-components-Loading-___Loading__wrapper___3RmgW']"))));
+			}else if (driver.findElement(By.xpath(".//div[@class='sk-double-bounce sk-spinner source-components-Loading-___Loading__spinner___dEAFF']")).isDisplayed()) {
+		    	wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.xpath(".//div[@class='sk-double-bounce sk-spinner source-components-Loading-___Loading__spinner___dEAFF']"))));
+			}
 		}catch(Exception e) {
 			
 		}
