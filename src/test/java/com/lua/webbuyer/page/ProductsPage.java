@@ -4,17 +4,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import com.lua.webbuyer.extent.reports.ReportsExtend;
+import com.lua.webbuyer.extent.reports.ReportExtent;
 import com.lua.webbuyer.utils.Selenium;
 
 public class ProductsPage {
 	private Selenium selenium;
 	private WebDriver driver;
-	private ReportsExtend LOG;
+	private ReportExtent LOG;
 
 	public ProductsPage(WebDriver driver) {
 		this.selenium = new Selenium(driver);
-		this.LOG = new ReportsExtend();
+		this.LOG = new ReportExtent();
 
 	}
 

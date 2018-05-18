@@ -1,45 +1,43 @@
 package com.lua.webbuyer.test;
 
-import org.testng.annotations.AfterTest;
+import org.fluttercode.datafactory.impl.DataFactory;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.lua.webbuyer.actions.ActionsBuyer;
-import com.lua.webbuyer.extent.reports.ReportsExtend;
-import com.lua.webbuyer.param.BuyerParams;
+import com.lua.webbuyer.actions.LoginPageActions;
+import com.lua.webbuyer.extent.reports.ReportExtent;
+import com.lua.webbuyer.param.LoginParams;
 import com.lua.webbuyer.utils.Driver;
 
 
 
 
 
-public class TestLoginPage extends ReportsExtend {
+public class TestLoginPage extends ReportExtent {
 
-	// @Parameters({"Browser"})
-	// @BeforeClass//(alwaysRun = true)
-	// public void setupClass(String browser) {
-	// Driver.initializeTest(browser);
-	// }
-	//
 	
-	 
+	private ReportExtent LOG = new ReportExtent();
 	
-	@AfterTest // (alwaysRun = true)
-	public void endSession() {
-		Driver.finalyzeClass();
-	} 
 
-	@Test
-	@Parameters({ "Browser", "Product" })
-	public void testeCompradois(String browser, String product) {
+	@Parameters({"Product" })
+	@Test(description="Simula cadastro completo.", groups = "Fluxo Contínuo")
+	public void Fluxo_de_Cadastro(String product) {
 		
-		BuyerParams.setCep("03279120");
-		BuyerParams.setNumeroEndereço("52");
-		BuyerParams.setTelefone("11958657895");
-
-		ActionsBuyer actions = new ActionsBuyer(Driver.driver);
-		actions.productBuy(product);
-
+		DataFactory df = new DataFactory();
+		System.out.println(df.getRandomText(20, 25));
+		
+		LoginParams.setSenha("123456");
+		
+		try {	
+			LoginPageActions actions = new LoginPageActions(Driver.driver);
+			actions.createAccount();
+			LOG.loggerPass("Cadastro Concluido!");
+		}catch(AssertionError e) {
+			LOG.loggerFail("Test Failed: " + e.getMessage());
+			org.testng.Assert.fail("Test Failed"); 
+		}
+		  
+		//Driver.finalyzeTest();
 	}
 	
 	

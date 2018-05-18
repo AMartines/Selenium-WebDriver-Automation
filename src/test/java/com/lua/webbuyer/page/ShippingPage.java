@@ -9,21 +9,29 @@ import com.lua.webbuyer.utils.Selenium;
 
 public class ShippingPage {
 
-	private Selenium actions;
+	private Selenium selenium;
 	private WebDriver driver;
 	private Common common;
 
 	public ShippingPage(WebDriver driver) {
 
 		this.driver = driver;
-		this.actions = new Selenium(driver);
+		this.selenium = new Selenium(driver);
 		this.common = new Common(driver);
+	}
+	
+	public void setEstadoUf(String value) throws Exception {
+		try {
+			selenium.menuDropdown(By.xpath(".//select[@placeholder = '-> Estado* <-']"), value);
+		}catch(Exception e) {
+			throw new Exception("Não foi possivel selecionar a UF");
+		}
 	}
 
 	public void setCep(String cep) throws Exception {
 		try {
-			actions.setText(By.xpath(".//input[@name='cep']"), cep);
-			actions.click(By.xpath(".//input[@name='address']"));
+			selenium.setText(By.xpath(".//input[@name='cep']"), cep);
+			selenium.click(By.xpath(".//input[@name='address']"));
 		} catch (Exception e) {
 			throw new Exception("Não foi possivel preencher o campo CEP na página de 'Shipment'!");
 		}
@@ -32,7 +40,7 @@ public class ShippingPage {
 	public void setRua(String nomeRua) throws Exception {
 
 		try {
-			actions.setText(By.xpath(".//input[@name='address']"), nomeRua);
+			selenium.setText(By.xpath(".//input[@name='address']"), nomeRua);
 		} catch (Exception e) {
 			throw new Exception("Não foi possivel preencher o campo 'RUA' na página de 'Shipment'!");
 		}
@@ -41,7 +49,7 @@ public class ShippingPage {
 	public void setNumero(String numero) throws Exception {
 
 		try {
-			actions.setText(By.xpath(".//input[@name='number']"), numero);
+			selenium.setText(By.xpath(".//input[@name='number']"), numero);
 		} catch (Exception e) {
 			throw new Exception("Não foi possivel preencher o campo 'Número' na página de 'Shipment'!");
 		}
@@ -50,7 +58,7 @@ public class ShippingPage {
 	public void setComplemento(String complemento) throws Exception {
 
 		try {
-			actions.setText(By.xpath(".//input[@name='complement']"), complemento);
+			selenium.setText(By.xpath(".//input[@name='complement']"), complemento);
 		} catch (Exception e) {
 			throw new Exception("Não foi possivel preencher o campo 'Complemento' na página de 'Shipment'!");
 		}
@@ -60,7 +68,7 @@ public class ShippingPage {
 	public void setBairro(String bairro) throws Exception {
 
 		try {
-			actions.setText(By.xpath(".//input[@name='neighborhood']"), bairro);
+			selenium.setText(By.xpath(".//input[@name='neighborhood']"), bairro);
 		} catch (Exception e) {
 			throw new Exception("Não foi possivel preencher o campo 'Bairro' na página de 'Shipment'!");
 		}
@@ -69,7 +77,7 @@ public class ShippingPage {
 	public void setCidade(String cidade) throws Exception {
 
 		try {
-			actions.setText(By.xpath(".//input[@name='city']"), cidade);
+			selenium.setText(By.xpath(".//input[@name='city']"), cidade);
 		} catch (Exception e) {
 			throw new Exception("Não foi possivel preencher o campo 'Cidade' na página de 'Shipment'!");
 		}
@@ -78,7 +86,7 @@ public class ShippingPage {
 	public void setTelefone(String telefone) throws Exception {
 
 		try {
-			actions.setText(By.xpath(".//input[@name='telephone']"), telefone);
+			selenium.setText(By.xpath(".//input[@name='telephone']"), telefone);
 		} catch (Exception e) {
 			throw new Exception("Não foi possivel preencher o campo 'Telefone' na página de 'Shipment'!");
 		}
@@ -87,7 +95,7 @@ public class ShippingPage {
 	public void naoSabeSeuCepBtn() throws Exception {
 
 		try {
-			actions.click(By.xpath(".//a[text()[contains(.,'Não sabe seu cep?')]]"));
+			selenium.click(By.xpath(".//a[text()[contains(.,'Não sabe seu cep?')]]"));
 		} catch (Exception e) {
 			throw new Exception("Não foi possivel clicar no botão 'Não sabe o seu CEP'!");
 		}
@@ -97,7 +105,7 @@ public class ShippingPage {
 
 		try {
 			//Thread.sleep(50000);
-			actions.jsClick(By.xpath(".//button[text()[contains(.,'Continuar')]]"));
+			selenium.jsClick(By.xpath(".//button[text()[contains(.,'Continuar')]]"));
 			common.loadingWait(driver);
 			//actions.jsAsyncClick(By.xpath(".//button[text()[contains(.,'Continuar')]]"));
 //			if (driver.findElement(By.xpath(".//button[text()[contains(.,'Continuar')]]")).isDisplayed()) {
@@ -110,7 +118,7 @@ public class ShippingPage {
 
 	public void efetuarPagamentoBtn() throws Exception {
 		try {
-			actions.click(By.xpath(".//button[text()[contains(.,'Efetuar pagamento')]]"));
+			selenium.jsClick(By.xpath(".//button[text()[contains(.,'Efetuar pagamento')]]"));
 		} catch (Exception e) {
 			throw new Exception("Não foi possivel clicar no botão 'Efetuar pagamento'!");
 		}
@@ -121,7 +129,7 @@ public class ShippingPage {
 		try {
 			
 			driver.switchTo().frame(driver.findElement(By.xpath("/html/body/div[3]/iframe")));
-			actions.click(
+			selenium.click(
 					By.xpath("//div[@class='pagarme-checkout-step']//div[@id='pagarme-checkout-boleto-button']"));
 			driver.switchTo().defaultContent();
 		} catch (Exception e) {
@@ -131,7 +139,7 @@ public class ShippingPage {
 	
 	public String statusCompra() throws Exception {
 		try {
-			actions.wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='source-containers-Shipping-ModalInvoice-___ModalInvoice__invoice-ready___3NOrQ']")));
+			selenium.wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='source-containers-Shipping-ModalInvoice-___ModalInvoice__invoice-ready___3NOrQ']")));
 			String statusCompra = driver.findElement(By.xpath("//div[@class='source-containers-Shipping-ModalInvoice-___ModalInvoice__invoice-ready___3NOrQ']")).getText();
 		
 			return statusCompra;

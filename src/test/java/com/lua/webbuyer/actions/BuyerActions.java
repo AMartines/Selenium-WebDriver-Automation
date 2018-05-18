@@ -3,7 +3,7 @@ package com.lua.webbuyer.actions;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-import com.lua.webbuyer.extent.reports.ReportsExtend;
+import com.lua.webbuyer.extent.reports.ReportExtent;
 import com.lua.webbuyer.page.CartPage;
 import com.lua.webbuyer.page.HomePage;
 import com.lua.webbuyer.page.LoginPage;
@@ -13,7 +13,7 @@ import com.lua.webbuyer.param.BuyerParams;
 import com.lua.webbuyer.param.LoginParams;
 import com.lua.webbuyer.utils.Common;
 
-public class ActionsBuyer {
+public class BuyerActions {
 
 	private WebDriver driver;
 	private Common common;
@@ -22,11 +22,11 @@ public class ActionsBuyer {
 	private ProductsPage productsPage;	
 	private CartPage cartPage; 
 	private ShippingPage shipping;
-	private ReportsExtend LOG;
+	private ReportExtent LOG;
 	
 	
 	
-	public ActionsBuyer(WebDriver driver) {
+	public BuyerActions(WebDriver driver) {
 		this.driver = driver;
 		this.common = new Common(driver); 
 		this.homePage = new HomePage(driver);
@@ -34,10 +34,10 @@ public class ActionsBuyer {
 		this.productsPage = new ProductsPage(driver);
 		this.cartPage = new CartPage(driver);
 		this.shipping = new ShippingPage(driver); 
-		LOG = new ReportsExtend();
+		LOG = new ReportExtent();
 	}
 
-	public void productBuy(String Product) { 
+	public void productBuy(String Product, String uf) { 
 
 
 		String user = LoginParams.getUser();  
@@ -46,10 +46,11 @@ public class ActionsBuyer {
 		String cep = BuyerParams.getCep();
 		String numero = BuyerParams.getNumeroEndereço();
 		String telefone = BuyerParams.getTelefone();
-
+		boolean ufTest = BuyerParams.getUfTest();
 		
 		try {
-			LOG.loggerInfo("Executando Login com o usuário: " + user + ", na loja '" + URL + "'");
+			LOG.loggerInfo("Iniciando fluxo de compra para a UF:");
+			LOG.loggerInfo("Executando Login com o usuário: '" + user + "', na loja '" + URL + "'");
 			loginPage.performLogin(URL, user, password);
 			LOG.loggerInfo("Login executado com sucesso!");
 			cartPage.cleanCart();
@@ -65,6 +66,12 @@ public class ActionsBuyer {
 			shipping.setCep(cep);
 			common.loadingWait(driver);
 			shipping.setNumero(numero);
+			
+			if (ufTest == true) {
+				shipping.setEstadoUf(uf);
+				LOG.loggerInfo("UF selecionada: '" + uf + "'");
+			}
+			
 			shipping.setTelefone(telefone);
 			shipping.continuarBtn();
 			common.loadingWait(driver);

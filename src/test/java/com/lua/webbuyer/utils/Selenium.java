@@ -71,12 +71,9 @@ public class Selenium{
 		}
 	}
 	
-	public void menuDropdown(By selector, String value) {
-		try {
+	public void menuDropdown(By selector, String value) throws Exception {
 			final Select dropDown = new Select(driver.findElement(selector));
 			dropDown.selectByValue(value); 
-		}catch(Exception e ) {
-		}  
 	}
 	
 	

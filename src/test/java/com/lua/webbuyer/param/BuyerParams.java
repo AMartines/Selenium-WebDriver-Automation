@@ -5,9 +5,18 @@ public class BuyerParams {
 	public static String cep;
 	public static String numeroEndereço;
 	public static String telefone;
+	public static boolean ufTest;
 		
 	
 	
+
+	public static boolean getUfTest() {
+		return ufTest;
+	}
+
+	public static void setUfTest(boolean setUF) {
+		BuyerParams.ufTest = setUF;
+	}
 
 	public static String getTelefone() {
 		return telefone;
