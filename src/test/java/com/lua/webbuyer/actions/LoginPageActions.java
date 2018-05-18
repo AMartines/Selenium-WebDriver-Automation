@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
-import com.gargoylesoftware.htmlunit.ElementNotFoundException;
 import com.lua.webbuyer.extent.reports.ReportExtent;
 import com.lua.webbuyer.page.HomePage;
 import com.lua.webbuyer.page.LoginPage;
@@ -30,7 +29,6 @@ public class LoginPageActions {
 		this.homePage = new HomePage(driver);
 		this.LOG = new ReportExtent();
 		this.selenium = new Selenium(driver);
-		
 	}
 
 	/**
@@ -83,16 +81,39 @@ public class LoginPageActions {
 	 * Inicio dos metodos de teste Negativo
 	 * 
 	 * ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	 * @throws Exception 
 	 * 
 	 */
+	
+	public void validateEmptyFieldLogin(int node) throws Exception {
+		
+		String URL = LoginParams.getURL();
+		common.reachLoginPage(URL);
+		String expected = null;
+		
+		switch (node) {
+		case 1:
+			loginPage.fieldNameClick();
+			expected = "O campo \"Nome\" é obrigatório.";
+			break;
+		case 2:
+			loginPage.fieldEmailCadastroClick();
+			expected = "O campo \"E-mail\" é obrigatório.";
+			break;
+		}
+		
+	}
+	
+	public void validateInvalidLogin() {
+		
+	}
 
-	public void verifyEmptyField(int node) {
+	public void validateEmptyFieldSignup(int node) {
 
 		try {
 			String URL = LoginParams.getURL();
 			common.reachLoginPage(URL);
 			String expected = null;
-
 			switch (node) {
 			case 1:
 				loginPage.fieldNameClick();
@@ -111,15 +132,11 @@ public class LoginPageActions {
 				expected = "O campo \"senha\" é obrigatório.";
 				break;
 			}
-
-			
 			loginPage.clickEmptyScpace();
-
 			LOG.loggerInfo("Mensagem de aviso esperada: '" + expected + "'");
-			String warning = selenium.wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
-					"//section[1]/child::div[" + node + "]/div/span[@class='source-components-RenderField-SignUp-___RenderFieldSignUp__errors___2FpmU']"))).getText();
-					
-					
+			String warning = selenium.wait
+					.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//section[1]/child::div[" + node + "]/div/span[@class='source-components-RenderField-SignUp-___RenderFieldSignUp__errors___2FpmU']")))
+					.getText();
 			LOG.loggerInfo("Mensagem retornada pelo sistema: '" + warning + "'");
 			Assert.assertTrue(warning.contains(expected),
 					"Mensagem de aviso não exibida ou não confere com o esperado: '" + expected + "'");
@@ -130,7 +147,7 @@ public class LoginPageActions {
 		}
 	}
 
-	public void verifyInvalidField(int node) {
+	public void validateInvalidFieldSignup(int node) {
 
 		try {
 			String URL = LoginParams.getURL();
@@ -152,11 +169,12 @@ public class LoginPageActions {
 				expected = "O campo CPF deve conter 11 caracteres.";
 				break;
 			}
-
 			loginPage.clickEmptyScpace();
 			LOG.loggerInfo("Mensagem de aviso esperada: '" + expected + "'");
-			String warning = selenium.wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
-					"//section[1]/child::div[" + node + "]/div/span[@class='source-components-RenderField-SignUp-___RenderFieldSignUp__errors___2FpmU']"))).getText();
+			String warning = selenium.wait
+					.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//section[1]/child::div[" + node
+							+ "]/div/span[@class='source-components-RenderField-SignUp-___RenderFieldSignUp__errors___2FpmU']")))
+					.getText();
 			LOG.loggerInfo("Mensagem retornada pelo sistema: '" + warning + "'");
 			Assert.assertTrue(warning.contains(expected),
 					"Mensagem de aviso não exibida ou não confere com o esperado: '" + expected + "'");
@@ -165,11 +183,11 @@ public class LoginPageActions {
 		} catch (Exception e) {
 			Assert.fail(e.getMessage());
 		}
-
-		/**
-		 * FIM dos metodos de teste Negativo
-		 * 
-		 * ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-		 */
 	}
+
+	/**
+	 * FIM dos metodos de teste Negativo
+	 * 
+	 * ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	 */
 }

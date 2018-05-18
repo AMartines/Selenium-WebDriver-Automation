@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="24" failed="1" total="34" passed="9">
+<testng-results skipped="14" failed="1" total="34" passed="19">
   <reporter-output>
   </reporter-output>
-  <suite name="TestSuite" duration-ms="342277" started-at="2018-05-18T16:48:51Z" finished-at="2018-05-18T16:54:34Z">
+  <suite name="TestSuite" duration-ms="1142083" started-at="2018-05-18T18:04:44Z" finished-at="2018-05-18T18:23:46Z">
     <groups>
       <group name="Teste Negativo">
         <method signature="TestesNegativos.testeCpfEmBranco()[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="testeCpfEmBranco" class="com.lua.webbuyer.test.TestesNegativos"/>
@@ -17,9 +17,9 @@
         <method signature="TestesCompra.Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" class="com.lua.webbuyer.test.TestesCompra"/>
       </group> <!-- Fluxo de Compras - Test -->
     </groups>
-    <test name="Teste Compras" duration-ms="342277" started-at="2018-05-18T16:48:51Z" finished-at="2018-05-18T16:54:34Z">
+    <test name="Teste Compras" duration-ms="1142083" started-at="2018-05-18T18:04:44Z" finished-at="2018-05-18T18:23:46Z">
       <class name="com.lua.webbuyer.test.TestesNegativos">
-        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="register" is-config="true" duration-ms="6760" started-at="2018-05-18T13:48:51Z" finished-at="2018-05-18T13:48:58Z">
+        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="register" is-config="true" duration-ms="13375" started-at="2018-05-18T15:04:44Z" finished-at="2018-05-18T15:04:57Z">
           <params>
             <param index="0">
               <value>
@@ -35,11 +35,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method status="PASS" signature="testeCpfEmBranco()[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="testeCpfEmBranco" duration-ms="12641" started-at="2018-05-18T13:48:58Z" description="Força a mensagem de warning no campo &#039;CPF&#039; na tela de Login." finished-at="2018-05-18T13:49:11Z">
+        <test-method status="PASS" signature="testeCpfEmBranco()[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="testeCpfEmBranco" duration-ms="8938" started-at="2018-05-18T15:04:57Z" description="Força a mensagem de warning no campo &#039;CPF&#039; na tela de Login." finished-at="2018-05-18T15:05:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testeCpfEmBranco -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="getResult" is-config="true" duration-ms="1353" started-at="2018-05-18T13:49:11Z" finished-at="2018-05-18T13:49:12Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="getResult" is-config="true" duration-ms="983" started-at="2018-05-18T15:05:06Z" finished-at="2018-05-18T15:05:07Z">
           <params>
             <param index="0">
               <value>
@@ -50,7 +50,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="register" is-config="true" duration-ms="4930" started-at="2018-05-18T13:49:12Z" finished-at="2018-05-18T13:49:17Z">
+        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="register" is-config="true" duration-ms="4669" started-at="2018-05-18T15:05:07Z" finished-at="2018-05-18T15:05:12Z">
           <params>
             <param index="0">
               <value>
@@ -66,11 +66,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method status="PASS" signature="testeCpfInvalido()[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="testeCpfInvalido" duration-ms="9664" started-at="2018-05-18T13:49:17Z" description="Força a mensagem de warning no campo &#039;CPF&#039; na tela de Login." finished-at="2018-05-18T13:49:27Z">
+        <test-method status="PASS" signature="testeCpfInvalido()[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="testeCpfInvalido" duration-ms="9590" started-at="2018-05-18T15:05:12Z" description="Força a mensagem de warning no campo &#039;CPF&#039; na tela de Login." finished-at="2018-05-18T15:05:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testeCpfInvalido -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="getResult" is-config="true" duration-ms="1008" started-at="2018-05-18T13:49:27Z" finished-at="2018-05-18T13:49:28Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="getResult" is-config="true" duration-ms="970" started-at="2018-05-18T15:05:21Z" finished-at="2018-05-18T15:05:22Z">
           <params>
             <param index="0">
               <value>
@@ -81,7 +81,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="register" is-config="true" duration-ms="4916" started-at="2018-05-18T13:49:28Z" finished-at="2018-05-18T13:49:33Z">
+        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="register" is-config="true" duration-ms="8656" started-at="2018-05-18T15:05:22Z" finished-at="2018-05-18T15:05:31Z">
           <params>
             <param index="0">
               <value>
@@ -97,11 +97,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method status="PASS" signature="testeEmailEmBranco()[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="testeEmailEmBranco" duration-ms="8148" started-at="2018-05-18T13:49:33Z" description="Força a mensagem de warning no campo &#039;E-Mail&#039; na tela de Login." finished-at="2018-05-18T13:49:41Z">
+        <test-method status="PASS" signature="testeEmailEmBranco()[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="testeEmailEmBranco" duration-ms="8615" started-at="2018-05-18T15:05:31Z" description="Força a mensagem de warning no campo &#039;E-Mail&#039; na tela de Login." finished-at="2018-05-18T15:05:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testeEmailEmBranco -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="getResult" is-config="true" duration-ms="1014" started-at="2018-05-18T13:49:41Z" finished-at="2018-05-18T13:49:42Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="getResult" is-config="true" duration-ms="1096" started-at="2018-05-18T15:05:40Z" finished-at="2018-05-18T15:05:41Z">
           <params>
             <param index="0">
               <value>
@@ -112,7 +112,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="register" is-config="true" duration-ms="4723" started-at="2018-05-18T13:49:42Z" finished-at="2018-05-18T13:49:46Z">
+        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="register" is-config="true" duration-ms="4918" started-at="2018-05-18T15:05:41Z" finished-at="2018-05-18T15:05:46Z">
           <params>
             <param index="0">
               <value>
@@ -128,11 +128,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method status="PASS" signature="testeEmailInvalido()[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="testeEmailInvalido" duration-ms="8185" started-at="2018-05-18T13:49:46Z" description="Força a mensagem de warning no campo &#039;E-Mail&#039; na tela de Login." finished-at="2018-05-18T13:49:55Z">
+        <test-method status="PASS" signature="testeEmailInvalido()[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="testeEmailInvalido" duration-ms="8451" started-at="2018-05-18T15:05:46Z" description="Força a mensagem de warning no campo &#039;E-Mail&#039; na tela de Login." finished-at="2018-05-18T15:05:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testeEmailInvalido -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="getResult" is-config="true" duration-ms="1021" started-at="2018-05-18T13:49:55Z" finished-at="2018-05-18T13:49:56Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="getResult" is-config="true" duration-ms="1229" started-at="2018-05-18T15:05:54Z" finished-at="2018-05-18T15:05:55Z">
           <params>
             <param index="0">
               <value>
@@ -143,7 +143,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="register" is-config="true" duration-ms="4764" started-at="2018-05-18T13:49:56Z" finished-at="2018-05-18T13:50:00Z">
+        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="register" is-config="true" duration-ms="5213" started-at="2018-05-18T15:05:55Z" finished-at="2018-05-18T15:06:01Z">
           <params>
             <param index="0">
               <value>
@@ -159,11 +159,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method status="PASS" signature="testeNomeEmBranco()[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="testeNomeEmBranco" duration-ms="10655" started-at="2018-05-18T13:50:00Z" description="Força a mensagem de warning no campo &#039;Nome&#039; na tela de Login." finished-at="2018-05-18T13:50:11Z">
+        <test-method status="PASS" signature="testeNomeEmBranco()[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="testeNomeEmBranco" duration-ms="8140" started-at="2018-05-18T15:06:01Z" description="Força a mensagem de warning no campo &#039;Nome&#039; na tela de Login." finished-at="2018-05-18T15:06:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testeNomeEmBranco -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="getResult" is-config="true" duration-ms="1191" started-at="2018-05-18T13:50:11Z" finished-at="2018-05-18T13:50:12Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="getResult" is-config="true" duration-ms="1004" started-at="2018-05-18T15:06:09Z" finished-at="2018-05-18T15:06:10Z">
           <params>
             <param index="0">
               <value>
@@ -174,7 +174,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="register" is-config="true" duration-ms="5805" started-at="2018-05-18T13:50:12Z" finished-at="2018-05-18T13:50:18Z">
+        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="register" is-config="true" duration-ms="4725" started-at="2018-05-18T15:06:10Z" finished-at="2018-05-18T15:06:14Z">
           <params>
             <param index="0">
               <value>
@@ -190,11 +190,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method status="PASS" signature="testeNomeInvalido()[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="testeNomeInvalido" duration-ms="10201" started-at="2018-05-18T13:50:18Z" description="Força a mensagem de warning no campo &#039;Nome&#039; na tela de Login." finished-at="2018-05-18T13:50:28Z">
+        <test-method status="PASS" signature="testeNomeInvalido()[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="testeNomeInvalido" duration-ms="8493" started-at="2018-05-18T15:06:14Z" description="Força a mensagem de warning no campo &#039;Nome&#039; na tela de Login." finished-at="2018-05-18T15:06:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testeNomeInvalido -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="getResult" is-config="true" duration-ms="1183" started-at="2018-05-18T13:50:28Z" finished-at="2018-05-18T13:50:29Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="getResult" is-config="true" duration-ms="3443" started-at="2018-05-18T15:06:23Z" finished-at="2018-05-18T15:06:26Z">
           <params>
             <param index="0">
               <value>
@@ -205,7 +205,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="register" is-config="true" duration-ms="5613" started-at="2018-05-18T13:50:29Z" finished-at="2018-05-18T13:50:35Z">
+        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="register" is-config="true" duration-ms="7309" started-at="2018-05-18T15:06:26Z" finished-at="2018-05-18T15:06:34Z">
           <params>
             <param index="0">
               <value>
@@ -221,11 +221,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method status="PASS" signature="testeSenhaCadastroEmBranco()[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="testeSenhaCadastroEmBranco" duration-ms="10209" started-at="2018-05-18T13:50:35Z" description="Força a mensagem de warning no campo &#039;Senha de cadastro&#039; na tela de Login." finished-at="2018-05-18T13:50:45Z">
+        <test-method status="PASS" signature="testeSenhaCadastroEmBranco()[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="testeSenhaCadastroEmBranco" duration-ms="7968" started-at="2018-05-18T15:06:34Z" description="Força a mensagem de warning no campo &#039;Senha de cadastro&#039; na tela de Login." finished-at="2018-05-18T15:06:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testeSenhaCadastroEmBranco -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="getResult" is-config="true" duration-ms="1316" started-at="2018-05-18T13:50:45Z" finished-at="2018-05-18T13:50:47Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesNegativos@1a1d6a08]" name="getResult" is-config="true" duration-ms="1006" started-at="2018-05-18T15:06:42Z" finished-at="2018-05-18T15:06:43Z">
           <params>
             <param index="0">
               <value>
@@ -238,11 +238,11 @@
         </test-method> <!-- getResult -->
       </class> <!-- com.lua.webbuyer.test.TestesNegativos -->
       <class name="com.lua.webbuyer.test.TestesCompra">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="setup" is-config="true" duration-ms="432" started-at="2018-05-18T13:48:51Z" finished-at="2018-05-18T13:48:51Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="setup" is-config="true" duration-ms="478" started-at="2018-05-18T15:04:43Z" finished-at="2018-05-18T15:04:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="5023" started-at="2018-05-18T13:50:47Z" finished-at="2018-05-18T13:50:52Z">
+        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="4677" started-at="2018-05-18T15:06:43Z" finished-at="2018-05-18T15:06:47Z">
           <params>
             <param index="0">
               <value>
@@ -258,7 +258,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method status="PASS" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="101069" started-at="2018-05-18T13:50:52Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T13:52:33Z">
+        <test-method status="PASS" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="77570" started-at="2018-05-18T15:06:47Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T15:08:05Z">
           <params>
             <param index="0">
               <value>
@@ -274,7 +274,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Fluxo_de_Compras -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="863" started-at="2018-05-18T13:52:33Z" finished-at="2018-05-18T13:52:34Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="1157" started-at="2018-05-18T15:08:05Z" finished-at="2018-05-18T15:08:06Z">
           <params>
             <param index="0">
               <value>
@@ -285,7 +285,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="4888" started-at="2018-05-18T13:52:34Z" finished-at="2018-05-18T13:52:38Z">
+        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="5418" started-at="2018-05-18T15:08:06Z" finished-at="2018-05-18T15:08:12Z">
           <params>
             <param index="0">
               <value>
@@ -301,7 +301,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method status="PASS" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="103593" started-at="2018-05-18T13:52:38Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T13:54:22Z">
+        <test-method status="PASS" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="83430" started-at="2018-05-18T15:08:12Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T15:09:35Z">
           <params>
             <param index="0">
               <value>
@@ -317,7 +317,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Fluxo_de_Compras -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="877" started-at="2018-05-18T13:54:22Z" finished-at="2018-05-18T13:54:23Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="1052" started-at="2018-05-18T15:09:35Z" finished-at="2018-05-18T15:09:36Z">
           <params>
             <param index="0">
               <value>
@@ -328,7 +328,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="6357" started-at="2018-05-18T13:54:23Z" finished-at="2018-05-18T13:54:29Z">
+        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="9294" started-at="2018-05-18T15:09:36Z" finished-at="2018-05-18T15:09:45Z">
           <params>
             <param index="0">
               <value>
@@ -344,7 +344,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method status="FAIL" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="3933" started-at="2018-05-18T13:54:29Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T13:54:33Z">
+        <test-method status="PASS" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="74586" started-at="2018-05-18T15:09:45Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T15:11:00Z">
           <params>
             <param index="0">
               <value>
@@ -354,6 +354,436 @@
             <param index="1">
               <value>
                 <![CDATA[AM]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Fluxo_de_Compras -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="911" started-at="2018-05-18T15:11:00Z" finished-at="2018-05-18T15:11:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Fluxo_de_Compras status=SUCCESS method=TestesCompra.Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="5155" started-at="2018-05-18T15:11:01Z" finished-at="2018-05-18T15:11:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lua.webbuyer.test.TestesCompra.Fluxo_de_Compras(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="75139" started-at="2018-05-18T15:11:06Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T15:12:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pijama Adulto Spiderman]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[AP]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Fluxo_de_Compras -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="883" started-at="2018-05-18T15:12:21Z" finished-at="2018-05-18T15:12:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Fluxo_de_Compras status=SUCCESS method=TestesCompra.Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="5561" started-at="2018-05-18T15:12:22Z" finished-at="2018-05-18T15:12:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lua.webbuyer.test.TestesCompra.Fluxo_de_Compras(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="71636" started-at="2018-05-18T15:12:28Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T15:13:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pijama Adulto Spiderman]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[BA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Fluxo_de_Compras -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="896" started-at="2018-05-18T15:13:39Z" finished-at="2018-05-18T15:13:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Fluxo_de_Compras status=SUCCESS method=TestesCompra.Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="5426" started-at="2018-05-18T15:13:40Z" finished-at="2018-05-18T15:13:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lua.webbuyer.test.TestesCompra.Fluxo_de_Compras(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="83748" started-at="2018-05-18T15:13:45Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T15:15:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pijama Adulto Spiderman]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Fluxo_de_Compras -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="898" started-at="2018-05-18T15:15:09Z" finished-at="2018-05-18T15:15:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Fluxo_de_Compras status=SUCCESS method=TestesCompra.Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="9282" started-at="2018-05-18T15:15:10Z" finished-at="2018-05-18T15:15:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lua.webbuyer.test.TestesCompra.Fluxo_de_Compras(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="75643" started-at="2018-05-18T15:15:19Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T15:16:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pijama Adulto Spiderman]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DF]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Fluxo_de_Compras -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="1266" started-at="2018-05-18T15:16:35Z" finished-at="2018-05-18T15:16:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Fluxo_de_Compras status=SUCCESS method=TestesCompra.Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="5452" started-at="2018-05-18T15:16:36Z" finished-at="2018-05-18T15:16:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lua.webbuyer.test.TestesCompra.Fluxo_de_Compras(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="80899" started-at="2018-05-18T15:16:42Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T15:18:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pijama Adulto Spiderman]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ES]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Fluxo_de_Compras -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="878" started-at="2018-05-18T15:18:03Z" finished-at="2018-05-18T15:18:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Fluxo_de_Compras status=SUCCESS method=TestesCompra.Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="5185" started-at="2018-05-18T15:18:04Z" finished-at="2018-05-18T15:18:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lua.webbuyer.test.TestesCompra.Fluxo_de_Compras(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="71502" started-at="2018-05-18T15:18:09Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T15:19:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pijama Adulto Spiderman]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[GO]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Fluxo_de_Compras -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="874" started-at="2018-05-18T15:19:20Z" finished-at="2018-05-18T15:19:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Fluxo_de_Compras status=SUCCESS method=TestesCompra.Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="7349" started-at="2018-05-18T15:19:21Z" finished-at="2018-05-18T15:19:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lua.webbuyer.test.TestesCompra.Fluxo_de_Compras(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="80043" started-at="2018-05-18T15:19:28Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T15:20:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pijama Adulto Spiderman]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Fluxo_de_Compras -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="908" started-at="2018-05-18T15:20:49Z" finished-at="2018-05-18T15:20:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Fluxo_de_Compras status=SUCCESS method=TestesCompra.Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="4801" started-at="2018-05-18T15:20:49Z" finished-at="2018-05-18T15:20:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lua.webbuyer.test.TestesCompra.Fluxo_de_Compras(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="78949" started-at="2018-05-18T15:20:54Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T15:22:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pijama Adulto Spiderman]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MG]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Fluxo_de_Compras -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="1071" started-at="2018-05-18T15:22:13Z" finished-at="2018-05-18T15:22:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Fluxo_de_Compras status=SUCCESS method=TestesCompra.Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="5505" started-at="2018-05-18T15:22:14Z" finished-at="2018-05-18T15:22:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lua.webbuyer.test.TestesCompra.Fluxo_de_Compras(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="76506" started-at="2018-05-18T15:22:20Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T15:23:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pijama Adulto Spiderman]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Fluxo_de_Compras -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="856" started-at="2018-05-18T15:23:36Z" finished-at="2018-05-18T15:23:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Fluxo_de_Compras status=SUCCESS method=TestesCompra.Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="5033" started-at="2018-05-18T15:23:37Z" finished-at="2018-05-18T15:23:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lua.webbuyer.test.TestesCompra.Fluxo_de_Compras(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="FAIL" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="3561" started-at="2018-05-18T15:23:42Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T15:23:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pijama Adulto Spiderman]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MT]]>
               </value>
             </param>
           </params>
@@ -370,7 +800,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Fluxo_de_Compras -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
+        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T15:23:46Z" finished-at="2018-05-18T15:23:46Z">
           <params>
             <param index="0">
               <value>
@@ -384,16 +814,16 @@
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2619, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: bca765ab-e851-8142-ab5b-8adb43ecc821]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2619, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: bca765ab-e851-8142-ab5b-8adb43ecc821
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -410,611 +840,11 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
+        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T15:23:46Z" finished-at="2018-05-18T15:23:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="4" started-at="2018-05-18T13:54:33Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T13:54:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Pijama Adulto Spiderman]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[AP]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Fluxo_de_Compras -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Fluxo_de_Compras status=SKIP method=TestesCompra.Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Tried to run command without establishing a connection
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:291)
-	at com.lua.webbuyer.utils.getScreenshot.Capture(getScreenshot.java:24)
-	at com.lua.webbuyer.extent.reports.ReportExtent.getResult(ReportExtent.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- register -->
-        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="1" started-at="2018-05-18T13:54:33Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T13:54:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Pijama Adulto Spiderman]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[BA]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Fluxo_de_Compras -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Fluxo_de_Compras status=SKIP method=TestesCompra.Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Tried to run command without establishing a connection
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:291)
-	at com.lua.webbuyer.utils.getScreenshot.Capture(getScreenshot.java:24)
-	at com.lua.webbuyer.extent.reports.ReportExtent.getResult(ReportExtent.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- register -->
-        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="1" started-at="2018-05-18T13:54:33Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T13:54:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Pijama Adulto Spiderman]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[CE]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Fluxo_de_Compras -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Fluxo_de_Compras status=SKIP method=TestesCompra.Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Tried to run command without establishing a connection
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:291)
-	at com.lua.webbuyer.utils.getScreenshot.Capture(getScreenshot.java:24)
-	at com.lua.webbuyer.extent.reports.ReportExtent.getResult(ReportExtent.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- register -->
-        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="2" started-at="2018-05-18T13:54:33Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T13:54:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Pijama Adulto Spiderman]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[DF]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Fluxo_de_Compras -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Fluxo_de_Compras status=SKIP method=TestesCompra.Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Tried to run command without establishing a connection
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:291)
-	at com.lua.webbuyer.utils.getScreenshot.Capture(getScreenshot.java:24)
-	at com.lua.webbuyer.extent.reports.ReportExtent.getResult(ReportExtent.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- register -->
-        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="1" started-at="2018-05-18T13:54:33Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T13:54:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Pijama Adulto Spiderman]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ES]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Fluxo_de_Compras -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Fluxo_de_Compras status=SKIP method=TestesCompra.Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Tried to run command without establishing a connection
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:291)
-	at com.lua.webbuyer.utils.getScreenshot.Capture(getScreenshot.java:24)
-	at com.lua.webbuyer.extent.reports.ReportExtent.getResult(ReportExtent.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- register -->
-        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="1" started-at="2018-05-18T13:54:33Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T13:54:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Pijama Adulto Spiderman]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[GO]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Fluxo_de_Compras -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Fluxo_de_Compras status=SKIP method=TestesCompra.Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Tried to run command without establishing a connection
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:291)
-	at com.lua.webbuyer.utils.getScreenshot.Capture(getScreenshot.java:24)
-	at com.lua.webbuyer.extent.reports.ReportExtent.getResult(ReportExtent.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- register -->
-        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="1" started-at="2018-05-18T13:54:33Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T13:54:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Pijama Adulto Spiderman]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[MA]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Fluxo_de_Compras -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Fluxo_de_Compras status=SKIP method=TestesCompra.Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Tried to run command without establishing a connection
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:291)
-	at com.lua.webbuyer.utils.getScreenshot.Capture(getScreenshot.java:24)
-	at com.lua.webbuyer.extent.reports.ReportExtent.getResult(ReportExtent.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- register -->
-        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="1" started-at="2018-05-18T13:54:33Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T13:54:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Pijama Adulto Spiderman]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[MG]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Fluxo_de_Compras -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Fluxo_de_Compras status=SKIP method=TestesCompra.Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Tried to run command without establishing a connection
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:291)
-	at com.lua.webbuyer.utils.getScreenshot.Capture(getScreenshot.java:24)
-	at com.lua.webbuyer.extent.reports.ReportExtent.getResult(ReportExtent.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- register -->
-        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="1" started-at="2018-05-18T13:54:33Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T13:54:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Pijama Adulto Spiderman]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[MS]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Fluxo_de_Compras -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Fluxo_de_Compras status=SKIP method=TestesCompra.Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Tried to run command without establishing a connection
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:291)
-	at com.lua.webbuyer.utils.getScreenshot.Capture(getScreenshot.java:24)
-	at com.lua.webbuyer.extent.reports.ReportExtent.getResult(ReportExtent.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- register -->
-        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="1" started-at="2018-05-18T13:54:33Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T13:54:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Pijama Adulto Spiderman]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[MT]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Fluxo_de_Compras -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Fluxo_de_Compras status=SKIP method=TestesCompra.Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Tried to run command without establishing a connection
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:291)
-	at com.lua.webbuyer.utils.getScreenshot.Capture(getScreenshot.java:24)
-	at com.lua.webbuyer.extent.reports.ReportExtent.getResult(ReportExtent.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- register -->
-        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="1" started-at="2018-05-18T13:54:33Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T13:54:33Z">
+        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="1" started-at="2018-05-18T15:23:46Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T15:23:46Z">
           <params>
             <param index="0">
               <value>
@@ -1030,7 +860,7 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Fluxo_de_Compras -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
+        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T15:23:46Z" finished-at="2018-05-18T15:23:46Z">
           <params>
             <param index="0">
               <value>
@@ -1044,16 +874,16 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2619, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: bca765ab-e851-8142-ab5b-8adb43ecc821]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2619, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: bca765ab-e851-8142-ab5b-8adb43ecc821
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -1070,11 +900,11 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
+        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T15:23:46Z" finished-at="2018-05-18T15:23:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="1" started-at="2018-05-18T13:54:33Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T13:54:33Z">
+        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="1" started-at="2018-05-18T15:23:46Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T15:23:46Z">
           <params>
             <param index="0">
               <value>
@@ -1090,7 +920,7 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Fluxo_de_Compras -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
+        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T15:23:46Z" finished-at="2018-05-18T15:23:46Z">
           <params>
             <param index="0">
               <value>
@@ -1104,16 +934,16 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2619, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: bca765ab-e851-8142-ab5b-8adb43ecc821]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2619, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: bca765ab-e851-8142-ab5b-8adb43ecc821
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -1130,11 +960,11 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
+        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T15:23:46Z" finished-at="2018-05-18T15:23:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="1" started-at="2018-05-18T13:54:33Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T13:54:33Z">
+        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="1" started-at="2018-05-18T15:23:46Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T15:23:46Z">
           <params>
             <param index="0">
               <value>
@@ -1150,7 +980,7 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Fluxo_de_Compras -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
+        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T15:23:46Z" finished-at="2018-05-18T15:23:46Z">
           <params>
             <param index="0">
               <value>
@@ -1164,16 +994,16 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2619, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: bca765ab-e851-8142-ab5b-8adb43ecc821]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2619, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: bca765ab-e851-8142-ab5b-8adb43ecc821
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -1190,11 +1020,11 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
+        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T15:23:46Z" finished-at="2018-05-18T15:23:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="2" started-at="2018-05-18T13:54:33Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T13:54:33Z">
+        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="3" started-at="2018-05-18T15:23:46Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T15:23:46Z">
           <params>
             <param index="0">
               <value>
@@ -1210,7 +1040,7 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Fluxo_de_Compras -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
+        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T15:23:46Z" finished-at="2018-05-18T15:23:46Z">
           <params>
             <param index="0">
               <value>
@@ -1224,16 +1054,16 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2619, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: bca765ab-e851-8142-ab5b-8adb43ecc821]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2619, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: bca765ab-e851-8142-ab5b-8adb43ecc821
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -1250,11 +1080,11 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
+        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T15:23:46Z" finished-at="2018-05-18T15:23:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="1" started-at="2018-05-18T13:54:33Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T13:54:33Z">
+        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="3" started-at="2018-05-18T15:23:46Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T15:23:46Z">
           <params>
             <param index="0">
               <value>
@@ -1270,7 +1100,7 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Fluxo_de_Compras -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
+        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T15:23:46Z" finished-at="2018-05-18T15:23:46Z">
           <params>
             <param index="0">
               <value>
@@ -1284,16 +1114,16 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2619, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: bca765ab-e851-8142-ab5b-8adb43ecc821]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2619, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: bca765ab-e851-8142-ab5b-8adb43ecc821
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -1310,11 +1140,11 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
+        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T15:23:46Z" finished-at="2018-05-18T15:23:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="1" started-at="2018-05-18T13:54:33Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T13:54:33Z">
+        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="3" started-at="2018-05-18T15:23:46Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T15:23:46Z">
           <params>
             <param index="0">
               <value>
@@ -1330,7 +1160,7 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Fluxo_de_Compras -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
+        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T15:23:46Z" finished-at="2018-05-18T15:23:46Z">
           <params>
             <param index="0">
               <value>
@@ -1344,16 +1174,16 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2619, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: bca765ab-e851-8142-ab5b-8adb43ecc821]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2619, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: bca765ab-e851-8142-ab5b-8adb43ecc821
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -1370,11 +1200,11 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
+        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T15:23:46Z" finished-at="2018-05-18T15:23:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="0" started-at="2018-05-18T13:54:33Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T13:54:33Z">
+        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="1" started-at="2018-05-18T15:23:46Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T15:23:46Z">
           <params>
             <param index="0">
               <value>
@@ -1390,7 +1220,7 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Fluxo_de_Compras -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:33Z" finished-at="2018-05-18T13:54:33Z">
+        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T15:23:46Z" finished-at="2018-05-18T15:23:46Z">
           <params>
             <param index="0">
               <value>
@@ -1404,16 +1234,16 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2619, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: bca765ab-e851-8142-ab5b-8adb43ecc821]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2619, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: bca765ab-e851-8142-ab5b-8adb43ecc821
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -1430,11 +1260,11 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:34Z" finished-at="2018-05-18T13:54:34Z">
+        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T15:23:46Z" finished-at="2018-05-18T15:23:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="2" started-at="2018-05-18T13:54:34Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T13:54:34Z">
+        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="4" started-at="2018-05-18T15:23:46Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T15:23:46Z">
           <params>
             <param index="0">
               <value>
@@ -1450,7 +1280,7 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Fluxo_de_Compras -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:34Z" finished-at="2018-05-18T13:54:34Z">
+        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T15:23:46Z" finished-at="2018-05-18T15:23:46Z">
           <params>
             <param index="0">
               <value>
@@ -1464,16 +1294,16 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2619, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: bca765ab-e851-8142-ab5b-8adb43ecc821]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2619, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: bca765ab-e851-8142-ab5b-8adb43ecc821
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -1490,11 +1320,11 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:34Z" finished-at="2018-05-18T13:54:34Z">
+        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T15:23:46Z" finished-at="2018-05-18T15:23:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="1" started-at="2018-05-18T13:54:34Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T13:54:34Z">
+        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="1" started-at="2018-05-18T15:23:46Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T15:23:46Z">
           <params>
             <param index="0">
               <value>
@@ -1510,7 +1340,7 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Fluxo_de_Compras -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:34Z" finished-at="2018-05-18T13:54:34Z">
+        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T15:23:46Z" finished-at="2018-05-18T15:23:46Z">
           <params>
             <param index="0">
               <value>
@@ -1524,16 +1354,16 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2619, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: bca765ab-e851-8142-ab5b-8adb43ecc821]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2619, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: bca765ab-e851-8142-ab5b-8adb43ecc821
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -1550,11 +1380,11 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:34Z" finished-at="2018-05-18T13:54:34Z">
+        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T15:23:46Z" finished-at="2018-05-18T15:23:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="1" started-at="2018-05-18T13:54:34Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T13:54:34Z">
+        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="1" started-at="2018-05-18T15:23:46Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T15:23:46Z">
           <params>
             <param index="0">
               <value>
@@ -1570,7 +1400,7 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Fluxo_de_Compras -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:34Z" finished-at="2018-05-18T13:54:34Z">
+        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T15:23:46Z" finished-at="2018-05-18T15:23:46Z">
           <params>
             <param index="0">
               <value>
@@ -1584,16 +1414,16 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2619, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: bca765ab-e851-8142-ab5b-8adb43ecc821]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2619, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: bca765ab-e851-8142-ab5b-8adb43ecc821
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -1610,11 +1440,11 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:34Z" finished-at="2018-05-18T13:54:34Z">
+        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T15:23:46Z" finished-at="2018-05-18T15:23:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="1" started-at="2018-05-18T13:54:34Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T13:54:34Z">
+        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="1" started-at="2018-05-18T15:23:46Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T15:23:46Z">
           <params>
             <param index="0">
               <value>
@@ -1630,7 +1460,7 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Fluxo_de_Compras -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:34Z" finished-at="2018-05-18T13:54:34Z">
+        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T15:23:46Z" finished-at="2018-05-18T15:23:46Z">
           <params>
             <param index="0">
               <value>
@@ -1644,16 +1474,16 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2619, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: bca765ab-e851-8142-ab5b-8adb43ecc821]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2619, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: bca765ab-e851-8142-ab5b-8adb43ecc821
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -1670,11 +1500,11 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:34Z" finished-at="2018-05-18T13:54:34Z">
+        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T15:23:46Z" finished-at="2018-05-18T15:23:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="3" started-at="2018-05-18T13:54:34Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T13:54:34Z">
+        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="1" started-at="2018-05-18T15:23:46Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T15:23:46Z">
           <params>
             <param index="0">
               <value>
@@ -1690,7 +1520,7 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Fluxo_de_Compras -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:34Z" finished-at="2018-05-18T13:54:34Z">
+        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T15:23:46Z" finished-at="2018-05-18T15:23:46Z">
           <params>
             <param index="0">
               <value>
@@ -1704,16 +1534,16 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2619, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: bca765ab-e851-8142-ab5b-8adb43ecc821]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2619, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: bca765ab-e851-8142-ab5b-8adb43ecc821
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -1730,11 +1560,11 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:34Z" finished-at="2018-05-18T13:54:34Z">
+        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T15:23:46Z" finished-at="2018-05-18T15:23:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="1" started-at="2018-05-18T13:54:34Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T13:54:34Z">
+        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="1" started-at="2018-05-18T15:23:46Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T15:23:46Z">
           <params>
             <param index="0">
               <value>
@@ -1750,7 +1580,7 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Fluxo_de_Compras -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:34Z" finished-at="2018-05-18T13:54:34Z">
+        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T15:23:46Z" finished-at="2018-05-18T15:23:46Z">
           <params>
             <param index="0">
               <value>
@@ -1764,16 +1594,16 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2619, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: bca765ab-e851-8142-ab5b-8adb43ecc821]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2619, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: bca765ab-e851-8142-ab5b-8adb43ecc821
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -1790,11 +1620,11 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:34Z" finished-at="2018-05-18T13:54:34Z">
+        <test-method status="SKIP" signature="register(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="register" is-config="true" duration-ms="0" started-at="2018-05-18T15:23:46Z" finished-at="2018-05-18T15:23:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="1" started-at="2018-05-18T13:54:34Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T13:54:34Z">
+        <test-method status="SKIP" signature="Fluxo_de_Compras(java.lang.String, java.lang.String)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="Fluxo_de_Compras" duration-ms="1" started-at="2018-05-18T15:23:46Z" description="Simula uma compra em cada UF disponível." data-provider="test1" finished-at="2018-05-18T15:23:46Z">
           <params>
             <param index="0">
               <value>
@@ -1810,7 +1640,7 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Fluxo_de_Compras -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T13:54:34Z" finished-at="2018-05-18T13:54:34Z">
+        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="getResult" is-config="true" duration-ms="0" started-at="2018-05-18T15:23:46Z" finished-at="2018-05-18T15:23:46Z">
           <params>
             <param index="0">
               <value>
@@ -1824,16 +1654,16 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2619, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: bca765ab-e851-8142-ab5b-8adb43ecc821]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'Guminis-Mac-mini.local', ip: 'fe80:0:0:0:14df:14b4:e921:a3b6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2415, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 2619, moz:profile: /var/folders/pp/1jtdrljj4ls..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.5.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: bca765ab-e851-8142-ab5b-8adb43ecc821
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -1850,7 +1680,7 @@ Session ID: ea043b64-5cce-e545-b4c1-6cedd74d5658
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="cleanUp" is-config="true" duration-ms="460" started-at="2018-05-18T13:54:34Z" finished-at="2018-05-18T13:54:34Z">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.lua.webbuyer.test.TestesCompra@2173f6d9]" name="cleanUp" is-config="true" duration-ms="555" started-at="2018-05-18T15:23:46Z" finished-at="2018-05-18T15:23:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->

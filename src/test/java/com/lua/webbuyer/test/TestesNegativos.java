@@ -15,12 +15,13 @@ public class TestesNegativos extends ReportExtent {
 	
 	
 	
+	
 	@Test(priority=2, testName = "Teste Negativo: Campo 'Nome' Invalido", description="Força a mensagem de warning no campo 'Nome' na tela de Login.", groups = "Teste Negativo")
 	public void testeNomeInvalido() {
 		
 		try {	
 			LoginPageActions actions = new LoginPageActions(Driver.driver);
-			actions.verifyInvalidField(1);
+			actions.validateInvalidFieldSignup(1);
 			LOG.loggerPass("Warning do campo'Nome' exibido corretamente!");
 		}catch(AssertionError e) {
 			Assert.fail("Test Failed: " + e.getMessage());
@@ -33,7 +34,7 @@ public class TestesNegativos extends ReportExtent {
 		
 		try {	
 			LoginPageActions actions = new LoginPageActions(Driver.driver);
-			actions.verifyInvalidField(2);
+			actions.validateInvalidFieldSignup(2);
 			LOG.loggerPass("Warning do campo 'E-mail' exibido corretamente!");
 		}catch(AssertionError e) {
 			Assert.fail("Test Failed: " + e.getMessage());
@@ -46,7 +47,7 @@ public class TestesNegativos extends ReportExtent {
 		
 		try {	
 			LoginPageActions actions = new LoginPageActions(Driver.driver);
-			actions.verifyInvalidField(3);
+			actions.validateInvalidFieldSignup(3);
 			LOG.loggerPass("Warning do campo 'CPF' exibido corretamente!");
 		}catch(AssertionError e) {
 			Assert.fail("Test Failed: " + e.getMessage());
@@ -59,7 +60,7 @@ public class TestesNegativos extends ReportExtent {
 		
 		try {	
 			LoginPageActions actions = new LoginPageActions(Driver.driver);
-			actions.verifyEmptyField(1);
+			actions.validateEmptyFieldSignup(1);
 			LOG.loggerPass("Warning do campo'Nome' exibido corretamente!");
 		}catch(AssertionError e) {
 			Assert.fail("Test Failed: " + e.getMessage());
@@ -72,7 +73,7 @@ public class TestesNegativos extends ReportExtent {
 		
 		try {	
 			LoginPageActions actions = new LoginPageActions(Driver.driver);
-			actions.verifyEmptyField(2);
+			actions.validateEmptyFieldSignup(2);
 			LOG.loggerPass("Warning do campo 'E-mail' exibido corretamente!");
 		}catch(AssertionError e) {
 			Assert.fail("Test Failed: " + e.getMessage());
@@ -85,7 +86,7 @@ public class TestesNegativos extends ReportExtent {
 		
 		try {	
 			LoginPageActions actions = new LoginPageActions(Driver.driver);
-			actions.verifyEmptyField(3);
+			actions.validateEmptyFieldSignup(3);
 			LOG.loggerPass("Warning do campo 'CPF' exibido corretamente!");
 		}catch(AssertionError e) {
 			Assert.fail("Test Failed: " + e.getMessage());
@@ -98,7 +99,7 @@ public class TestesNegativos extends ReportExtent {
 		
 		try {	
 			LoginPageActions actions = new LoginPageActions(Driver.driver);
-			actions.verifyEmptyField(4);
+			actions.validateEmptyFieldSignup(4);
 			LOG.loggerPass("Warning do campo 'Senha de cadastro' exibido corretamente!");
 		}catch(AssertionError e) {
 			Assert.fail("Test Failed: " + e.getMessage());
