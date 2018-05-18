@@ -1,4 +1,4 @@
-package com.lua.webbuyer.extent.reports;
+package com.lua.webbuyer.resources;
 
 import java.io.File;
 import java.io.IOException;

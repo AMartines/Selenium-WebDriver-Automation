@@ -1,4 +1,4 @@
-package com.lua.webbuyer.listners;
+package com.lua.webbuyer.resources;
 
 import org.testng.IRetryAnalyzer;
 
@@ -10,7 +10,7 @@ public class Retry implements IRetryAnalyzer {
 
     private int retryCount = 0;
 
-    private int maxRetryCount = 0;
+    private int maxRetryCount = 2;
 
 
 

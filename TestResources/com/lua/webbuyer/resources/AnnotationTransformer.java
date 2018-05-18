@@ -1,4 +1,4 @@
-package com.lua.webbuyer.listners;
+package com.lua.webbuyer.resources;
 
 import java.lang.reflect.Constructor;
 

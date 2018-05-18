@@ -6,10 +6,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
-import com.lua.webbuyer.extent.reports.ReportExtent;
 import com.lua.webbuyer.page.HomePage;
 import com.lua.webbuyer.page.LoginPage;
 import com.lua.webbuyer.param.LoginParams;
+import com.lua.webbuyer.resources.ReportExtent;
 import com.lua.webbuyer.utils.Common;
 import com.lua.webbuyer.utils.Selenium;
 

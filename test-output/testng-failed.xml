@@ -5,7 +5,7 @@
   <parameter name="Product" value="Pijama Adulto Spiderman"/>
   <parameter name="Browser" value="Firefox"/>
   <listeners>
-    <listener class-name="com.lua.webbuyer.listners.AnnotationTransformer"/>
+    <listener class-name="com.lua.webbuyer.resources.AnnotationTransformer"/>
   </listeners>
   <test name="Teste Compras(failed)">
     <parameter name="itemColorCode" value="11682"/>
@@ -14,16 +14,19 @@
     <classes>
       <class name="com.lua.webbuyer.test.TestesCompra">
         <methods>
-          <include name="register"/>
-          <include name="setup"/>
-          <include name="getResult"/>
           <include name="cleanUp"/>
-          <include name="Fluxo_de_Compras" invocation-numbers="12"/>
+          <include name="setup"/>
+          <include name="Fluxo_de_Compras"/>
+          <include name="getResult"/>
         </methods>
       </class> <!-- com.lua.webbuyer.test.TestesCompra -->
       <class name="com.lua.webbuyer.test.TestesNegativos">
         <methods>
+          <include name="testeNomeInvalido"/>
+          <include name="testeSenhaCadastroEmBranco"/>
           <include name="register"/>
+          <include name="testeNomeEmBranco"/>
+          <include name="testeCpfInvalido"/>
           <include name="getResult"/>
         </methods>
       </class> <!-- com.lua.webbuyer.test.TestesNegativos -->

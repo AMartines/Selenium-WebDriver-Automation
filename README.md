@@ -4,6 +4,8 @@
 
 Framework based on Selenium WebDriver 3.11 using Page Objects Model(POM).
 
+Using Retry.class to retry failed tests for three times before realy fail the test case.
+
 Using Extent Reports to generate evidences.
 
 Using Maven to upload dependencies.

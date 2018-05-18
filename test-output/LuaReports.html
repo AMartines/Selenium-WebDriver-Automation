@@ -40,6 +40,7 @@
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
 				<li class='waves-effect'><a href='#!' view='author-view' onclick="configureView(3)"><i class='material-icons'>person</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -53,7 +54,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>May 18, 2018 03:04:44 PM</span>
+                    <span class='label suite-start-time blue darken-3'>May 18, 2018 04:30:49 PM</span>
 				</a>
 			</li>
 			<li>
@@ -93,7 +94,6 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>TesteNegativo</a></li>
-					<li><a href='#'>FluxodeCompras-Test</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -141,10 +141,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='95%'><span class='strong'>19</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='80%'><span class='strong'>4</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='5%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='20%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -156,10 +156,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='23.899%'><span class='strong'>38</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='28.571%'><span class='strong'>6</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0.629%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='75.472%'>120</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='9.524%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='61.905%'>13</span> others
 				</div>
 			</div>
 		</div>
@@ -177,14 +177,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>testeCpfEmBranco</span>
-						<span class='test-time'>May 18, 2018 03:04:44 PM</span>
+						<span class='test-time'>May 18, 2018 04:30:49 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 18, 2018 03:04:44 PM</span>
-	<span class='label end-time'>May 18, 2018 03:05:06 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 22s+499ms</span>
+	<span class='label start-time'>May 18, 2018 04:30:49 PM</span>
+	<span class='label end-time'>May 18, 2018 04:31:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 26s+729ms</span>
 </div>
 	<div class='test-desc'>Força a mensagem de warning no campo 'CPF' na tela de Login. </div>
 	<div class='test-attributes'>
@@ -207,50 +207,50 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:04:44 PM</td>
+					<td class='timestamp'>4:30:49 PM</td>
 					<td class='step-details'>Iniciando testeCpfEmBranco</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:05:06 PM</td>
+					<td class='timestamp'>4:31:16 PM</td>
 					<td class='step-details'>Mensagem de aviso esperada: 'O campo "CPF" é obrigatório.'</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:05:06 PM</td>
+					<td class='timestamp'>4:31:16 PM</td>
 					<td class='step-details'>Mensagem retornada pelo sistema: 'O campo "CPF" é obrigatório.'</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:05:06 PM</td>
+					<td class='timestamp'>4:31:16 PM</td>
 					<td class='step-details'>Warning do campo 'CPF' exibido corretamente!</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:05:06 PM</td>
+					<td class='timestamp'>4:31:16 PM</td>
 					<td class='step-details'><span class='label white-text green'>Test: testeCpfEmBranco PASS</span></td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
 							<ul class='screenshots'>
-								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeCpfEmBranco-2018_05_18 006.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeCpfEmBranco-2018_05_18 006.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeCpfEmBranco-2018_05_18 006.png'></li>
+								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeCpfEmBranco-2018_05_18 016.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeCpfEmBranco-2018_05_18 016.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeCpfEmBranco-2018_05_18 016.png'></li>
 							</ul>
 					</div>
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>testeCpfInvalido</span>
-						<span class='test-time'>May 18, 2018 03:05:07 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>May 18, 2018 04:31:17 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 18, 2018 03:05:07 PM</span>
-	<span class='label end-time'>May 18, 2018 03:05:22 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+468ms</span>
+	<span class='label start-time'>May 18, 2018 04:31:17 PM</span>
+	<span class='label end-time'>May 18, 2018 04:31:31 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+418ms</span>
 </div>
 	<div class='test-desc'>Força a mensagem de warning no campo 'CPF' na tela de Login. </div>
 	<div class='test-attributes'>
@@ -273,34 +273,37 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:05:07 PM</td>
+					<td class='timestamp'>4:31:17 PM</td>
 					<td class='step-details'>Iniciando testeCpfInvalido</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:05:21 PM</td>
+					<td class='timestamp'>4:31:30 PM</td>
 					<td class='step-details'>Mensagem de aviso esperada: 'O campo CPF deve conter 11 caracteres.'</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:05:21 PM</td>
-					<td class='step-details'>Mensagem retornada pelo sistema: 'O campo CPF deve conter 11 caracteres.'</td>
+					<td class='timestamp'>4:31:30 PM</td>
+					<td class='step-details'>Mensagem retornada pelo sistema: 'O campo "CPF" é obrigatório.'</td>
 				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:05:21 PM</td>
-					<td class='step-details'>Warning do campo 'CPF' exibido corretamente!</td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>4:31:31 PM</td>
+					<td class='step-details'><span class='label white-text red'>Test: testeCpfInvalido FAILED</span></td>
 				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:05:22 PM</td>
-					<td class='step-details'><span class='label white-text green'>Test: testeCpfInvalido PASS</span></td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>4:31:31 PM</td>
+					<td class='step-details'><pre>junit.framework.AssertionFailedError: Test Failed: Mensagem de aviso não exibida ou não confere com o esperado: 'O campo CPF deve conter 11 caracteres.' expected [true] but found [false]
+	at junit.framework.Assert.fail(Assert.java:57)
+	at com.lua.webbuyer.test.TestesNegativos.testeCpfInvalido(TestesNegativos.java:53)
+</pre></td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
 							<ul class='screenshots'>
-								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeCpfInvalido-2018_05_18 021.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeCpfInvalido-2018_05_18 021.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeCpfInvalido-2018_05_18 021.png'></li>
+								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeCpfInvalido-2018_05_18 030.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeCpfInvalido-2018_05_18 030.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeCpfInvalido-2018_05_18 030.png'></li>
 							</ul>
 					</div>
 				</li>
@@ -309,14 +312,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'>testeEmailEmBranco</span>
-						<span class='test-time'>May 18, 2018 03:05:22 PM</span>
+						<span class='test-time'>May 18, 2018 04:31:32 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 18, 2018 03:05:22 PM</span>
-	<span class='label end-time'>May 18, 2018 03:05:40 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 17s+479ms</span>
+	<span class='label start-time'>May 18, 2018 04:31:32 PM</span>
+	<span class='label end-time'>May 18, 2018 04:31:45 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+488ms</span>
 </div>
 	<div class='test-desc'>Força a mensagem de warning no campo 'E-Mail' na tela de Login. </div>
 	<div class='test-attributes'>
@@ -339,34 +342,34 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:05:22 PM</td>
+					<td class='timestamp'>4:31:32 PM</td>
 					<td class='step-details'>Iniciando testeEmailEmBranco</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:05:40 PM</td>
+					<td class='timestamp'>4:31:45 PM</td>
 					<td class='step-details'>Mensagem de aviso esperada: 'O campo "E-mail" é obrigatório.'</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:05:40 PM</td>
+					<td class='timestamp'>4:31:45 PM</td>
 					<td class='step-details'>Mensagem retornada pelo sistema: 'O campo "E-mail" é obrigatório.'</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:05:40 PM</td>
+					<td class='timestamp'>4:31:45 PM</td>
 					<td class='step-details'>Warning do campo 'E-mail' exibido corretamente!</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:05:40 PM</td>
+					<td class='timestamp'>4:31:45 PM</td>
 					<td class='step-details'><span class='label white-text green'>Test: testeEmailEmBranco PASS</span></td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
 							<ul class='screenshots'>
-								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeEmailEmBranco-2018_05_18 040.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeEmailEmBranco-2018_05_18 040.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeEmailEmBranco-2018_05_18 040.png'></li>
+								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeEmailEmBranco-2018_05_18 045.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeEmailEmBranco-2018_05_18 045.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeEmailEmBranco-2018_05_18 045.png'></li>
 							</ul>
 					</div>
 				</li>
@@ -375,14 +378,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
 						<span class='test-name'>testeEmailInvalido</span>
-						<span class='test-time'>May 18, 2018 03:05:41 PM</span>
+						<span class='test-time'>May 18, 2018 04:31:47 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 18, 2018 03:05:41 PM</span>
-	<span class='label end-time'>May 18, 2018 03:05:54 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+585ms</span>
+	<span class='label start-time'>May 18, 2018 04:31:47 PM</span>
+	<span class='label end-time'>May 18, 2018 04:32:02 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+446ms</span>
 </div>
 	<div class='test-desc'>Força a mensagem de warning no campo 'E-Mail' na tela de Login. </div>
 	<div class='test-attributes'>
@@ -405,34 +408,34 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:05:41 PM</td>
+					<td class='timestamp'>4:31:47 PM</td>
 					<td class='step-details'>Iniciando testeEmailInvalido</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:05:54 PM</td>
+					<td class='timestamp'>4:32:02 PM</td>
 					<td class='step-details'>Mensagem de aviso esperada: 'E-mail inválido.'</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:05:54 PM</td>
+					<td class='timestamp'>4:32:02 PM</td>
 					<td class='step-details'>Mensagem retornada pelo sistema: 'E-mail inválido.'</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:05:54 PM</td>
+					<td class='timestamp'>4:32:02 PM</td>
 					<td class='step-details'>Warning do campo 'E-mail' exibido corretamente!</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:05:54 PM</td>
+					<td class='timestamp'>4:32:02 PM</td>
 					<td class='step-details'><span class='label white-text green'>Test: testeEmailInvalido PASS</span></td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
 							<ul class='screenshots'>
-								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeEmailInvalido-2018_05_18 054.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeEmailInvalido-2018_05_18 054.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeEmailInvalido-2018_05_18 054.png'></li>
+								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeEmailInvalido-2018_05_18 002.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeEmailInvalido-2018_05_18 002.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeEmailInvalido-2018_05_18 002.png'></li>
 							</ul>
 					</div>
 				</li>
@@ -441,14 +444,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
 					<div class='test-heading'>
 						<span class='test-name'>testeNomeEmBranco</span>
-						<span class='test-time'>May 18, 2018 03:05:55 PM</span>
+						<span class='test-time'>May 18, 2018 04:32:03 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 18, 2018 03:05:55 PM</span>
-	<span class='label end-time'>May 18, 2018 03:06:09 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+567ms</span>
+	<span class='label start-time'>May 18, 2018 04:32:03 PM</span>
+	<span class='label end-time'>May 18, 2018 04:32:03 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 	<div class='test-desc'>Força a mensagem de warning no campo 'Nome' na tela de Login. </div>
 	<div class='test-attributes'>
@@ -471,1313 +474,8 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:05:55 PM</td>
+					<td class='timestamp'>4:32:03 PM</td>
 					<td class='step-details'>Iniciando testeNomeEmBranco</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:06:09 PM</td>
-					<td class='step-details'>Mensagem de aviso esperada: 'O campo "Nome" é obrigatório.'</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:06:09 PM</td>
-					<td class='step-details'>Mensagem retornada pelo sistema: 'O campo "Nome" é obrigatório.'</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:06:09 PM</td>
-					<td class='step-details'>Warning do campo'Nome' exibido corretamente!</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:06:09 PM</td>
-					<td class='step-details'><span class='label white-text green'>Test: testeNomeEmBranco PASS</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeNomeEmBranco-2018_05_18 009.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeNomeEmBranco-2018_05_18 009.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeNomeEmBranco-2018_05_18 009.png'></li>
-							</ul>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
-					<div class='test-heading'>
-						<span class='test-name'>testeNomeInvalido</span>
-						<span class='test-time'>May 18, 2018 03:06:10 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 18, 2018 03:06:10 PM</span>
-	<span class='label end-time'>May 18, 2018 03:06:24 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+906ms</span>
-</div>
-	<div class='test-desc'>Força a mensagem de warning no campo 'Nome' na tela de Login. </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>TesteNegativo</span>
-			</div>
-			<div class='author-list'>
-				<span class='author label white-text'>Author:AndréMartines</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:06:10 PM</td>
-					<td class='step-details'>Iniciando testeNomeInvalido</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:06:23 PM</td>
-					<td class='step-details'>Mensagem de aviso esperada: 'Seu nome deve ter ao menos 3 caracteres.'</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:06:23 PM</td>
-					<td class='step-details'>Mensagem retornada pelo sistema: 'Seu nome deve ter ao menos 3 caracteres.'</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:06:23 PM</td>
-					<td class='step-details'>Warning do campo'Nome' exibido corretamente!</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:06:24 PM</td>
-					<td class='step-details'><span class='label white-text green'>Test: testeNomeInvalido PASS</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeNomeInvalido-2018_05_18 023.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeNomeInvalido-2018_05_18 023.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeNomeInvalido-2018_05_18 023.png'></li>
-							</ul>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
-					<div class='test-heading'>
-						<span class='test-name'>testeSenhaCadastroEmBranco</span>
-						<span class='test-time'>May 18, 2018 03:06:26 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 18, 2018 03:06:26 PM</span>
-	<span class='label end-time'>May 18, 2018 03:06:42 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+477ms</span>
-</div>
-	<div class='test-desc'>Força a mensagem de warning no campo 'Senha de cadastro' na tela de Login. </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>TesteNegativo</span>
-			</div>
-			<div class='author-list'>
-				<span class='author label white-text'>Author:AndréMartines</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:06:26 PM</td>
-					<td class='step-details'>Iniciando testeSenhaCadastroEmBranco</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:06:42 PM</td>
-					<td class='step-details'>Mensagem de aviso esperada: 'O campo "senha" é obrigatório.'</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:06:42 PM</td>
-					<td class='step-details'>Mensagem retornada pelo sistema: 'O campo "senha" é obrigatório.'</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:06:42 PM</td>
-					<td class='step-details'>Warning do campo 'Senha de cadastro' exibido corretamente!</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:06:42 PM</td>
-					<td class='step-details'><span class='label white-text green'>Test: testeSenhaCadastroEmBranco PASS</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeSenhaCadastroEmBranco-2018_05_18 042.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeSenhaCadastroEmBranco-2018_05_18 042.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeSenhaCadastroEmBranco-2018_05_18 042.png'></li>
-							</ul>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
-					<div class='test-heading'>
-						<span class='test-name'>Fluxo_de_Compras</span>
-						<span class='test-time'>May 18, 2018 03:06:43 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 18, 2018 03:06:43 PM</span>
-	<span class='label end-time'>May 18, 2018 03:08:05 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 22s+534ms</span>
-</div>
-	<div class='test-desc'>Simula uma compra em cada UF disponível. </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>FluxodeCompras-Test</span>
-			</div>
-			<div class='author-list'>
-				<span class='author label white-text'>Author:AndréMartines</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:06:43 PM</td>
-					<td class='step-details'>Iniciando Fluxo_de_Compras</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:06:47 PM</td>
-					<td class='step-details'>Iniciando fluxo de compra para a UF:</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:06:47 PM</td>
-					<td class='step-details'>Executando Login com o usuário: 'compradorteste@mailinator.com', na loja 'http://musttest.hml.tenzen.com.br/'</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:06:59 PM</td>
-					<td class='step-details'>Login executado com sucesso!</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:07:09 PM</td>
-					<td class='step-details'>Pesquisando o produto: Pijama Adulto Spiderman</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:07:12 PM</td>
-					<td class='step-details'>Produto adicionado ao carrinho</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:07:14 PM</td>
-					<td class='step-details'>Preenchendo dados de shipment</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:07:23 PM</td>
-					<td class='step-details'>UF selecionada: 'AC'</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:08:05 PM</td>
-					<td class='step-details'>Compra executada com sucesso!</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:08:05 PM</td>
-					<td class='step-details'><span class='label white-text green'>Test: Fluxo_de_Compras PASS</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 005.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 005.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 005.png'></li>
-							</ul>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
-					<div class='test-heading'>
-						<span class='test-name'>Fluxo_de_Compras</span>
-						<span class='test-time'>May 18, 2018 03:08:06 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 18, 2018 03:08:06 PM</span>
-	<span class='label end-time'>May 18, 2018 03:09:35 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 29s+121ms</span>
-</div>
-	<div class='test-desc'>Simula uma compra em cada UF disponível. </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>FluxodeCompras-Test</span>
-			</div>
-			<div class='author-list'>
-				<span class='author label white-text'>Author:AndréMartines</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:08:06 PM</td>
-					<td class='step-details'>Iniciando Fluxo_de_Compras</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:08:12 PM</td>
-					<td class='step-details'>Iniciando fluxo de compra para a UF:</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:08:12 PM</td>
-					<td class='step-details'>Executando Login com o usuário: 'compradorteste@mailinator.com', na loja 'http://musttest.hml.tenzen.com.br/'</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:08:29 PM</td>
-					<td class='step-details'>Login executado com sucesso!</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:08:39 PM</td>
-					<td class='step-details'>Pesquisando o produto: Pijama Adulto Spiderman</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:08:43 PM</td>
-					<td class='step-details'>Produto adicionado ao carrinho</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:08:45 PM</td>
-					<td class='step-details'>Preenchendo dados de shipment</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:08:51 PM</td>
-					<td class='step-details'>UF selecionada: 'AL'</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:09:35 PM</td>
-					<td class='step-details'>Compra executada com sucesso!</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:09:35 PM</td>
-					<td class='step-details'><span class='label white-text green'>Test: Fluxo_de_Compras PASS</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 035.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 035.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 035.png'></li>
-							</ul>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
-					<div class='test-heading'>
-						<span class='test-name'>Fluxo_de_Compras</span>
-						<span class='test-time'>May 18, 2018 03:09:36 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 18, 2018 03:09:36 PM</span>
-	<span class='label end-time'>May 18, 2018 03:11:00 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 24s+127ms</span>
-</div>
-	<div class='test-desc'>Simula uma compra em cada UF disponível. </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>FluxodeCompras-Test</span>
-			</div>
-			<div class='author-list'>
-				<span class='author label white-text'>Author:AndréMartines</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:09:36 PM</td>
-					<td class='step-details'>Iniciando Fluxo_de_Compras</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:09:45 PM</td>
-					<td class='step-details'>Iniciando fluxo de compra para a UF:</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:09:45 PM</td>
-					<td class='step-details'>Executando Login com o usuário: 'compradorteste@mailinator.com', na loja 'http://musttest.hml.tenzen.com.br/'</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:09:58 PM</td>
-					<td class='step-details'>Login executado com sucesso!</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:10:09 PM</td>
-					<td class='step-details'>Pesquisando o produto: Pijama Adulto Spiderman</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:10:12 PM</td>
-					<td class='step-details'>Produto adicionado ao carrinho</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:10:13 PM</td>
-					<td class='step-details'>Preenchendo dados de shipment</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:10:19 PM</td>
-					<td class='step-details'>UF selecionada: 'AM'</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:11:00 PM</td>
-					<td class='step-details'>Compra executada com sucesso!</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:11:00 PM</td>
-					<td class='step-details'><span class='label white-text green'>Test: Fluxo_de_Compras PASS</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 000.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 000.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 000.png'></li>
-							</ul>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
-					<div class='test-heading'>
-						<span class='test-name'>Fluxo_de_Compras</span>
-						<span class='test-time'>May 18, 2018 03:11:01 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 18, 2018 03:11:01 PM</span>
-	<span class='label end-time'>May 18, 2018 03:12:21 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 20s+542ms</span>
-</div>
-	<div class='test-desc'>Simula uma compra em cada UF disponível. </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>FluxodeCompras-Test</span>
-			</div>
-			<div class='author-list'>
-				<span class='author label white-text'>Author:AndréMartines</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:11:01 PM</td>
-					<td class='step-details'>Iniciando Fluxo_de_Compras</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:11:06 PM</td>
-					<td class='step-details'>Iniciando fluxo de compra para a UF:</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:11:06 PM</td>
-					<td class='step-details'>Executando Login com o usuário: 'compradorteste@mailinator.com', na loja 'http://musttest.hml.tenzen.com.br/'</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:11:20 PM</td>
-					<td class='step-details'>Login executado com sucesso!</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:11:30 PM</td>
-					<td class='step-details'>Pesquisando o produto: Pijama Adulto Spiderman</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:11:33 PM</td>
-					<td class='step-details'>Produto adicionado ao carrinho</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:11:35 PM</td>
-					<td class='step-details'>Preenchendo dados de shipment</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:11:41 PM</td>
-					<td class='step-details'>UF selecionada: 'AP'</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:12:21 PM</td>
-					<td class='step-details'>Compra executada com sucesso!</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:12:21 PM</td>
-					<td class='step-details'><span class='label white-text green'>Test: Fluxo_de_Compras PASS</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 021.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 021.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 021.png'></li>
-							</ul>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
-					<div class='test-heading'>
-						<span class='test-name'>Fluxo_de_Compras</span>
-						<span class='test-time'>May 18, 2018 03:12:22 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 18, 2018 03:12:22 PM</span>
-	<span class='label end-time'>May 18, 2018 03:13:39 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 17s+439ms</span>
-</div>
-	<div class='test-desc'>Simula uma compra em cada UF disponível. </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>FluxodeCompras-Test</span>
-			</div>
-			<div class='author-list'>
-				<span class='author label white-text'>Author:AndréMartines</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:12:22 PM</td>
-					<td class='step-details'>Iniciando Fluxo_de_Compras</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:12:28 PM</td>
-					<td class='step-details'>Iniciando fluxo de compra para a UF:</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:12:28 PM</td>
-					<td class='step-details'>Executando Login com o usuário: 'compradorteste@mailinator.com', na loja 'http://musttest.hml.tenzen.com.br/'</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:12:40 PM</td>
-					<td class='step-details'>Login executado com sucesso!</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:12:50 PM</td>
-					<td class='step-details'>Pesquisando o produto: Pijama Adulto Spiderman</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:12:53 PM</td>
-					<td class='step-details'>Produto adicionado ao carrinho</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:12:54 PM</td>
-					<td class='step-details'>Preenchendo dados de shipment</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:13:01 PM</td>
-					<td class='step-details'>UF selecionada: 'BA'</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:13:39 PM</td>
-					<td class='step-details'>Compra executada com sucesso!</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:13:39 PM</td>
-					<td class='step-details'><span class='label white-text green'>Test: Fluxo_de_Compras PASS</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 039.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 039.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 039.png'></li>
-							</ul>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
-					<div class='test-heading'>
-						<span class='test-name'>Fluxo_de_Compras</span>
-						<span class='test-time'>May 18, 2018 03:13:40 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 18, 2018 03:13:40 PM</span>
-	<span class='label end-time'>May 18, 2018 03:15:09 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 29s+428ms</span>
-</div>
-	<div class='test-desc'>Simula uma compra em cada UF disponível. </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>FluxodeCompras-Test</span>
-			</div>
-			<div class='author-list'>
-				<span class='author label white-text'>Author:AndréMartines</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:13:40 PM</td>
-					<td class='step-details'>Iniciando Fluxo_de_Compras</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:13:45 PM</td>
-					<td class='step-details'>Iniciando fluxo de compra para a UF:</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:13:45 PM</td>
-					<td class='step-details'>Executando Login com o usuário: 'compradorteste@mailinator.com', na loja 'http://musttest.hml.tenzen.com.br/'</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:14:07 PM</td>
-					<td class='step-details'>Login executado com sucesso!</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:14:17 PM</td>
-					<td class='step-details'>Pesquisando o produto: Pijama Adulto Spiderman</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:14:21 PM</td>
-					<td class='step-details'>Produto adicionado ao carrinho</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:14:22 PM</td>
-					<td class='step-details'>Preenchendo dados de shipment</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:14:29 PM</td>
-					<td class='step-details'>UF selecionada: 'CE'</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:15:09 PM</td>
-					<td class='step-details'>Compra executada com sucesso!</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:15:09 PM</td>
-					<td class='step-details'><span class='label white-text green'>Test: Fluxo_de_Compras PASS</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 009.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 009.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 009.png'></li>
-							</ul>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
-					<div class='test-heading'>
-						<span class='test-name'>Fluxo_de_Compras</span>
-						<span class='test-time'>May 18, 2018 03:15:10 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 18, 2018 03:15:10 PM</span>
-	<span class='label end-time'>May 18, 2018 03:16:35 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 25s+195ms</span>
-</div>
-	<div class='test-desc'>Simula uma compra em cada UF disponível. </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>FluxodeCompras-Test</span>
-			</div>
-			<div class='author-list'>
-				<span class='author label white-text'>Author:AndréMartines</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:15:10 PM</td>
-					<td class='step-details'>Iniciando Fluxo_de_Compras</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:15:19 PM</td>
-					<td class='step-details'>Iniciando fluxo de compra para a UF:</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:15:19 PM</td>
-					<td class='step-details'>Executando Login com o usuário: 'compradorteste@mailinator.com', na loja 'http://musttest.hml.tenzen.com.br/'</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:15:35 PM</td>
-					<td class='step-details'>Login executado com sucesso!</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:15:45 PM</td>
-					<td class='step-details'>Pesquisando o produto: Pijama Adulto Spiderman</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:15:49 PM</td>
-					<td class='step-details'>Produto adicionado ao carrinho</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:15:50 PM</td>
-					<td class='step-details'>Preenchendo dados de shipment</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:15:57 PM</td>
-					<td class='step-details'>UF selecionada: 'DF'</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:16:35 PM</td>
-					<td class='step-details'>Compra executada com sucesso!</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:16:35 PM</td>
-					<td class='step-details'><span class='label white-text green'>Test: Fluxo_de_Compras PASS</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 035.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 035.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 035.png'></li>
-							</ul>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
-					<div class='test-heading'>
-						<span class='test-name'>Fluxo_de_Compras</span>
-						<span class='test-time'>May 18, 2018 03:16:36 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 18, 2018 03:16:36 PM</span>
-	<span class='label end-time'>May 18, 2018 03:18:03 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 26s+598ms</span>
-</div>
-	<div class='test-desc'>Simula uma compra em cada UF disponível. </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>FluxodeCompras-Test</span>
-			</div>
-			<div class='author-list'>
-				<span class='author label white-text'>Author:AndréMartines</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:16:36 PM</td>
-					<td class='step-details'>Iniciando Fluxo_de_Compras</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:16:42 PM</td>
-					<td class='step-details'>Iniciando fluxo de compra para a UF:</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:16:42 PM</td>
-					<td class='step-details'>Executando Login com o usuário: 'compradorteste@mailinator.com', na loja 'http://musttest.hml.tenzen.com.br/'</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:16:54 PM</td>
-					<td class='step-details'>Login executado com sucesso!</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:17:04 PM</td>
-					<td class='step-details'>Pesquisando o produto: Pijama Adulto Spiderman</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:17:08 PM</td>
-					<td class='step-details'>Produto adicionado ao carrinho</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:17:09 PM</td>
-					<td class='step-details'>Preenchendo dados de shipment</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:17:23 PM</td>
-					<td class='step-details'>UF selecionada: 'ES'</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:18:03 PM</td>
-					<td class='step-details'>Compra executada com sucesso!</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:18:03 PM</td>
-					<td class='step-details'><span class='label white-text green'>Test: Fluxo_de_Compras PASS</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 003.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 003.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 003.png'></li>
-							</ul>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
-					<div class='test-heading'>
-						<span class='test-name'>Fluxo_de_Compras</span>
-						<span class='test-time'>May 18, 2018 03:18:04 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 18, 2018 03:18:04 PM</span>
-	<span class='label end-time'>May 18, 2018 03:19:20 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 16s+930ms</span>
-</div>
-	<div class='test-desc'>Simula uma compra em cada UF disponível. </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>FluxodeCompras-Test</span>
-			</div>
-			<div class='author-list'>
-				<span class='author label white-text'>Author:AndréMartines</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:18:04 PM</td>
-					<td class='step-details'>Iniciando Fluxo_de_Compras</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:18:09 PM</td>
-					<td class='step-details'>Iniciando fluxo de compra para a UF:</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:18:09 PM</td>
-					<td class='step-details'>Executando Login com o usuário: 'compradorteste@mailinator.com', na loja 'http://musttest.hml.tenzen.com.br/'</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:18:22 PM</td>
-					<td class='step-details'>Login executado com sucesso!</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:18:32 PM</td>
-					<td class='step-details'>Pesquisando o produto: Pijama Adulto Spiderman</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:18:35 PM</td>
-					<td class='step-details'>Produto adicionado ao carrinho</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:18:37 PM</td>
-					<td class='step-details'>Preenchendo dados de shipment</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:18:42 PM</td>
-					<td class='step-details'>UF selecionada: 'GO'</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:19:20 PM</td>
-					<td class='step-details'>Compra executada com sucesso!</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:19:20 PM</td>
-					<td class='step-details'><span class='label white-text green'>Test: Fluxo_de_Compras PASS</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 020.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 020.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 020.png'></li>
-							</ul>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='17'>
-					<div class='test-heading'>
-						<span class='test-name'>Fluxo_de_Compras</span>
-						<span class='test-time'>May 18, 2018 03:19:21 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 18, 2018 03:19:21 PM</span>
-	<span class='label end-time'>May 18, 2018 03:20:49 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 27s+651ms</span>
-</div>
-	<div class='test-desc'>Simula uma compra em cada UF disponível. </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>FluxodeCompras-Test</span>
-			</div>
-			<div class='author-list'>
-				<span class='author label white-text'>Author:AndréMartines</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:19:21 PM</td>
-					<td class='step-details'>Iniciando Fluxo_de_Compras</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:19:28 PM</td>
-					<td class='step-details'>Iniciando fluxo de compra para a UF:</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:19:28 PM</td>
-					<td class='step-details'>Executando Login com o usuário: 'compradorteste@mailinator.com', na loja 'http://musttest.hml.tenzen.com.br/'</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:19:41 PM</td>
-					<td class='step-details'>Login executado com sucesso!</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:19:52 PM</td>
-					<td class='step-details'>Pesquisando o produto: Pijama Adulto Spiderman</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:19:55 PM</td>
-					<td class='step-details'>Produto adicionado ao carrinho</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:19:57 PM</td>
-					<td class='step-details'>Preenchendo dados de shipment</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:20:11 PM</td>
-					<td class='step-details'>UF selecionada: 'MA'</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:20:49 PM</td>
-					<td class='step-details'>Compra executada com sucesso!</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:20:49 PM</td>
-					<td class='step-details'><span class='label white-text green'>Test: Fluxo_de_Compras PASS</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 049.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 049.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 049.png'></li>
-							</ul>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='18'>
-					<div class='test-heading'>
-						<span class='test-name'>Fluxo_de_Compras</span>
-						<span class='test-time'>May 18, 2018 03:20:49 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 18, 2018 03:20:49 PM</span>
-	<span class='label end-time'>May 18, 2018 03:22:13 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 24s+20ms</span>
-</div>
-	<div class='test-desc'>Simula uma compra em cada UF disponível. </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>FluxodeCompras-Test</span>
-			</div>
-			<div class='author-list'>
-				<span class='author label white-text'>Author:AndréMartines</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:20:49 PM</td>
-					<td class='step-details'>Iniciando Fluxo_de_Compras</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:20:54 PM</td>
-					<td class='step-details'>Iniciando fluxo de compra para a UF:</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:20:54 PM</td>
-					<td class='step-details'>Executando Login com o usuário: 'compradorteste@mailinator.com', na loja 'http://musttest.hml.tenzen.com.br/'</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:21:15 PM</td>
-					<td class='step-details'>Login executado com sucesso!</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:21:25 PM</td>
-					<td class='step-details'>Pesquisando o produto: Pijama Adulto Spiderman</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:21:28 PM</td>
-					<td class='step-details'>Produto adicionado ao carrinho</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:21:29 PM</td>
-					<td class='step-details'>Preenchendo dados de shipment</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:21:36 PM</td>
-					<td class='step-details'>UF selecionada: 'MG'</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:22:13 PM</td>
-					<td class='step-details'>Compra executada com sucesso!</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:22:13 PM</td>
-					<td class='step-details'><span class='label white-text green'>Test: Fluxo_de_Compras PASS</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 013.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 013.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 013.png'></li>
-							</ul>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='19'>
-					<div class='test-heading'>
-						<span class='test-name'>Fluxo_de_Compras</span>
-						<span class='test-time'>May 18, 2018 03:22:14 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 18, 2018 03:22:14 PM</span>
-	<span class='label end-time'>May 18, 2018 03:23:36 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 22s+258ms</span>
-</div>
-	<div class='test-desc'>Simula uma compra em cada UF disponível. </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>FluxodeCompras-Test</span>
-			</div>
-			<div class='author-list'>
-				<span class='author label white-text'>Author:AndréMartines</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:22:14 PM</td>
-					<td class='step-details'>Iniciando Fluxo_de_Compras</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:22:20 PM</td>
-					<td class='step-details'>Iniciando fluxo de compra para a UF:</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:22:20 PM</td>
-					<td class='step-details'>Executando Login com o usuário: 'compradorteste@mailinator.com', na loja 'http://musttest.hml.tenzen.com.br/'</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:22:38 PM</td>
-					<td class='step-details'>Login executado com sucesso!</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:22:48 PM</td>
-					<td class='step-details'>Pesquisando o produto: Pijama Adulto Spiderman</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:22:52 PM</td>
-					<td class='step-details'>Produto adicionado ao carrinho</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:22:53 PM</td>
-					<td class='step-details'>Preenchendo dados de shipment</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:22:59 PM</td>
-					<td class='step-details'>UF selecionada: 'MS'</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:23:36 PM</td>
-					<td class='step-details'>Compra executada com sucesso!</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>3:23:36 PM</td>
-					<td class='step-details'><span class='label white-text green'>Test: Fluxo_de_Compras PASS</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 036.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 036.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 036.png'></li>
-							</ul>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='20'>
-					<div class='test-heading'>
-						<span class='test-name'>Fluxo_de_Compras</span>
-						<span class='test-time'>May 18, 2018 03:23:37 PM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>May 18, 2018 03:23:37 PM</span>
-	<span class='label end-time'>May 18, 2018 03:23:46 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+592ms</span>
-</div>
-	<div class='test-desc'>Simula uma compra em cada UF disponível. </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>FluxodeCompras-Test</span>
-			</div>
-			<div class='author-list'>
-				<span class='author label white-text'>Author:AndréMartines</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:23:37 PM</td>
-					<td class='step-details'>Iniciando Fluxo_de_Compras</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:23:42 PM</td>
-					<td class='step-details'>Iniciando fluxo de compra para a UF:</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>3:23:42 PM</td>
-					<td class='step-details'>Executando Login com o usuário: 'compradorteste@mailinator.com', na loja 'http://musttest.hml.tenzen.com.br/'</td>
-				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>3:23:46 PM</td>
-					<td class='step-details'>Test Failed: A página solicitada não retornou resposta: 'http://musttest.hml.tenzen.com.br/'</td>
 				</tr>
 			</tbody>
 		</table>
@@ -1838,77 +536,13 @@
 					<div class='category-heading'>
 						<span class='category-name'>TesteNegativo</span>
 						<span class='category-status right'>
-							<span class='label pass'>7</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 7</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 18, 2018 03:04:44 PM</td>
-										<td class='linked' test-id='1'>testeCpfEmBranco</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 18, 2018 03:05:07 PM</td>
-										<td class='linked' test-id='2'>testeCpfInvalido</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 18, 2018 03:05:22 PM</td>
-										<td class='linked' test-id='3'>testeEmailEmBranco</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 18, 2018 03:05:41 PM</td>
-										<td class='linked' test-id='4'>testeEmailInvalido</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 18, 2018 03:05:55 PM</td>
-										<td class='linked' test-id='5'>testeNomeEmBranco</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 18, 2018 03:06:10 PM</td>
-										<td class='linked' test-id='6'>testeNomeInvalido</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 18, 2018 03:06:26 PM</td>
-										<td class='linked' test-id='7'>testeSenhaCadastroEmBranco</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>FluxodeCompras-Test</span>
-						<span class='category-status right'>
-							<span class='label pass'>12</span>
+							<span class='label pass'>4</span>
 							<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 12</span>
+							<span class='label green accent-4 white-text'>Passed: 4</span>
 							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
@@ -1924,69 +558,29 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 18, 2018 03:06:43 PM</td>
-										<td class='linked' test-id='8'>Fluxo_de_Compras</td>
+										<td>May 18, 2018 04:30:49 PM</td>
+										<td class='linked' test-id='1'>testeCpfEmBranco</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>May 18, 2018 03:08:06 PM</td>
-										<td class='linked' test-id='9'>Fluxo_de_Compras</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 18, 2018 03:09:36 PM</td>
-										<td class='linked' test-id='10'>Fluxo_de_Compras</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 18, 2018 03:11:01 PM</td>
-										<td class='linked' test-id='11'>Fluxo_de_Compras</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 18, 2018 03:12:22 PM</td>
-										<td class='linked' test-id='12'>Fluxo_de_Compras</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 18, 2018 03:13:40 PM</td>
-										<td class='linked' test-id='13'>Fluxo_de_Compras</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 18, 2018 03:15:10 PM</td>
-										<td class='linked' test-id='14'>Fluxo_de_Compras</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 18, 2018 03:16:36 PM</td>
-										<td class='linked' test-id='15'>Fluxo_de_Compras</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 18, 2018 03:18:04 PM</td>
-										<td class='linked' test-id='16'>Fluxo_de_Compras</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 18, 2018 03:19:21 PM</td>
-										<td class='linked' test-id='17'>Fluxo_de_Compras</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 18, 2018 03:20:49 PM</td>
-										<td class='linked' test-id='18'>Fluxo_de_Compras</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 18, 2018 03:22:14 PM</td>
-										<td class='linked' test-id='19'>Fluxo_de_Compras</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>May 18, 2018 03:23:37 PM</td>
-										<td class='linked' test-id='20'>Fluxo_de_Compras</td>
+										<td>May 18, 2018 04:31:17 PM</td>
+										<td class='linked' test-id='2'>testeCpfInvalido</td>
 										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>May 18, 2018 04:31:32 PM</td>
+										<td class='linked' test-id='3'>testeEmailEmBranco</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>May 18, 2018 04:31:47 PM</td>
+										<td class='linked' test-id='4'>testeEmailInvalido</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>May 18, 2018 04:32:03 PM</td>
+										<td class='linked' test-id='5'>testeNomeEmBranco</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -2033,13 +627,13 @@
                             <div class='author-heading'>
                                 <span class='author-name'>Author:AndréMartines</span>
                                 <span class='author-status right'>
-                                        <span class='label pass'>19</span>
+                                        <span class='label pass'>4</span>
                                         <span class='label fail'>1</span>
 						        </span>
                             </div>
                             <div class='author-content hide'>
                                 <div class='author-status-counts'>
-                                    <span class='label green accent-4 white-text'>Passed: 19</span>
+                                    <span class='label green accent-4 white-text'>Passed: 4</span>
                                     <span class='label red lighten-1 white-text'>Failed: 1</span>
                                     
                                 </div>
@@ -2055,104 +649,29 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>May 18, 2018 03:04:44 PM</td>
+                                                <td>May 18, 2018 04:30:49 PM</td>
                                                 <td class='linked' test-id='1'>testeCpfEmBranco</td>
                                                 <td><span class='test-status pass'>pass</span></td>
                                             </tr>
                                             <tr>
-                                                <td>May 18, 2018 03:05:07 PM</td>
+                                                <td>May 18, 2018 04:31:17 PM</td>
                                                 <td class='linked' test-id='2'>testeCpfInvalido</td>
-                                                <td><span class='test-status pass'>pass</span></td>
+                                                <td><span class='test-status fail'>fail</span></td>
                                             </tr>
                                             <tr>
-                                                <td>May 18, 2018 03:05:22 PM</td>
+                                                <td>May 18, 2018 04:31:32 PM</td>
                                                 <td class='linked' test-id='3'>testeEmailEmBranco</td>
                                                 <td><span class='test-status pass'>pass</span></td>
                                             </tr>
                                             <tr>
-                                                <td>May 18, 2018 03:05:41 PM</td>
+                                                <td>May 18, 2018 04:31:47 PM</td>
                                                 <td class='linked' test-id='4'>testeEmailInvalido</td>
                                                 <td><span class='test-status pass'>pass</span></td>
                                             </tr>
                                             <tr>
-                                                <td>May 18, 2018 03:05:55 PM</td>
+                                                <td>May 18, 2018 04:32:03 PM</td>
                                                 <td class='linked' test-id='5'>testeNomeEmBranco</td>
                                                 <td><span class='test-status pass'>pass</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>May 18, 2018 03:06:10 PM</td>
-                                                <td class='linked' test-id='6'>testeNomeInvalido</td>
-                                                <td><span class='test-status pass'>pass</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>May 18, 2018 03:06:26 PM</td>
-                                                <td class='linked' test-id='7'>testeSenhaCadastroEmBranco</td>
-                                                <td><span class='test-status pass'>pass</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>May 18, 2018 03:06:43 PM</td>
-                                                <td class='linked' test-id='8'>Fluxo_de_Compras</td>
-                                                <td><span class='test-status pass'>pass</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>May 18, 2018 03:08:06 PM</td>
-                                                <td class='linked' test-id='9'>Fluxo_de_Compras</td>
-                                                <td><span class='test-status pass'>pass</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>May 18, 2018 03:09:36 PM</td>
-                                                <td class='linked' test-id='10'>Fluxo_de_Compras</td>
-                                                <td><span class='test-status pass'>pass</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>May 18, 2018 03:11:01 PM</td>
-                                                <td class='linked' test-id='11'>Fluxo_de_Compras</td>
-                                                <td><span class='test-status pass'>pass</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>May 18, 2018 03:12:22 PM</td>
-                                                <td class='linked' test-id='12'>Fluxo_de_Compras</td>
-                                                <td><span class='test-status pass'>pass</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>May 18, 2018 03:13:40 PM</td>
-                                                <td class='linked' test-id='13'>Fluxo_de_Compras</td>
-                                                <td><span class='test-status pass'>pass</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>May 18, 2018 03:15:10 PM</td>
-                                                <td class='linked' test-id='14'>Fluxo_de_Compras</td>
-                                                <td><span class='test-status pass'>pass</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>May 18, 2018 03:16:36 PM</td>
-                                                <td class='linked' test-id='15'>Fluxo_de_Compras</td>
-                                                <td><span class='test-status pass'>pass</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>May 18, 2018 03:18:04 PM</td>
-                                                <td class='linked' test-id='16'>Fluxo_de_Compras</td>
-                                                <td><span class='test-status pass'>pass</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>May 18, 2018 03:19:21 PM</td>
-                                                <td class='linked' test-id='17'>Fluxo_de_Compras</td>
-                                                <td><span class='test-status pass'>pass</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>May 18, 2018 03:20:49 PM</td>
-                                                <td class='linked' test-id='18'>Fluxo_de_Compras</td>
-                                                <td><span class='test-status pass'>pass</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>May 18, 2018 03:22:14 PM</td>
-                                                <td class='linked' test-id='19'>Fluxo_de_Compras</td>
-                                                <td><span class='test-status pass'>pass</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>May 18, 2018 03:23:37 PM</td>
-                                                <td class='linked' test-id='20'>Fluxo_de_Compras</td>
-                                                <td><span class='test-status fail'>fail</span></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -2170,6 +689,70 @@
         </div>
     </div>
 </div>
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>junit.framework.AssertionFailedError</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>May 18, 2018 04:31:17 PM</td>
+                                                        <td class='linked' test-id='2'>testeCpfInvalido</td>
+                                                        <td><pre><pre>junit.framework.AssertionFailedError: Test Failed: Mensagem de aviso não exibida ou não confere com o esperado: 'O campo CPF deve conter 11 caracteres.' expected [true] but found [false]
+	at junit.framework.Assert.fail(Assert.java:57)
+	at com.lua.webbuyer.test.TestesNegativos.testeCpfInvalido(TestesNegativos.java:53)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -2179,31 +762,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>20</div>
+					<div class='panel-lead'>5</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>159</div>
+					<div class='panel-lead'>21</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 18, 2018 03:04:44 PM</div>
+					<div class='panel-lead'>May 18, 2018 04:30:49 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 18, 2018 03:23:46 PM</div>
+			 		<div class='panel-lead'>May 18, 2018 04:32:14 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 19m 2s+494ms</div>
+					<div class='panel-lead'>0h 1m 24s+569ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -2240,20 +823,11 @@
 						</tr>
 						<tr>
 							<td>TesteNegativo</td>
-							<td>7</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>FluxodeCompras-Test</td>
-							<td>12</td>
+							<td>4</td>
 							<td>1</td>
 							<td>0</td>
 							<td>
-									92.308%
+									80%
 							</td>
 						</tr>
 					</table>
@@ -2269,7 +843,7 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 19,
+				passParent: 4,
 				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
@@ -2277,14 +851,14 @@
 				skipParent: 0,
 				exceptionsParent: 1,
 				
-				passChild: 38,
-				failChild: 1,
+				passChild: 6,
+				failChild: 2,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 120,
-				exceptionsChild: 1,
+				infoChild: 13,
+				exceptionsChild: 2,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

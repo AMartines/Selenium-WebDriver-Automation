@@ -5,7 +5,7 @@
 	<listeners>
 	
 		<listener
-			class-name="com.lua.webbuyer.listners.AnnotationTransformer" />
+			class-name="com.lua.webbuyer.resources.AnnotationTransformer" />
 	</listeners>
 
 	<!-- Parametros para a classe TestBuyer -->
@@ -13,8 +13,6 @@
 	<test name="Teste Compras">
 
 		<parameter name="Browser" value="Firefox" />
-		<parameter name="Product" value="Pijama Adulto Spiderman" />
-		<parameter name="itemColorCode" value="11682" />
 		<classes>
 			<class name="com.lua.webbuyer.test.TestesLoginPage">
 			</class>

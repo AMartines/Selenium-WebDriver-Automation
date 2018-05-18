@@ -3,7 +3,6 @@ package com.lua.webbuyer.actions;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-import com.lua.webbuyer.extent.reports.ReportExtent;
 import com.lua.webbuyer.page.CartPage;
 import com.lua.webbuyer.page.HomePage;
 import com.lua.webbuyer.page.LoginPage;
@@ -11,6 +10,7 @@ import com.lua.webbuyer.page.ProductsPage;
 import com.lua.webbuyer.page.ShippingPage;
 import com.lua.webbuyer.param.BuyerParams;
 import com.lua.webbuyer.param.LoginParams;
+import com.lua.webbuyer.resources.ReportExtent;
 import com.lua.webbuyer.utils.Common;
 
 public class BuyerActions {

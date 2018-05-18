@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import com.lua.webbuyer.extent.reports.ReportExtent;
+import com.lua.webbuyer.resources.ReportExtent;
 import com.lua.webbuyer.utils.Selenium;
 
 public class ProductsPage {

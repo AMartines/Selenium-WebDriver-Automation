@@ -4,8 +4,8 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.lua.webbuyer.actions.BuyerActions;
-import com.lua.webbuyer.extent.reports.ReportExtent;
 import com.lua.webbuyer.param.BuyerParams;
+import com.lua.webbuyer.resources.ReportExtent;
 import com.lua.webbuyer.utils.Driver;
 
 public class TestesCompra extends ReportExtent {

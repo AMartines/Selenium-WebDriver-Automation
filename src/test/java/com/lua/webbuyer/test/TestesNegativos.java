@@ -3,7 +3,7 @@ package com.lua.webbuyer.test;
 import org.testng.annotations.Test;
 
 import com.lua.webbuyer.actions.LoginPageActions;
-import com.lua.webbuyer.extent.reports.ReportExtent;
+import com.lua.webbuyer.resources.ReportExtent;
 import com.lua.webbuyer.utils.Driver;
 
 import junit.framework.Assert;
