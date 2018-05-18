@@ -23,7 +23,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.lua.webbuyer.utils.Driver;
 import com.lua.webbuyer.utils.getScreenshot;
 
-public class ReportsExtend {
+public class ReportExtent {
 
 	public static ExtentHtmlReporter htmlReporter;
 	public static ExtentReports reports;
@@ -56,7 +56,7 @@ public class ReportsExtend {
 	    
 		testInfo = reports.createTest(testName, desc);
 		testInfo.assignCategory(groupInfo);
-		testInfo.assignAuthor("Author: André_Kennedy");
+		testInfo.assignAuthor("Author: André Martines");
 		//testInfo.assignCategory("");
 				
 		testInfo.log(Status.INFO, "Iniciando " + testName);
@@ -78,16 +78,20 @@ public class ReportsExtend {
 
 	@AfterMethod(alwaysRun = true)
 	public void getResult(ITestResult result) throws IOException {
+		String screenshotPath = getScreenshot.Capture(getScreenshot.generateFileName(result)) ; 
 		
 		if (result.getStatus() == ITestResult.SUCCESS) {
 			//testInfo.log(Status.PASS, "Test: " + result.getName() + " PASS");
+			testInfo.addScreenCaptureFromPath(screenshotPath);
+
 			testInfo.log(Status.PASS, MarkupHelper.createLabel("Test: " + result.getName() + " PASS", ExtentColor.GREEN));
 			Driver.finalyzeTest();
 			
 		} else if (result.getStatus() == ITestResult.FAILURE) {
 			
-			String screenshotPath = getScreenshot.Capture("screenshotForExtentReport");
+			//String screenshotPath = getScreenshot.Capture("screenshotForExtentReport");
 			testInfo.addScreenCaptureFromPath(screenshotPath);
+			
 			
 			testInfo.log(Status.FAIL, MarkupHelper.createLabel("Test: " + result.getName() + " FAILED", ExtentColor.RED));
 			testInfo.log(Status.FAIL, result.getThrowable()); 

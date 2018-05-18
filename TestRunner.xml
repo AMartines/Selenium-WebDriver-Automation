@@ -16,9 +16,11 @@
 		<parameter name="Product" value="Pijama Adulto Spiderman" />
 		<parameter name="itemColorCode" value="11682" />
 		<classes>
-			<class name="com.lua.webbuyer.test.TestBuyer">
+			<class name="com.lua.webbuyer.test.TestesLoginPage">
 			</class>
-			<class name="com.lua.webbuyer.test.TestLoginPage">
+			<class name="com.lua.webbuyer.test.TestesNegativos">
+			</class>
+			<class name="com.lua.webbuyer.test.TestesCompra">
 			</class>
 		</classes>
 	</test>
@@ -29,3 +31,7 @@
 
 
 </suite>
+
+
+
+

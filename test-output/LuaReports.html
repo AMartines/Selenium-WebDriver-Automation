@@ -53,7 +53,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>May 11, 2018 05:46:58 PM</span>
+                    <span class='label suite-start-time blue darken-3'>May 18, 2018 01:48:51 PM</span>
 				</a>
 			</li>
 			<li>
@@ -79,6 +79,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -91,7 +92,8 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>Testesdecompra</a></li>
+					<li><a href='#'>TesteNegativo</a></li>
+					<li><a href='#'>FluxodeCompras-Test</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -139,10 +141,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='90%'><span class='strong'>9</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='10%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -154,10 +156,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='13.333%'><span class='strong'>2</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='30.508%'><span class='strong'>18</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='86.667%'>13</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='1.695%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='67.797%'>40</span> others
 				</div>
 			</div>
 		</div>
@@ -174,23 +176,23 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>compraSequencial</span>
-						<span class='test-time'>May 11, 2018 05:46:59 PM</span>
+						<span class='test-name'>testeCpfEmBranco</span>
+						<span class='test-time'>May 18, 2018 01:48:51 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 11, 2018 05:46:59 PM</span>
-	<span class='label end-time'>May 11, 2018 05:48:22 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 23s+677ms</span>
+	<span class='label start-time'>May 18, 2018 01:48:51 PM</span>
+	<span class='label end-time'>May 18, 2018 01:49:11 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 19s+596ms</span>
 </div>
-	<div class='test-desc'>Simula duas compras feitas na mesma loja e com o mesmo usuário em sequência. </div>
+	<div class='test-desc'>Força a mensagem de warning no campo 'CPF' na tela de Login. </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>Testesdecompra</span>
+				<span class='category label white-text'>TesteNegativo</span>
 			</div>
 			<div class='author-list'>
-				<span class='author label white-text'>Author:André_Kennedy</span>
+				<span class='author label white-text'>Author:AndréMartines</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -205,66 +207,58 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:46:59 PM</td>
-					<td class='step-details'>Iniciando compraSequencial</td>
+					<td class='timestamp'>1:48:51 PM</td>
+					<td class='step-details'>Iniciando testeCpfEmBranco</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:47:05 PM</td>
-					<td class='step-details'>Executando Login com o usuário: compradorteste@mailinator.com, na loja 'http://musttest.hml.tenzen.com.br/'</td>
+					<td class='timestamp'>1:49:11 PM</td>
+					<td class='step-details'>Mensagem de aviso esperada: 'O campo "CPF" é obrigatório.'</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:47:26 PM</td>
-					<td class='step-details'>Login executado com sucesso!</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:47:37 PM</td>
-					<td class='step-details'>Pesquisando o produto: Pijama Adulto Spiderman</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:47:40 PM</td>
-					<td class='step-details'>Produto adicionado ao carrinho</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:47:41 PM</td>
-					<td class='step-details'>Preenchendo dados de shipment</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:48:22 PM</td>
-					<td class='step-details'>Compra executada com sucesso!</td>
+					<td class='timestamp'>1:49:11 PM</td>
+					<td class='step-details'>Mensagem retornada pelo sistema: 'O campo "CPF" é obrigatório.'</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:48:22 PM</td>
-					<td class='step-details'><span class='label white-text green'>Test: compraSequencial PASS</span></td>
+					<td class='timestamp'>1:49:11 PM</td>
+					<td class='step-details'>Warning do campo 'CPF' exibido corretamente!</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:49:11 PM</td>
+					<td class='step-details'><span class='label white-text green'>Test: testeCpfEmBranco PASS</span></td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeCpfEmBranco-2018_05_18 011.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeCpfEmBranco-2018_05_18 011.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeCpfEmBranco-2018_05_18 011.png'></li>
+							</ul>
 					</div>
 				</li>
 				
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>testeCompradois</span>
-						<span class='test-time'>May 11, 2018 05:48:23 PM</span>
+						<span class='test-name'>testeCpfInvalido</span>
+						<span class='test-time'>May 18, 2018 01:49:12 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 11, 2018 05:48:23 PM</span>
-	<span class='label end-time'>May 11, 2018 05:49:48 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 24s+731ms</span>
+	<span class='label start-time'>May 18, 2018 01:49:12 PM</span>
+	<span class='label end-time'>May 18, 2018 01:49:27 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+847ms</span>
 </div>
+	<div class='test-desc'>Força a mensagem de warning no campo 'CPF' na tela de Login. </div>
 	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>TesteNegativo</span>
+			</div>
 			<div class='author-list'>
-				<span class='author label white-text'>Author:André_Kennedy</span>
+				<span class='author label white-text'>Author:AndréMartines</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -279,38 +273,601 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:48:23 PM</td>
-					<td class='step-details'>Iniciando testeCompradois</td>
+					<td class='timestamp'>1:49:12 PM</td>
+					<td class='step-details'>Iniciando testeCpfInvalido</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:48:28 PM</td>
-					<td class='step-details'>Executando Login com o usuário: compradorteste@mailinator.com, na loja 'http://musttest.hml.tenzen.com.br/'</td>
+					<td class='timestamp'>1:49:27 PM</td>
+					<td class='step-details'>Mensagem de aviso esperada: 'O campo CPF deve conter 11 caracteres.'</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:48:50 PM</td>
+					<td class='timestamp'>1:49:27 PM</td>
+					<td class='step-details'>Mensagem retornada pelo sistema: 'O campo CPF deve conter 11 caracteres.'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:49:27 PM</td>
+					<td class='step-details'>Warning do campo 'CPF' exibido corretamente!</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:49:27 PM</td>
+					<td class='step-details'><span class='label white-text green'>Test: testeCpfInvalido PASS</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeCpfInvalido-2018_05_18 027.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeCpfInvalido-2018_05_18 027.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeCpfInvalido-2018_05_18 027.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>testeEmailEmBranco</span>
+						<span class='test-time'>May 18, 2018 01:49:28 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 18, 2018 01:49:28 PM</span>
+	<span class='label end-time'>May 18, 2018 01:49:41 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+286ms</span>
+</div>
+	<div class='test-desc'>Força a mensagem de warning no campo 'E-Mail' na tela de Login. </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>TesteNegativo</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Author:AndréMartines</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:49:28 PM</td>
+					<td class='step-details'>Iniciando testeEmailEmBranco</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:49:41 PM</td>
+					<td class='step-details'>Mensagem de aviso esperada: 'O campo "E-mail" é obrigatório.'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:49:41 PM</td>
+					<td class='step-details'>Mensagem retornada pelo sistema: 'O campo "E-mail" é obrigatório.'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:49:41 PM</td>
+					<td class='step-details'>Warning do campo 'E-mail' exibido corretamente!</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:49:41 PM</td>
+					<td class='step-details'><span class='label white-text green'>Test: testeEmailEmBranco PASS</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeEmailEmBranco-2018_05_18 041.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeEmailEmBranco-2018_05_18 041.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeEmailEmBranco-2018_05_18 041.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>testeEmailInvalido</span>
+						<span class='test-time'>May 18, 2018 01:49:42 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 18, 2018 01:49:42 PM</span>
+	<span class='label end-time'>May 18, 2018 01:49:55 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+138ms</span>
+</div>
+	<div class='test-desc'>Força a mensagem de warning no campo 'E-Mail' na tela de Login. </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>TesteNegativo</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Author:AndréMartines</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:49:42 PM</td>
+					<td class='step-details'>Iniciando testeEmailInvalido</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:49:55 PM</td>
+					<td class='step-details'>Mensagem de aviso esperada: 'E-mail inválido.'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:49:55 PM</td>
+					<td class='step-details'>Mensagem retornada pelo sistema: 'E-mail inválido.'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:49:55 PM</td>
+					<td class='step-details'>Warning do campo 'E-mail' exibido corretamente!</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:49:55 PM</td>
+					<td class='step-details'><span class='label white-text green'>Test: testeEmailInvalido PASS</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeEmailInvalido-2018_05_18 055.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeEmailInvalido-2018_05_18 055.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeEmailInvalido-2018_05_18 055.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>testeNomeEmBranco</span>
+						<span class='test-time'>May 18, 2018 01:49:56 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 18, 2018 01:49:56 PM</span>
+	<span class='label end-time'>May 18, 2018 01:50:11 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+684ms</span>
+</div>
+	<div class='test-desc'>Força a mensagem de warning no campo 'Nome' na tela de Login. </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>TesteNegativo</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Author:AndréMartines</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:49:56 PM</td>
+					<td class='step-details'>Iniciando testeNomeEmBranco</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:50:11 PM</td>
+					<td class='step-details'>Mensagem de aviso esperada: 'O campo "Nome" é obrigatório.'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:50:11 PM</td>
+					<td class='step-details'>Mensagem retornada pelo sistema: 'O campo "Nome" é obrigatório.'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:50:11 PM</td>
+					<td class='step-details'>Warning do campo'Nome' exibido corretamente!</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:50:11 PM</td>
+					<td class='step-details'><span class='label white-text green'>Test: testeNomeEmBranco PASS</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeNomeEmBranco-2018_05_18 011.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeNomeEmBranco-2018_05_18 011.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeNomeEmBranco-2018_05_18 011.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>testeNomeInvalido</span>
+						<span class='test-time'>May 18, 2018 01:50:12 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 18, 2018 01:50:12 PM</span>
+	<span class='label end-time'>May 18, 2018 01:50:29 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 16s+275ms</span>
+</div>
+	<div class='test-desc'>Força a mensagem de warning no campo 'Nome' na tela de Login. </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>TesteNegativo</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Author:AndréMartines</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:50:12 PM</td>
+					<td class='step-details'>Iniciando testeNomeInvalido</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:50:28 PM</td>
+					<td class='step-details'>Mensagem de aviso esperada: 'Seu nome deve ter ao menos 3 caracteres.'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:50:28 PM</td>
+					<td class='step-details'>Mensagem retornada pelo sistema: 'Seu nome deve ter ao menos 3 caracteres.'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:50:28 PM</td>
+					<td class='step-details'>Warning do campo'Nome' exibido corretamente!</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:50:29 PM</td>
+					<td class='step-details'><span class='label white-text green'>Test: testeNomeInvalido PASS</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeNomeInvalido-2018_05_18 028.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeNomeInvalido-2018_05_18 028.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeNomeInvalido-2018_05_18 028.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>testeSenhaCadastroEmBranco</span>
+						<span class='test-time'>May 18, 2018 01:50:29 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 18, 2018 01:50:29 PM</span>
+	<span class='label end-time'>May 18, 2018 01:50:46 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 16s+87ms</span>
+</div>
+	<div class='test-desc'>Força a mensagem de warning no campo 'Senha de cadastro' na tela de Login. </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>TesteNegativo</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Author:AndréMartines</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:50:29 PM</td>
+					<td class='step-details'>Iniciando testeSenhaCadastroEmBranco</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:50:45 PM</td>
+					<td class='step-details'>Mensagem de aviso esperada: 'O campo "senha" é obrigatório.'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:50:45 PM</td>
+					<td class='step-details'>Mensagem retornada pelo sistema: 'O campo "senha" é obrigatório.'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:50:45 PM</td>
+					<td class='step-details'>Warning do campo 'Senha de cadastro' exibido corretamente!</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:50:46 PM</td>
+					<td class='step-details'><span class='label white-text green'>Test: testeSenhaCadastroEmBranco PASS</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeSenhaCadastroEmBranco-2018_05_18 045.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeSenhaCadastroEmBranco-2018_05_18 045.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/testeSenhaCadastroEmBranco-2018_05_18 045.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>Fluxo_de_Compras</span>
+						<span class='test-time'>May 18, 2018 01:50:47 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 18, 2018 01:50:47 PM</span>
+	<span class='label end-time'>May 18, 2018 01:52:33 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 46s+303ms</span>
+</div>
+	<div class='test-desc'>Simula uma compra em cada UF disponível. </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>FluxodeCompras-Test</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Author:AndréMartines</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:50:47 PM</td>
+					<td class='step-details'>Iniciando Fluxo_de_Compras</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:50:52 PM</td>
+					<td class='step-details'>Iniciando fluxo de compra para a UF:</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:50:52 PM</td>
+					<td class='step-details'>Executando Login com o usuário: 'compradorteste@mailinator.com', na loja 'http://musttest.hml.tenzen.com.br/'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:51:04 PM</td>
 					<td class='step-details'>Login executado com sucesso!</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:49:00 PM</td>
+					<td class='timestamp'>1:51:14 PM</td>
 					<td class='step-details'>Pesquisando o produto: Pijama Adulto Spiderman</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:49:03 PM</td>
+					<td class='timestamp'>1:51:18 PM</td>
 					<td class='step-details'>Produto adicionado ao carrinho</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:49:05 PM</td>
+					<td class='timestamp'>1:51:19 PM</td>
 					<td class='step-details'>Preenchendo dados de shipment</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:51:55 PM</td>
+					<td class='step-details'>UF selecionada: 'AC'</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:49:48 PM</td>
-					<td class='step-details'><span class='label white-text green'>Test: testeCompradois PASS</span></td>
+					<td class='timestamp'>1:52:33 PM</td>
+					<td class='step-details'>Compra executada com sucesso!</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:52:33 PM</td>
+					<td class='step-details'><span class='label white-text green'>Test: Fluxo_de_Compras PASS</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 033.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 033.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 033.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>Fluxo_de_Compras</span>
+						<span class='test-time'>May 18, 2018 01:52:34 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 18, 2018 01:52:34 PM</span>
+	<span class='label end-time'>May 18, 2018 01:54:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 48s+711ms</span>
+</div>
+	<div class='test-desc'>Simula uma compra em cada UF disponível. </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>FluxodeCompras-Test</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Author:AndréMartines</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:52:34 PM</td>
+					<td class='step-details'>Iniciando Fluxo_de_Compras</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:52:38 PM</td>
+					<td class='step-details'>Iniciando fluxo de compra para a UF:</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:52:38 PM</td>
+					<td class='step-details'>Executando Login com o usuário: 'compradorteste@mailinator.com', na loja 'http://musttest.hml.tenzen.com.br/'</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:52:56 PM</td>
+					<td class='step-details'>Login executado com sucesso!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:53:06 PM</td>
+					<td class='step-details'>Pesquisando o produto: Pijama Adulto Spiderman</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:53:10 PM</td>
+					<td class='step-details'>Produto adicionado ao carrinho</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:53:11 PM</td>
+					<td class='step-details'>Preenchendo dados de shipment</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:53:45 PM</td>
+					<td class='step-details'>UF selecionada: 'AL'</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:54:22 PM</td>
+					<td class='step-details'>Compra executada com sucesso!</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:54:22 PM</td>
+					<td class='step-details'><span class='label white-text green'>Test: Fluxo_de_Compras PASS</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 022.png' width='10%' src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 022.png' data-src='/Users/andremartines/eclipse-workspace/Lua_Automation/Test-Screenshots/Fluxo_de_Compras-2018_05_18 022.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>Fluxo_de_Compras</span>
+						<span class='test-time'>May 18, 2018 01:54:23 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>May 18, 2018 01:54:23 PM</span>
+	<span class='label end-time'>May 18, 2018 01:54:33 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+289ms</span>
+</div>
+	<div class='test-desc'>Simula uma compra em cada UF disponível. </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>FluxodeCompras-Test</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Author:AndréMartines</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:54:23 PM</td>
+					<td class='step-details'>Iniciando Fluxo_de_Compras</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:54:29 PM</td>
+					<td class='step-details'>Iniciando fluxo de compra para a UF:</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:54:29 PM</td>
+					<td class='step-details'>Executando Login com o usuário: 'compradorteste@mailinator.com', na loja 'http://musttest.hml.tenzen.com.br/'</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>1:54:33 PM</td>
+					<td class='step-details'>Test Failed: A página solicitada não retornou resposta: 'http://musttest.hml.tenzen.com.br/'</td>
 				</tr>
 			</tbody>
 		</table>
@@ -369,14 +926,14 @@
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>Testesdecompra</span>
+						<span class='category-name'>TesteNegativo</span>
 						<span class='category-status right'>
-							<span class='label pass'>1</span>
+							<span class='label pass'>7</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
+							<span class='label green accent-4 white-text'>Passed: 7</span>
 							
 							
 						</div>
@@ -392,9 +949,84 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 11, 2018 05:46:59 PM</td>
-										<td class='linked' test-id='1'>compraSequencial</td>
+										<td>May 18, 2018 01:48:51 PM</td>
+										<td class='linked' test-id='1'>testeCpfEmBranco</td>
 										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>May 18, 2018 01:49:12 PM</td>
+										<td class='linked' test-id='2'>testeCpfInvalido</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>May 18, 2018 01:49:28 PM</td>
+										<td class='linked' test-id='3'>testeEmailEmBranco</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>May 18, 2018 01:49:42 PM</td>
+										<td class='linked' test-id='4'>testeEmailInvalido</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>May 18, 2018 01:49:56 PM</td>
+										<td class='linked' test-id='5'>testeNomeEmBranco</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>May 18, 2018 01:50:12 PM</td>
+										<td class='linked' test-id='6'>testeNomeInvalido</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>May 18, 2018 01:50:29 PM</td>
+										<td class='linked' test-id='7'>testeSenhaCadastroEmBranco</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>FluxodeCompras-Test</span>
+						<span class='category-status right'>
+							<span class='label pass'>2</span>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>May 18, 2018 01:50:47 PM</td>
+										<td class='linked' test-id='8'>Fluxo_de_Compras</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>May 18, 2018 01:52:34 PM</td>
+										<td class='linked' test-id='9'>Fluxo_de_Compras</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>May 18, 2018 01:54:23 PM</td>
+										<td class='linked' test-id='10'>Fluxo_de_Compras</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -439,15 +1071,16 @@
 
                         <li class='author displayed active'>
                             <div class='author-heading'>
-                                <span class='author-name'>Author:André_Kennedy</span>
+                                <span class='author-name'>Author:AndréMartines</span>
                                 <span class='author-status right'>
-                                        <span class='label pass'>2</span>
+                                        <span class='label pass'>9</span>
+                                        <span class='label fail'>1</span>
 						        </span>
                             </div>
                             <div class='author-content hide'>
                                 <div class='author-status-counts'>
-                                    <span class='label green accent-4 white-text'>Passed: 2</span>
-                                    
+                                    <span class='label green accent-4 white-text'>Passed: 9</span>
+                                    <span class='label red lighten-1 white-text'>Failed: 1</span>
                                     
                                 </div>
 
@@ -462,14 +1095,54 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>May 11, 2018 05:46:59 PM</td>
-                                                <td class='linked' test-id='1'>compraSequencial</td>
+                                                <td>May 18, 2018 01:48:51 PM</td>
+                                                <td class='linked' test-id='1'>testeCpfEmBranco</td>
                                                 <td><span class='test-status pass'>pass</span></td>
                                             </tr>
                                             <tr>
-                                                <td>May 11, 2018 05:48:23 PM</td>
-                                                <td class='linked' test-id='2'>testeCompradois</td>
+                                                <td>May 18, 2018 01:49:12 PM</td>
+                                                <td class='linked' test-id='2'>testeCpfInvalido</td>
                                                 <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>May 18, 2018 01:49:28 PM</td>
+                                                <td class='linked' test-id='3'>testeEmailEmBranco</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>May 18, 2018 01:49:42 PM</td>
+                                                <td class='linked' test-id='4'>testeEmailInvalido</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>May 18, 2018 01:49:56 PM</td>
+                                                <td class='linked' test-id='5'>testeNomeEmBranco</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>May 18, 2018 01:50:12 PM</td>
+                                                <td class='linked' test-id='6'>testeNomeInvalido</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>May 18, 2018 01:50:29 PM</td>
+                                                <td class='linked' test-id='7'>testeSenhaCadastroEmBranco</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>May 18, 2018 01:50:47 PM</td>
+                                                <td class='linked' test-id='8'>Fluxo_de_Compras</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>May 18, 2018 01:52:34 PM</td>
+                                                <td class='linked' test-id='9'>Fluxo_de_Compras</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>May 18, 2018 01:54:23 PM</td>
+                                                <td class='linked' test-id='10'>Fluxo_de_Compras</td>
+                                                <td><span class='test-status fail'>fail</span></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -496,31 +1169,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>10</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>15</div>
+					<div class='panel-lead'>59</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 11, 2018 05:46:58 PM</div>
+					<div class='panel-lead'>May 18, 2018 01:48:51 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 11, 2018 05:49:49 PM</div>
+			 		<div class='panel-lead'>May 18, 2018 01:54:34 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 2m 50s+204ms</div>
+					<div class='panel-lead'>0h 5m 42s+678ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -556,12 +1229,21 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>Testesdecompra</td>
-							<td>1</td>
+							<td>TesteNegativo</td>
+							<td>7</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
 									100%
+							</td>
+						</tr>
+						<tr>
+							<td>FluxodeCompras-Test</td>
+							<td>2</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									66.667%
 							</td>
 						</tr>
 					</table>
@@ -577,22 +1259,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 2,
-				failParent: 0,
+				passParent: 9,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				
-				passChild: 2,
-				failChild: 0,
+				passChild: 18,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 13,
-				exceptionsChild: 0,
+				infoChild: 40,
+				exceptionsChild: 1,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

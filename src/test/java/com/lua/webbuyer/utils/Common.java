@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Common {
 	WebDriver driver;
@@ -16,6 +15,14 @@ public class Common {
 		this.selenium = new Selenium(driver);
 	}
 
+	
+	public void getURL(String URL) throws Exception{
+		try {
+			Driver.getURL(URL);
+		}catch(Exception e) {
+			throw new Exception("A página solicitada não retornou resposta: '"+ URL +"'");
+		}
+	}
 	
 	public boolean validateElementPresence(By locator) {
 		
@@ -32,11 +39,22 @@ public class Common {
 		return exist;
 	}
 	 
-	public void reachLoginPage() throws Exception {
-		
-		this.loadingWait(driver); 
+	public void menuClick() throws Exception {
+		Thread.sleep(500);
 		selenium.click(By.xpath(".//button[@class='source-components-Header-___Header__menu-trigger___3rL3X']"));
-		selenium.click(By.xpath(".//*[@id='outer-container']/ul/li[2]/a"));
+	}
+	
+	public void reachLoginPage(String URL) throws Exception{
+		this.getURL(URL);
+		try {
+			this.loadingWait(driver); 
+			selenium.click(By.xpath(".//button[@class='source-components-Header-___Header__menu-trigger___3rL3X']"));
+			selenium.click(By.xpath(".//*[@id='outer-container']/ul/li[2]/a"));
+		}catch(Exception e) {
+			throw new Exception("Botão 'Menu Hamburguer' não encontrado!");
+				
+			
+		}
 	} 
 
 	 
@@ -47,12 +65,16 @@ public class Common {
 
 	
 	public void loadingWait(WebDriver driver) {
+		
+		
 		try {
-		    WebDriverWait wait = new WebDriverWait(driver, 5000L);
+		    //WebDriverWait wait = new WebDriverWait(driver, 5000L);
 		    if (driver.findElement(By.xpath(".//div[@class='source-components-Loading-___Loading__wrapper___3RmgW']")).isDisplayed()) {
-		    	wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.xpath(".//div[@class='source-components-Loading-___Loading__wrapper___3RmgW']"))));
+		    	selenium.wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.xpath(".//div[@class='source-components-Loading-___Loading__wrapper___3RmgW']"))));
+		    	//Thread.sleep(500);
 			}else if (driver.findElement(By.xpath(".//div[@class='sk-double-bounce sk-spinner source-components-Loading-___Loading__spinner___dEAFF']")).isDisplayed()) {
-		    	wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.xpath(".//div[@class='sk-double-bounce sk-spinner source-components-Loading-___Loading__spinner___dEAFF']"))));
+				selenium.wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.xpath(".//div[@class='sk-double-bounce sk-spinner source-components-Loading-___Loading__spinner___dEAFF']"))));
+				//Thread.sleep(500);
 			}
 		}catch(Exception e) {
 			

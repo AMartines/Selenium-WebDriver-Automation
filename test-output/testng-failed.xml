@@ -12,21 +12,21 @@
     <parameter name="Product" value="Pijama Adulto Spiderman"/>
     <parameter name="Browser" value="Firefox"/>
     <classes>
-      <class name="com.lua.webbuyer.test.TestBuyer">
+      <class name="com.lua.webbuyer.test.TestesCompra">
         <methods>
           <include name="register"/>
-          <include name="compraSequencial" invocation-numbers="0"/>
+          <include name="setup"/>
           <include name="getResult"/>
           <include name="cleanUp"/>
-          <include name="setup"/>
+          <include name="Fluxo_de_Compras" invocation-numbers="2"/>
         </methods>
-      </class> <!-- com.lua.webbuyer.test.TestBuyer -->
-      <class name="com.lua.webbuyer.test.TestLoginPage">
+      </class> <!-- com.lua.webbuyer.test.TestesCompra -->
+      <class name="com.lua.webbuyer.test.TestesNegativos">
         <methods>
+          <include name="register"/>
           <include name="getResult"/>
-          <include name="testeCompradois"/>
         </methods>
-      </class> <!-- com.lua.webbuyer.test.TestLoginPage -->
+      </class> <!-- com.lua.webbuyer.test.TestesNegativos -->
     </classes>
   </test> <!-- Teste Compras(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

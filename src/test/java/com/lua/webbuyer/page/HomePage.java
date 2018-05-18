@@ -8,9 +8,11 @@ import com.lua.webbuyer.utils.Selenium;
 public class HomePage {
 	
 		private Selenium selenium;
+		private WebDriver driver;
 		
 		public HomePage(WebDriver driver) {
 			this.selenium = new Selenium(driver);
+			this.driver = driver;
 		}
 		
 		public void searchItem(String text) throws Exception {
@@ -32,6 +34,17 @@ public class HomePage {
 //				}
 			}catch(Exception e) {
 				throw new Exception ("Produto não encontrado: " + itemToBeSelected);
+			}
+			
+		}
+		
+		public String validateLogin() throws Exception {
+			String email;
+			try {
+				email = driver.findElement(By.xpath("//span[@class = 'source-components-SideMenu-___SideMenu__side-menu__user-email___KLOhf']")).getText().toString();
+				return email;
+			}catch(Exception e) {
+				throw new Exception("Nenhum usuário logado no momento!"); 
 			}
 			
 		}

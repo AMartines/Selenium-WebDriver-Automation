@@ -8,7 +8,7 @@ import com.lua.webbuyer.extent.reports.ReportExtent;
 import com.lua.webbuyer.param.BuyerParams;
 import com.lua.webbuyer.utils.Driver;
 
-public class TestBuyer extends ReportExtent {
+public class TestesCompra extends ReportExtent {
 
 	private ReportExtent LOG = new ReportExtent();
 	public String product = "Pijama Adulto Spiderman";
