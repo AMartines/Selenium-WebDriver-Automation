@@ -33,13 +33,14 @@ public class ReportExtent {
 	
 	@BeforeSuite(alwaysRun = true)
 	public void setup() throws UnknownHostException {
-		
+		getScreenshot.cleanEvidences();
 		htmlReporter = new ExtentHtmlReporter(new File(System.getProperty("user.dir") + "/test-output" +"/LuaReports.html"));
 		htmlReporter.loadXMLConfig(new File(System.getProperty("user.dir") + "/extent-config.xml"));
 		reports = new ExtentReports();
 		reports.setSystemInfo("Environment", InetAddress.getLocalHost().getHostName());
 		reports.setSystemInfo("Environment", System.getProperty("user.name"));
 		reports.attachReporter(htmlReporter);
+		
 	}
  
 

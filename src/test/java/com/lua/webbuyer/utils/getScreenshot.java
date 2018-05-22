@@ -13,14 +13,14 @@ import org.testng.ITestResult;
 
 public class getScreenshot {
 	
-	private static String dest; 
+	private static String destino = System.getProperty("user.dir")+ "/Test-Screenshots/"; ; 
 	private static final DateFormat dateFormat = new SimpleDateFormat("yyyy_MM_dd sss");
 	
 	public static String Capture(String screenshotName) throws IOException{
 		
 			TakesScreenshot ts = (TakesScreenshot)Driver.driver;
-			getScreenshot.dest = System.getProperty("user.dir")+ "/Test-Screenshots/" + screenshotName + ".png";
-			getScreenshot.cleanEvidences();
+			String dest = System.getProperty("user.dir")+ "/Test-Screenshots/" + screenshotName + ".png";
+			
 			File source = ts.getScreenshotAs(OutputType.FILE);
 			
 			File destination = new File(dest);
@@ -38,9 +38,9 @@ public class getScreenshot {
 	}
 	
 	
-	private static void cleanEvidences(){
+	public static void cleanEvidences(){
 		try {
-			File shot = new File(getScreenshot.dest);
+			File shot = new File(getScreenshot.destino);
 			FileUtils.cleanDirectory(shot);
 		}catch(Exception e) {
 			

@@ -50,7 +50,8 @@ public class TestesNegativos extends ReportExtent {
 			actions.validateInvalidFieldSignup(3);
 			LOG.loggerPass("Warning do campo 'CPF' exibido corretamente!");
 		}catch(AssertionError e) {
-			Assert.fail("Test Failed: " + e.getMessage());
+			org.testng.Assert.fail("Test Failed"); 
+			//Assert.fail("Test Failed: " + e.getMessage());
 			LOG.loggerFail("Test Failed: " + e.getMessage());
 		}
 	}

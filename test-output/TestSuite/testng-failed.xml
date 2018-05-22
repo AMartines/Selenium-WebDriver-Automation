@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="3" name="Failed suite [TestSuite]">
-  <parameter name="itemColorCode" value="11682"/>
-  <parameter name="Product" value="Pijama Adulto Spiderman"/>
   <parameter name="Browser" value="Firefox"/>
   <listeners>
     <listener class-name="com.lua.webbuyer.resources.AnnotationTransformer"/>
   </listeners>
   <test name="Teste Compras(failed)">
-    <parameter name="itemColorCode" value="11682"/>
-    <parameter name="Product" value="Pijama Adulto Spiderman"/>
     <parameter name="Browser" value="Firefox"/>
     <classes>
       <class name="com.lua.webbuyer.test.TestesCompra">
@@ -26,7 +22,9 @@
           <include name="testeSenhaCadastroEmBranco"/>
           <include name="register"/>
           <include name="testeNomeEmBranco"/>
+          <include name="testeEmailEmBranco"/>
           <include name="testeCpfInvalido"/>
+          <include name="testeEmailInvalido"/>
           <include name="getResult"/>
         </methods>
       </class> <!-- com.lua.webbuyer.test.TestesNegativos -->

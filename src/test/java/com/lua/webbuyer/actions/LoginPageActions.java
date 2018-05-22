@@ -140,8 +140,6 @@ public class LoginPageActions {
 			LOG.loggerInfo("Mensagem retornada pelo sistema: '" + warning + "'");
 			Assert.assertTrue(warning.contains(expected),
 					"Mensagem de aviso não exibida ou não confere com o esperado: '" + expected + "'");
-		} catch (NoSuchElementException e) {
-			Assert.fail("Não foi possivel localizar a mensagem de aviso do sistema!");
 		} catch (Exception e) {
 			Assert.fail(e.getMessage());
 		}
